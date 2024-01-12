@@ -120,7 +120,8 @@ def interact_with_page(url):
 
             visited_links.append(link_url)
         return non_english_texts
-
+    except Exception as e:
+        print(f"Error occurred while processing {link_url}:\n {e}")
     finally:
         driver.quit()
 
