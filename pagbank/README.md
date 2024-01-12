@@ -18,3 +18,7 @@ It will save all phrases without translation in a JSON named `missing_translatio
   ],
 }
 ```
+
+### Ignoring strings
+
+To ignore strings from pages, the `ignore.json` file will follow the format from the created JSON above. The code will ignore any strings related to each URL.
