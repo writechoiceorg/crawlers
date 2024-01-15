@@ -18,9 +18,10 @@ def read_json_file(file_path):
 
 
 def ignore_string_cases(string, url):
-    ignore_data = read_json_file("./ignore.json")
-    if url in ignore_data.keys():
-        ignore_string = [True for data in ignore_data[url] if string == data]
+    ignore_data = read_json_file("./pagbank/ignore.json")
+    ignore_misses = read_json_file("./pagbank/missing_translation.json")
+    if string in ignore_data or string in ignore_misses[url]:
+        return True
     else:
         ignore_string = False
 
@@ -31,7 +32,7 @@ def ignore_string_cases(string, url):
         pass
 
     if (
-        string.startswith(("https://", "http://"))
+        string.startswith(("https://", "http://", "Example: ", "Number: "))
         or string in "📘🚧❗️👍."
         or not string
         or ignore_string
@@ -54,7 +55,7 @@ def extract_non_english_text(html_content, url):
 
     non_english_text = []
     for text in soup.stripped_strings:
-        if not is_english(text) and ignore_string_cases(text, url):
+        if not is_english(text) and not ignore_string_cases(text, url):
             non_english_text.append(text)
 
     return non_english_text
@@ -126,11 +127,12 @@ def interact_with_page(url):
         driver.quit()
 
 
-base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
-result = interact_with_page(base_url)
+if __name__ == "__main__":
+    base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
+    result = interact_with_page(base_url)
 
-# Save non-English texts to a JSON file
-json_file_path = "missing_translation.json"
-save_to_json(json_file_path, result)
+    # Save non-English texts to a JSON file
+    json_file_path = "pagbank/missing_translation.json"
+    save_to_json(json_file_path, result)
 
-print(f"Missing translations saved to {json_file_path}")
+    print(f"Missing translations saved to {json_file_path}")

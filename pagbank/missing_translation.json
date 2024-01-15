@@ -1,0 +1,400 @@
+{
+  "https://dev.pagbank.uol.com.br/reference/introducao-connect": [
+    ": Revoga o acesso à conta de um vendedor.",
+    "e-mail",
+    "senha",
+    "Code validity",
+    "Simulate authorization via SMS",
+    ", Like for example",
+    ", Like for example",
+    ", Like for example"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/connect-challenge": [
+    "\"RSA/ECB/OAEPWithSHA-256AndMGF1Padding\"",
+    "oaepParams"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-connect": [
+    "invalid_redirect_uri",
+    "Customer identification failure.",
+    "invalid_format_url"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-certificado-digital": [
+    "Digital certificate validity and update"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-certificado-digital": [
+    "Este endpoint permite que você gere um certificado digital. Os parâmetros",
+    "presentes na resposta da requisição estão codificados em base64. Para utilizá-los, você precisa decodificá-los e salvá-los como dois arquivos independentes."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-cadastro": [
+    "Simplified description",
+    "Forwarding agent"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-account": [
+    "Int (3 caracteres)",
+    "Int (8-9 caracteres)"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-api-pedidos": [
+    ": possibilita a criação de um pedido, incluindo a opção de efetuar o pagamento.. Dependendo do método de pagamento selecionado, você pode criar e pagar o pedido utilizando apenas este endpoint.",
+    ": permite a consulta de pedidos anteriormente criados, utilizando um identificador único associado ao pedido.",
+    ": possibilita a consulta de pedidos já existentes através de parâmetros específicos, como o identificador da cobrança.",
+    ": permite recuperar os dados relacionados à divisão de um pagamento, oferecendo insights sobre a distribuição dos valores envolvidos.",
+    ": este endpoint viabiliza o processo de pagamento para um pedido previamente criado.",
+    ": oferece a funcionalidade de consultar o status de um pagamento, proporcionando informações atualizadas sobre a transação.",
+    ": permite a capture transações pré-autorizadas.",
+    ": possibilita a devolução do valor pago ao comprador, sendo aplicável tanto para desfazer uma pré-autorização quanto para reembolsar um pagamento já capturado.",
+    ": permite gerar sessões que serão utilizadas para a autenticação de operações com autenticação 3DS do PagBank.",
+    ": permite que você consulte e exiba os juros de parcelamento das transações aos seus clientes."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-order": [
+    "Esse objeto representa o fechamento do carrinho de compras. Contém informações que identifica o que está sendo adquirido, o comprador, endereço de entrega e demais informações relevantes.",
+    "Exemplo: ORDE_F87334AC-BB8B-42E2-AA85-8579F70AA328",
+    "Identificador único atribuído para o pedido.",
+    "Exemplo: ex-00001",
+    "Contém informações do cliente que fará pagamentos usando o serviço PagBank.",
+    "Nome do cliente.",
+    "Exemplo: João Souza",
+    "Exemplo: joaosouza@gmail.com",
+    "Documento de identificação pessoal (CPF/CNPJ) do cliente.",
+    "Exemplo: 12345678910",
+    "Nome dado ao item.",
+    "Exemplo: Nome do item",
+    "Quantidade referente ao item.",
+    "Exemplo: 2",
+    "Valor do item.",
+    "Exemplo: 500",
+    "Objeto contendo os QR Codes vinculados à um pedido. Ao informar o",
+    ", o QR code será gerado automaticamente e pode ser pago com aplicativos de outras instituições (Pix).",
+    "Para que o QR Code aceite o pagamento Pix, o vendedor precisa ter pelo menos uma chave de endereçamento ativa vinculada a sua conta PagBank.",
+    "Caso o vendedor tenha mais de uma chave de endereçamento cadastrada no PagBank, priorizaremos a utilização da chave de endereçamento aleatória.",
+    "Data de expiração do QR Code. Por padrão, o QR Code gerado tem validade de 24 horas caso o parâmetro",
+    "Exemplo: 2021-08-29T20:15:59-03:00",
+    "Contém informações do valor a ser utilizado no QR Code.",
+    "Valor do QR Code.",
+    "Exemplo: 500",
+    "Contém as URLs que receberão as notificações do pedido (por ora, somente aceitamos uma url apenas. Aceitaremos mais URLs em breve.)",
+    "Representa todos os dados disponíveis em uma cobrança, ou seja, na iniciação de um pagamento.",
+    "summary",
+    "Flag Token Flags (Credit):",
+    "List of available MCCs",
+    "Demais bandeiras",
+    "Exemplo: 12345678910",
+    "Contains Pix payment data.",
+    "Contains payer information.",
+    "Payer document. CPF (masked) / CNPJ.",
+    "ENUM value:",
+    "Exemplo: João Souza"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-charge": [
+    "Flag Token Flags (Credit):",
+    "Demais bandeiras"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pedido-pedido-com-qr-code": [
+    "charges"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pedido-cartao-facilitador-pagamento": [
+    "charge",
+    "\"Razão Social / Nome completo\"",
+    "\"Razão Social / Nome completo\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-transacao-com-repasse-de-taxa": [
+    "\"referencia do pagamento\"",
+    "\"descricao do pagamento\"",
+    "\"referencia do pagamento\"",
+    "\"descricao do pagamento\"",
+    "\"referencia do pagamento\"",
+    "\"descricao do pagamento\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-cartao": [
+    "expYear",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-cartao-clientes-pci": [
+    "Too many flags",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-token-bandeira": [
+    "Request (Credit)",
+    "Request (Debit)",
+    "Response (Debit)",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "Request (Credit)",
+    "Request (Debit)",
+    "Response (Debit)",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-token-pagbank": [
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-recorencia": [
+    "Request (INITIAL)",
+    "Response (INITIAL)",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"charges\": [",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-3ds-validacao-externa": [
+    "Request (Credit)",
+    "Request (Debit)",
+    "Response (Debit)",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-3ds-validacao-pagbank": [
+    "Campo",
+    "The email must be valid.",
+    "data.paymentMethod.card.encrypted",
+    "data.shippingAddress.complement",
+    "Campo",
+    "CHANGE_PAYMENT_METHOD",
+    ". O",
+    "Request (Credit)",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"THREEDS\"",
+    "Test data"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-boleto": [
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"formatted_barcode\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criando-pedido-com-qrcode-pagbank": [
+    "must have at least 1 element",
+    "Attention",
+    ": Para Simular o Pagamento, será necessário baixar o aplicativo PagBank na loja Play Store/Apple Store em Produção."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criando-um-pedido-com-deeplink-pagar-com-pagbank": [
+    "Deeplink Duration",
+    "Valid link types:"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/pagando-um-pedido-com-deeplink-em-sandbox": [
+    "// demais campos retornados no serviço do Order omitidos por motivos de simplificação",
+    "Simulation value",
+    "status-desejado",
+    "- to simulate a successful payment;",
+    "Response to PAID status",
+    "cartão-desejado",
+    "Response to PAID status",
+    "Payment simulation error handling",
+    "4XX or 5XX errors",
+    "\"<Código de erro>\"",
+    "\"<Mensagem do erro>\"",
+    "Error Code",
+    "Error message"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/divisao-de-pagamento": [
+    "e depois defina as configurações de divisão de pagamento ao realizar o pagamento utilizando o endpoint",
+    "Pagar o pedido",
+    "Use Case",
+    "examples.",
+    "Available payment methods",
+    "Request (credit card)",
+    "Response (credit card)",
+    "\"referencia do pagamento\"",
+    "\"descricao do pagamento\"",
+    "\"referencia do pedido\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "Consultation link",
+    "Request (credit card)",
+    "Request (Boleto)",
+    "Response (Boleto)",
+    "\"referencia do pedido\"",
+    "\"referencia do pagamento\"",
+    "\"descricao do pagamento\"",
+    "\"referencia do pedido\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"Referência Pedido\"",
+    "\"Referência Pedido\"",
+    "\"CHAR_6FA1BCED-1E5E-4906-8ECB-C60A4135243F\"",
+    "Request - PIX QR Code Issuance",
+    "Response - PIX QR Code Issuance",
+    "\"QRCO_CF532BDB-5FE9-4FB8-B849-6E55E06796F0\"",
+    "\"splits\"",
+    "capture payment",
+    "\"Exemplo\"",
+    "\"Descrição exemplo\"",
+    "\"Exemplo\"",
+    "\"Exemplo\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/webhooks": [
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "Disponível",
+    "Devolvida",
+    "Cancelada",
+    "Retenção temporária",
+    "headers",
+    "fromstring",
+    "creditorFees"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/confirmar-autenticidade-da-notificacao": [
+    "\"Exemplo\"",
+    "assinatura",
+    "assinatura",
+    "// Usando a lib apache commons"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/motivos-de-compra-negada": [
+    "NOT AUTHORIZED BY PAGSEGURO",
+    "TRANSACTION NOT ALLOWED - DO NOT TRY AGAIN",
+    "CONTATE A CENTRAL DO SEU CARTAO",
+    "TRANSACTION NOT ALLOWED - DO NOT TRY AGAIN",
+    "INVALID PASSWORD",
+    "RECURRING PAYMENT SUSPENSION FOR SERVICE - DO NOT TRY AGAIN",
+    "NOT AUTHORIZED - TRY AGAIN LATER",
+    "UNAUTHORIZED - TRY AGAIN USING AUTHENTICATION",
+    "STOREMAN, CONTACT THE PURCHASER"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-order": [
+    "\"CODIGO_IDENTIFICADOR_DO_ERRO\"",
+    "\"descrição detalhada do erro\"",
+    "Pay Order",
+    "fees_not_configured"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-api-transferencias": [
+    ": consulte transferências vinculadas a um cliente ou referêntes a um período específico. Como várias transferências podem ser retornadas, esse endpoint disponibiliza a opção de utilizar paginação. A ordem das transferências é padrão, com as mais antigas sempre sendo retornadas primeiro. Além disso, apenas transferências realizadas nos últimos 4 meses podem ser retornadas. Caso você precise de um histórico mais extenso, entre em contato com o time de suporte do PagBank."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-transferencia": [
+    "Transfer Object",
+    "bank_branch",
+    "bank_branch"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-transferencias": [
+    "Invalid notification url format"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-checkout": [
+    ": permite que você crie e configure um checkout para cada compra realizada pelos seus clientes.",
+    ": possibilita que você recupere os dados associados a um checkout criado previamente. Utilize essa opção para verificar o status atual do checkout e da transação ou para recuperar dados relacionados ao montante, forma de pagamento, ou valor do frete, por exemplo.",
+    ": utilize essa opção para bloquear a realização do pagamento relacionado a um checkout criado previamente. O checkout continuará existindo com suas configurações. No entanto, o seu cliente não será capaz de realizar o pagamento enquanto o checkout estiver desativado.",
+    ": ativa um checkout previamente inativado. Enquanto o chekout está ativado, o cliente pode executar o pagamento."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-checkout": [
+    "shipping.type",
+    "it is",
+    "Delivery address."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/webhooks-checkout": [
+    "\"CHEC_120301FA-8B8B-4C25-B07D-A4541EB78EB5\"",
+    "\"height\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\"",
+    "\"referencia da cobranca\"",
+    "\"descricao da cobranca\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-pagamentos-recorrentes": [
+    ": para utilizar os serviços do sistema de Pagamentos Recorrentes você irá utilizar chaves públicas. Esse recurso é utilizado em outras APIs do PagBank. No entanto, para os pagamentos recorrentes você utilizará chaves públicas exclusivas desse serviço. Além disso, você pode criptografar seus cartões para garantir maior segurança para os seus usuários.",
+    ": um plano contém as configurações que uma assinatura vai seguir, como valor e intervalo de cobrança. Através desse serviço, você consegue gerenciar todos os processos relacionados aos seus planos.",
+    ": para criar uma assinatura, você precisa cadastrar um assinante com os dados de pagamento. Através do serviço de assinantes, você cria e gere os seus clientes recorrentes.",
+    ": uma assinatura permite a cobrança recorrente de um cliente (assinante) de forma automática e simples. Para criar uma assinatura, basta informar o plano, o cliente da assinatura e um identificador para ela. Se quiser, é possível criar o cliente e seus dados de pagamento junto com a assinatura. Todo esse gerenciamento é feito através do serviço de Assinaturas.",
+    ": você pode criar cupons de descontos para oferecer aos assinantes. Os cupons podem dar descontos de valores inteiros ou percentuais, e podem ter data de vencimento ou limite de assinaturas.",
+    ": o serviço de Pagamentos possibilita que você realize consulta sobre o status dos pagamentos dos assinantes e crie estornos quando necessário.",
+    ": no caso de uma fatura ter seu pagamento negado é possível fazer novas tentativas de cobrança de pagamento automaticamente através da configuração do sistema.",
+    ": possibilita que você pode altere as preferências de notificação através de uma requisição via API. As configurações que podem ser alteradas são envio de e-mails ao vendedor, envio de e-mails ao assinante e URL de notificação."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/autenticacao-assinaturas": [
+    "PagBank Assinaturas",
+    "Configurações",
+    "Autorizar cobrança",
+    "Autorizar Cobrança",
+    "Autorizar"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/criptografia": [
+    "expMonth"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/planos": [
+    ": Crie novos planos de assinatura para oferecer aos seus clientes."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/assinaturas": [
+    "ATIVO (ACTIVE)",
+    "OVERDUE",
+    "PENDING",
+    "SUSPENDED",
+    ": Inicie uma nova assinatura, informando o plano, o cliente e um identificador único.",
+    ": Visualize a lista completa de todas as assinaturas registradas em sua conta.",
+    ": Consulte as faturas associadas a uma assinatura específica.",
+    ": Faça modificações nos detalhes de uma assinatura existente.",
+    ": Encerre uma assinatura de maneira definitiva.",
+    ": Coloque temporariamente em suspensão uma assinatura, permitindo a reativação no futuro.",
+    ": Torne ativa uma assinatura previamente suspensa.",
+    ": Remova cupons associados a uma assinatura específica."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/objeto-cupom": [
+    "Object containing coupon duration type."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/merchant": [
+    "PAGO",
+    "PENDING",
+    "REFUNDED",
+    "UNPAID (UNPAID)",
+    "PAGO (Paid)",
+    "NÃO PAGO (Unpaid)",
+    "Pagamento",
+    "ESTORNADO (Refunded)",
+    ": Obtenha detalhes específicos de uma fatura usando seu identificador único.",
+    ": Visualize a lista completa de todos os pagamentos associados a uma fatura.",
+    ": Obtenha detalhes específicos de um pagamento usando seu identificador único.",
+    "Consult chargebacks",
+    ": Obtenha informações sobre estornos de pagamentos associados a uma fatura específica.",
+    ": Visualize a lista completa de estornos associados a um pagamento específico.",
+    ": Visualize a lista completa de todos os pagamentos registrados em sua conta."
+  ],
+  "https://dev.pagbank.uol.com.br/reference/testar-sua-integra%C3%A7%C3%A3o": [
+    "Behavior"
+  ],
+  "https://dev.pagbank.uol.com.br/reference/webhooks-assinaturas": [
+    "\"Plano Teste\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/cartoes-de-teste": [
+    "Request and response examples",
+    "\"VERIFIQUE OS DADOS DO CARTÃO\""
+  ],
+  "https://dev.pagbank.uol.com.br/reference/introducao-ao-edi": [
+    ": Lista todas as transações confirmadas e operações que são efetuadas pelo cliente. Consta toda a movimentação do estabelecimento realizada no dia anterior à data de processamento que afeta o Saldo a Receber da conta PagBank.",
+    ": Apresenta toda movimentação relativa à liquidação das transações realizada no dia anterior à data de processamento. Também são apresentados transferências entre contas PagBank e os saques efetuados para contas em Domicílios Bancários e a posição de saldo inicial e final da conta PagBank.",
+    "Limitations",
+    ": fornece o das movimentações selecionadas. Você precisa de um token válido para utilizar esse endpoint. Você pode escolher a versão de relatório que deseja receber. Atualmente, as versões 1.05, 2.00 e 2.01 estão disponíveis. A diferença entre elas está nos campos informados no extrato.",
+    ": verifica se o Token que você possui é valido."
+  ]
+}
