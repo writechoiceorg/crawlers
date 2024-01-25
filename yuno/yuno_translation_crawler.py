@@ -129,7 +129,7 @@ def interact_with_page(url, file_path):
         driver.quit()
 
 
-if __name__ == "__main__":
+def run_yuno_scraper():
     base_url1 = "https://docs.y.uno/docs/overview"
     json_file_path1 = "./yuno/missing/guides_missing_translation_guides.json"
     result1 = interact_with_page(base_url1, json_file_path1)
