@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
       - name: Tree
         run: |
-          cd /usr/local/share/chrome_driver/chromedriver 
+          cd /usr/local/share/chrome_driver 
           tree         
       - name: Install dependencies
         run: pip install -r requirements.txt
