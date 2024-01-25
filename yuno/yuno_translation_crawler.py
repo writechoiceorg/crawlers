@@ -6,6 +6,10 @@ from bs4 import BeautifulSoup
 import json
 import langdetect
 import langid
+from os import environ
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 
 def read_json_file(file_path):
@@ -89,9 +93,26 @@ def handle_sidebar_links(driver):
     return [link.get_attribute("href") for link in sidebar_links]
 
 
+def create_driver():
+    chrome_service = Service(environ["CHROMEWEBDRIVER"])
+    chrome_options = Options()
+    for option in [
+        "--headless",
+        "--disable-gpu",
+        "--window-size=1920,1200",
+        "--ignore-certificate-errors",
+        "--disable-extensions",
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+    ]:
+        chrome_options.add_argument(option)
+    return webdriver.Chrome(service=chrome_service, options=chrome_options)
+
+
 def interact_with_page(url, file_path):
     try:
-        driver = webdriver.Chrome()
+        # driver = webdriver.Chrome()
+        driver = create_driver()
         driver.get(url)
 
         handle_localize_widget(driver)
