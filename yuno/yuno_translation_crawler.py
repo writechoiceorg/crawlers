@@ -100,7 +100,7 @@ def interact_with_page(url, file_path):
         links = handle_sidebar_links(driver)
         visited_links = []
 
-        for link_url in links:
+        for link_url in links[:1]:
             if link_url in visited_links:
                 continue
 

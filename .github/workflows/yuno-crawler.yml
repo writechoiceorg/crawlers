@@ -1,0 +1,24 @@
+name: Scraper Workflow
+
+on:
+  schedule:
+    - cron:  '0 0 * * 0'  # Runs every Sunday at 00:00 UTC
+  push:
+    paths:
+      - 'yuno/yuno_translation.py' 
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run scraper
+        run: python yuno/yuno_translation.py.py
+
