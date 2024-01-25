@@ -19,5 +19,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run scraper
-        run: python ./yuno/yuno_translation.py
+        run: python '../yuno/yuno_translation.py'
 
