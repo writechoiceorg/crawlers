@@ -125,8 +125,8 @@ def interact_with_page(url, file_path):
         return english_texts
     except Exception as e:
         print(f"Error occurred while processing {link_url}:\n {e}")
-    # finally:
-    #     driver.quit()
+    finally:
+        driver.quit()
 
 
 def run_yuno_scraper():
