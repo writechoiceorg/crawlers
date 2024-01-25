@@ -1,4 +1,4 @@
-from translation_validator import read_json_file, save_to_json
+from pagbank.pagbank_translation_crawler import read_json_file, save_to_json
 
 
 def remove_duplicates(json_data):
