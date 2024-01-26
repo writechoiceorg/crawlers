@@ -1,4 +1,4 @@
-from pagbank.pagbank_translation_crawler import read_json_file, save_to_json
+from pagbank._deprecated_crawler import read_json_file, save_to_json
 
 
 def remove_duplicates(json_data):

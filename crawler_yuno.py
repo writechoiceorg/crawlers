@@ -2,68 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
-import json
-import langdetect
-import langid
-
-
-def read_json_file(file_path):
-    try:
-        with open(file_path, "r", encoding="utf-8") as file:
-            data_dict = json.load(file)
-        return data_dict
-    except Exception:
-        return {}
-
-
-def ignore_cases(text, url, file_path):
-    ignore_data = read_json_file("./yuno/ignore.json")
-    ignore_misses = read_json_file(file_path)
-
-    if not ignore_misses:
-        ignore_misses = {}
-        ignore_misses[url] = []
-
-    try:
-        int(text)
-        return True
-    except ValueError:
-        pass
-
-    if (
-        text in ignore_data
-        or text in ignore_misses[url]
-        or text.startswith(("https://", "http://"))
-        or text in "📘🚧❗️👍."
-        or not text
-    ):
-        return True
-    return False
-
-
-def is_translated(text, language):
-    try:
-        lang = langdetect.detect(text)
-        lang2, _ = langid.classify(text)
-        return lang == language and lang2 == language
-    except Exception:
-        return None
-
-
-def extract_english_text(html_content, url, file_path):
-    soup = BeautifulSoup(html_content, "html.parser")
-
-    english_text = []
-    for text in soup.stripped_strings:
-        if is_translated(text, "en") and not ignore_cases(text, url, file_path):
-            english_text.append(text)
-    return english_text
-
-
-def save_to_json(file_path, data):
-    with open(file_path, "w", encoding="utf-8") as json_file:
-        json.dump(data, json_file, ensure_ascii=False, indent=2)
+from utils.extract_texts import extract_english_text
+from utils.json_handler import save_to_json
 
 
 def handle_localize_widget(driver):
@@ -96,13 +36,14 @@ def handle_localize_widget(driver):
 
 
 def handle_sidebar_links(driver):
+    selector = ".Sidebar1t2G1ZJq-vU1 a"
     sidebar_links = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".Sidebar1t2G1ZJq-vU1 a"))
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, selector))
     )
     return [link.get_attribute("href") for link in sidebar_links]
 
 
-def interact_with_page(url, file_path):
+def interact_with_page(url, file_path, ignore_path):
     try:
         driver = webdriver.Chrome()
         driver.get(url)
@@ -127,7 +68,9 @@ def interact_with_page(url, file_path):
 
             full_content = title + article_content
 
-            english = extract_english_text(full_content, link_url, file_path)
+            english = extract_english_text(
+                full_content, link_url, file_path, ignore_path
+            )
 
             if english:
                 english_texts[link_url] = english
@@ -142,15 +85,17 @@ def interact_with_page(url, file_path):
 
 
 def run_yuno_scraper():
+    ignore_path = "./yuno/ignore.json"
+
     base_url1 = "https://docs.y.uno/docs/overview"
-    json_file_path1 = "./yuno/missing/guides_missing_translation_guides.json"
-    interact_with_page(base_url1, json_file_path1)
+    json_file_path1 = "./yuno/guides_missing_translation_guides.json"
+    interact_with_page(base_url1, json_file_path1, ignore_path)
 
     print(f"Missing guides translations saved to {json_file_path1}")
 
     base_url2 = "https://docs.y.uno/reference/introduction"
-    json_file_path2 = "./yuno/missing/apiref_missing_translation.json"
-    interact_with_page(base_url2, json_file_path2)
+    json_file_path2 = "./yuno/apiref_missing_translation.json"
+    interact_with_page(base_url2, json_file_path2, ignore_path)
 
     print(f"Missing API ref translations saved to {json_file_path2}")
 
