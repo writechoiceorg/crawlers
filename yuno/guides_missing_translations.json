@@ -1,0 +1,2905 @@
+{
+  "https://docs.y.uno/docs/3ds-1": [
+    "frictionless flow",
+    "Frictionless flow"
+  ],
+  "https://docs.y.uno/docs/full-sdk-workflow": [
+    "Checkout Session Endpoint",
+    "Checkout Session Endpoint"
+  ],
+  "https://docs.y.uno/docs/the-ultimate-checkout-lite": [
+    "Create Customer Endpoint",
+    "Checkout Session Endpoint",
+    "using the",
+    "using the"
+  ],
+  "https://docs.y.uno/docs/enrollment-lite": [
+    "customer_session",
+    "customer_session",
+    "customer_session",
+    "using the",
+    "customer_session",
+    ". This token can be saved and used for future payments."
+  ],
+  "https://docs.y.uno/docs/developers-credentials": [
+    "In the Developers section, you will find your authentication credentials to integrate Yuno. Authentication lies at the heart of every interaction within the Yuno ecosystem. By understanding the structure, distinguishing between Test Mode and Live Mode credentials, and upholding their security, you ensure the smooth and secure flow of operations.",
+    "To ensure the utmost security and integrity of your operations, this guide will explain the functionality of authentication credentials and their allocation and offer insights into their significance.",
+    "Safeguarding your credentials",
+    "The security of your authentication credentials is paramount. Therefore, treat your credentials as confidential information and safeguard them diligently to prevent unauthorized access.",
+    "Immediate Action",
+    "If you suspect or detect any exposure of your credentials, please reach out to our support team promptly. Rapid response ensures the integrity of your operations."
+  ],
+  "https://docs.y.uno/docs/connections": [
+    "Browse through the list of available providers and select the one you wish to connect to. Providers may include payment methods, processors, and anti-fraud solutions.",
+    "After selecting a provider, you will be prompted to provide the required credentials. These credentials are necessary to establish a secure connection. Follow the on-screen instructions to input the relevant information.",
+    "A connection will be created once the required credentials are provided and verified. This connection forms the bridge between your Yuno account and the chosen provider.",
+    "Move on to the",
+    "Routing",
+    "section to explore the capabilities that the newly established connection brings. For instance, if you have connected to a provider offering specific payment methods, these methods will be visible in the Routing section. This allows you to configure payment processing routes tailored to those methods.",
+    "Managing Connections",
+    "Editing Connections",
+    ": If you need to update the credentials or change a connection's settings, you can easily do so by selecting the",
+    "option. This ensures your information is up-to-date and accurate.",
+    "Pausing and Unpausing Connections",
+    ": To temporarily halt the interaction with a specific provider, you can choose to",
+    "a connection. When ready to resume, simply",
+    "it. This flexibility allows you to adapt to changing circumstances.",
+    "Deleting Connections",
+    ": If a connection is no longer needed, you can delete it. Exercise caution when deleting connections, as this action is irreversible."
+  ],
+  "https://docs.y.uno/docs/routing": [
+    "Configuring the dynamic routing",
+    "First, access your",
+    "account and select the option",
+    "Routing",
+    ". The Routing page separates the payment by",
+    "Not published",
+    "and",
+    "Published",
+    ". In the",
+    "Not published",
+    "tab, you will find the payment methods connected to your account that don’t have a published route.",
+    "Create new route",
+    "Add new condition",
+    "Succeeded",
+    "Declined",
+    ", and"
+  ],
+  "https://docs.y.uno/docs/insights": [
+    "Insights",
+    "With Insights solution, on the Yuno dashboard's solution, you get a unified view of all your payment performance. Insights is a strategic tool that empowers merchants with actionable knowledge for enhanced decision-making. In addition, our platform is easy to use and can be customized to fit your specific needs.",
+    "You can have a comprehensive view of your payment landscape, usage patterns, and emerging trends through our insightful analytics. Access all your payment data seamlessly on a single interface. This consolidated platform showcases payment volume, transaction types, payment methods, and customer demographics, giving you a deep understanding of your payments ecosystem.",
+    "Using historical data, you can monitor payment performance trends over time, identifying strengths and pinpoint areas for optimization to refine your payment strategies.",
+    "The available data on insights are divided into two core facets. The volume is aligned with business metrics, and performance addresses operational efficiency. As a result, you can extract valuable data, including:",
+    "Overall conversion rates or segmented by payment methods/providers, aiding visualization of top performers.",
+    "Detailed insights into declined transactions, uncovering reasons for non-conversion.",
+    "Volume checks for a clear grasp of transaction trends.",
+    "Empower your choices by utilizing insights to determine optimal payment methods and providers for your business. Rapidly identify anomalies and deviations from established patterns using existing data."
+  ],
+  "https://docs.y.uno/docs/export-data": [
+    "Select columns for the report. You can opt for defaults, include all, or customize as needed.",
+    "Export the report.",
+    ": Your reports mirror the filters you've set, ensuring the data aligns precisely with your requirements. Preview the report structure on your dashboard before downloading the associated data.",
+    "Time-efficient operation",
+    ": Processing might take a moment for larger reports. Yuno keeps you informed, notifying you when your report is ready for download. Meanwhile, you can continue your dashboard activities uninterrupted.",
+    "Seamless access",
+    ": All generated reports are conveniently listed under the download tab. This means easy reuse and access for future reference.",
+    "Using Yuno reports, you can enhance your comprehension of payments and transactions. Boost your ability to make informed decisions by delving into the wealth of data-rich reports readily accessible to you."
+  ],
+  "https://docs.y.uno/docs/accounts-management": [
+    "Seamless Switching",
+    ": The dashboard's flexibility shines through as users can effortlessly switch between different accounts. This is achieved with just a few clicks, eliminating the need for separate credentials."
+  ],
+  "https://docs.y.uno/docs/teams-and-roles": [
+    "There are 5 types of default roles:"
+  ],
+  "https://docs.y.uno/docs/reconciliations": [
+    "NOT RECONCILED",
+    "CONFLICT",
+    ":  The settlement report contains all transactions in each bank transfer executed to the merchant’s account by the acquirer, adding reconciliation information."
+  ],
+  "https://docs.y.uno/docs/reports": [
+    "The payment report will give you an overview of the payments you processed with Yuno. Information such as the collection status, refunds, or chargebacks associated with a payment will be available in a row.",
+    "The transaction report is a detailed file where you can find the breakdown of all your transactions with Yuno. They will be related to a specific payment in a period selected in the report request.",
+    "The transaction reconciliation report is a comprehensive document that provides a breakdown of all your transactions with Yuno and the result of the reconciliation process against the settlements. This report may be generated with information on transactions processed until the day before the request.",
+    "The settlement report will let you know the transactional composition and the fees incurred by each acquirer's payout in your bank accounts. Your financial team can use this report to recognize the composition of each settlement (gross amount, fees, and net amount) but also to perform reconciliation on a transaction level.",
+    "transaction_id field"
+  ],
+  "https://docs.y.uno/docs/create-payment-basic": [
+    "account_id",
+    "Additional steps",
+    "Different payment methods, such as with specific wallets or BNPL, \n          or functionalites, such as split payments, may require aditional \n          steps before creating the payment. Yuno provides complementary guides for these situations. \n          Check the",
+    "Create payments",
+    "page to find them all.",
+    "merchant_customer_id",
+    "customer_id",
+    "Paso 3: Cree un one-time token (OTT)",
+    "Crear Pago",
+    "Below you find a deeper description of how to create a payment.",
+    "customer_payer",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/docs/refund-payments": [
+    "The payment refund process is the procedure by which you will reimburse a customer for a previous payment. In this guide, you will find instructions on refunding a previously created payment on Yuno.",
+    "To refund a payment, you need to:",
+    "Refund a Payment",
+    "amount",
+    "Complete refund: Leave the",
+    "amount",
+    "empty.",
+    "amount",
+    "transaction.type = REFUND",
+    "transaction.status = SUCCEEDED"
+  ],
+  "https://docs.y.uno/docs/cancel-payments": [
+    "Which payments can you cancel?",
+    "You can cancel a payment only if it has the PENDING status. Use the",
+    "type = CANCEL",
+    "If the response contains the above values, the cancellation was successful."
+  ],
+  "https://docs.y.uno/docs/capture-payments": [
+    "amount",
+    "amount",
+    "type = CAPTURE"
+  ],
+  "https://docs.y.uno/docs/build-reports": [
+    "type",
+    "country",
+    "currency",
+    "country",
+    "transaction_type",
+    "updated_at_start",
+    "\"payment_status\": \"CREATED,READY_TO_PAY,DECLINED\"",
+    ". The",
+    "account_id"
+  ],
+  "https://docs.y.uno/docs/full-checkout-sdk": [
+    "checkoutSession",
+    "Refers to the current payment's",
+    "countryCode",
+    "onLoading",
+    "checkoutSession",
+    "countryCode",
+    "onLoading",
+    "createPayment",
+    "checkoutSession",
+    "* Mount checkout in browser DOM",
+    "mountCheckout",
+    "* Mount checkout in browser DOM with a payment method selected by default",
+    "* @optional",
+    "mountCheckout",
+    "* Optional, only needed if you would like this method type selected by default",
+    "* Can be one of 'BANCOLOMBIA_TRANSFER' | 'PIX' | 'ADDI' | 'NU_PAY' | 'MERCADO_PAGO_CHECKOUT_PRO",
+    "paymentMethodType",
+    "PAYMENT_METHOD_TYPE",
+    "* Optional",
+    "* Vaulted token related to payment method type",
+    "'click'",
+    "yuno.CreatePayment(oneTimeToken)",
+    "tokenWithInformation",
+    "Payment Status",
+    ": Update the user about the payment process.",
+    "The default value is true.",
+    "showLoading",
+    "issuersFormEnable",
+    "issuersFormEnable",
+    "type",
+    "type",
+    "type",
+    "type",
+    "type",
+    "externalPaymentButtons",
+    "automaticallyUnmount"
+  ],
+  "https://docs.y.uno/docs/lite-checkout-sdk": [
+    "Below, we outline the step-by-step process to enable the lite SDK functionalities in your system:",
+    "checkoutSession",
+    "Refers to the current payment's",
+    "countryCode",
+    "onLoading",
+    "checkoutSession",
+    "countryCode",
+    "onLoading",
+    "createPayment",
+    "checkoutSession",
+    "mountCheckoutLite",
+    "* can be one of 'BANCOLOMBIA_TRANSFER' | 'PIX' | 'ADDI' | 'NU_PAY' | 'MERCADO_PAGO_CHECKOUT_PRO | CARD",
+    "paymentMethodType",
+    "PAYMENT_METHOD_TYPE",
+    "* Vaulted token related to payment method type.",
+    "* Only if you already have it",
+    "* @optional",
+    "After mounting the SDK, the selected payment method flow will start automatically.",
+    "'click'",
+    "startPayment",
+    "yunoCreatePayment(oneTimeToken)",
+    "tokenWithInformation",
+    "Payment Status",
+    ": Update the user about the payment process.",
+    "The default value is true.",
+    "showLoading",
+    "issuersFormEnable",
+    "issuersFormEnable",
+    "type",
+    "type",
+    "type",
+    "type",
+    "type",
+    "automaticallyUnmount"
+  ],
+  "https://docs.y.uno/docs/enrollment-lite-sdk": [
+    "Step 3: Create a customer session and an enrollment payment method object",
+    "Before continuing with the process, you will need to create a",
+    "and a",
+    "to use in the setup of your secure fields integration for enrollment. While creating the payment method object, you will need to define which one is going to be available for your customer to enroll (in the case of secure fields, only CARD is available).",
+    "In case you want to verify cards (zero value authorization) before the enrollment , you can complete the 'verify' struct while defining the payment method object for the customer session.",
+    "Step 4: Mount the enrollment lite",
+    "Refers to the current payment's",
+    "countryCode",
+    "showLoading",
+    "onLoading",
+    "CREATED",
+    "CANCELED",
+    "issuersFormEnable",
+    "* country can be one of CO, BR, CL, PE, EC, UR, MX",
+    "countryCode",
+    "country",
+    "* Language can be one of es, en, pt",
+    "* Default is browser language",
+    "* Hide or show the Yuno loading/spinner page",
+    "* @optional",
+    "showLoading",
+    "* Required if you'd like to be informed if there is a server call",
+    "* @param { isLoading: boolean, type: 'DOCUMENT' | 'ONE_TIME_TOKEN'  } data",
+    "* @optional",
+    "onLoading",
+    "* Where the forms will be shown",
+    "* @optional",
+    "* Type can be one of `modal` or `element`",
+    "type",
+    "* Element where the form will be rendered",
+    "* Only needed if type is element",
+    "*  @optional",
+    "* Mode render card can be step or extends",
+    "type",
+    "* You can edit card form styles",
+    "* Only you should write css, then it will be injected into the iframe",
+    "*    color: red !important;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "* Show checkbox for save/enroll card",
+    "* Custom texts in Card forms buttons",
+    "*       numberCardStep?: {",
+    "*         nextButton?: string;",
+    "*         nextButton?: string;",
+    "*       expirationDateStep?: {",
+    "*         nextButton?: string;",
+    "*         nextButton?: string;",
+    "* Hide or show the document fields into card form",
+    "* @optional",
+    "* Call back is called with the following object",
+    "*    | 'READY_TO_ENROLL',",
+    "*    | 'UNENROLL_IN_PROCESS',",
+    "*    | 'CANCELED',",
+    "* If this is called the SDK should be mounted again",
+    "* @optional",
+    "'There was an error'",
+    "The default value is true.",
+    "showLoading",
+    "type",
+    "type",
+    "type",
+    "type",
+    "type"
+  ],
+  "https://docs.y.uno/docs/secure-fields-payment": [
+    "Secure Fields (Payment)",
+    "function and provide the necessary configuration parameters.",
+    "The essential parameters are the",
+    "countryCode",
+    "checkoutSession",
+    "countryCode",
+    "checkoutSession",
+    "Refers to the current payment's",
+    "This parameter is optional and is set false by default. If set True, the installments set for the account will be shown as a secure field.",
+    "* country can be one of CO, BR, CL, PE, EC, UR, MX",
+    "countryCode",
+    "country",
+    "* Should be added her or in the token generation",
+    "* @optional",
+    "checkoutSession",
+    "Step 4: Mount the Secure Fields",
+    "After defining the parameters, you will define, configure, and mount the Secure Fields. For each Secure Field, you need to define the",
+    "options",
+    "secureFields.create",
+    "options.styles",
+    "options.showError",
+    "options.onChange",
+    "An auxiliary function that can be configured and will run when the field content changes. Indicates if the fields have errors or additional data.",
+    "options.onBlur",
+    "options.onFocus",
+    "This allows for the definition of the field's error message.",
+    "function by selecting an HTML element using a valid CSS selector (",
+    "* interface SecureField {",
+    "options",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "'Card Number'",
+    "showError",
+    "onChange",
+    "* in data.installments you could receive an installments plan list information",
+    "regarding the installments plan set for your account and chosen by the customer",
+    "amount: {",
+    "currency: string;",
+    "\"issuer_name\": \"JPMORGAN CHASE BANK N A\",",
+    "\"type\": \"CREDIT\",",
+    "\"category\": \"CREDIT\",",
+    "\"country_code\": \"US\",",
+    "\"country_name\": \"United States of America\",",
+    "\"country_code\": null,",
+    "\"city\": null,",
+    "\"country\": null,",
+    "* in data.isCardIINLoading you can receive a true or false indicating if the card iin search is being excecuted.",
+    "* in data.isInstallmentLoading you can receive a true or false indicating if the installments search is being excecuted.",
+    "onFocus",
+    "* Fields name, can be 'cvv' | 'pan' | 'expiration'",
+    "// All options are optional",
+    "options",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "'Card Expiration'",
+    "showError",
+    "// Indicates if the fields has error",
+    "onChange",
+    "// Trigger when blurring from input",
+    "// Trigger when focussing on input",
+    "onFocus",
+    "options",
+    "'CVV'",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "'CVV'",
+    "showError",
+    "onChange",
+    "onFocus",
+    "Below you find a GIF showing how you can configure the Secure Fields:",
+    "Step 5: Generate an OTT (one-time token)",
+    ". As it is an asynchronous function, you can use try/catch to ensure you will correctly handle triggered errors. Below, you will find an example of creating a One-Time Token:",
+    "// This will trigger an error if there are missing data",
+    "// You can catch it using a try/catch",
+    "// Optional: This parameter is used to indicate that a different checkout session is desired,",
+    "//rather than the one initially generated.",
+    "//A use case is for the persistence of card data after a payment error.",
+    "checkoutSession",
+    "'{{the checkout session id}}'",
+    "// Required: You can create an input to get this formation",
+    "// Optional: You can create an input to get this formation",
+    "* @optional",
+    "// Optional: only neccessary if an installments plan is created for the account",
+    "amount",
+    "currency",
+    "// Check your card processor to know if you need to send",
+    "// full object here https://docs.y.uno/reference/the-customer-object",
+    "// This is useful for dual cards where the same card can be either used as credit or debit",
+    "cardType",
+    "or",
+    "'CREDIT'",
+    "You can also use",
+    "secureFields.generateTokenWithInformation",
+    "to receive any additional info given by the customer in the checkout such as installments or document type/number.",
+    "// This will trigger an error if there are missing data",
+    "// You can catch it using a try/catch",
+    "oneTimeTokenWithInformation",
+    "generateTokenWithInformation",
+    "// Optional: This parameter is used to indicate that a different checkout session is desired,",
+    "//rather than the one initially generated.",
+    "//A use case is for the persistence of card data after a payment error.",
+    "checkoutSession",
+    "'{{the checkout session id}}'",
+    "// Required: You can create an input to get this formation",
+    "// Optional: You can create an input to get this formation",
+    "// Optional: only neccessary if an installments plan is created for the account",
+    "amount",
+    "currency",
+    "// Check your card processor to know if you need to send",
+    "// full object here https://docs.y.uno/reference/the-customer-object",
+    "// This is useful for dual cards where the same card can be either used as credit or debit",
+    "cardType",
+    "or",
+    "'CREDIT'",
+    "Step 6: Create the Payment",
+    "createPayment",
+    "checkoutSession",
+    ". The back-to-back payment creation must be carried out using the",
+    "Status Payment",
+    ": As the process may raise errors, we recommend using a try/catch function here. Then, you can check the payment status with the",
+    "// Create your payment, you should implement this function",
+    "createPayment",
+    "checkoutSession",
+    "// Check payment status",
+    "mountStatusPayment",
+    "checkoutSession",
+    "checkoutSession",
+    "* Country can be one of CO, BR, CL, PE, EC, UR, MX",
+    "* Should be added her or in the token generation",
+    "* @optional",
+    "countryCode",
+    "* Language can be one of es, en, pt",
+    "1- Persist credit card information to retry payments",
+    "oneTimeTokenWithInformation",
+    "generateTokenWithInformation",
+    "checkoutSession",
+    "'{{the checkout session id}}'",
+    "oneTimeTokenWithInformation",
+    "generateTokenWithInformation",
+    "checkoutSession",
+    "'{{the checkout session id}}'",
+    "checkoutSession",
+    "2- Clear the values entered in the card fields",
+    "The merchant can set focus on a particular input. To accomplish this, it is necessary to execute the method",
+    ", for each field that you wish to focus. Below is an example:",
+    "4- Force validation",
+    "The merchant can force the validation for a particular input. To accomplish this, it is necessary to execute the method",
+    ", for each field that you wish to validate. Below is an example:",
+    "The merchant can define a custom error message after an input validation. To accomplish this, it is necessary to execute the method",
+    "secureFieldInstance.setError()",
+    ", for each field that you wish to set a custom error message for. Below is an example:",
+    "6- Set card type",
+    "The merchant can define the card type the customer is using for the payment. To accomplish this, it is necessary to execute the method",
+    "secureFieldInstance.setCardType()",
+    "and send either ´DEBIT´ or ´CREDIT´ for each scenario. This is useful for dual cards where the same card can be either used as credit or debit. In Brazil for example. Below is an example:",
+    "'CREDIT'"
+  ],
+  "https://docs.y.uno/docs/secure-fields-enrollment": [
+    "file in your page before close your",
+    "instance class in your",
+    "app with a valid",
+    "Step 3: Create a customer session and an enrollment payment method object",
+    "Before continuing with the process, you will need to create a",
+    "and a",
+    "to use in the setup of your secure fields integration for enrollment. While creating the payment method object, you will need to define which one is going to be available for your customer to enroll (in the case of secure fields, only CARD is available).",
+    "In case you want to verify cards (zero value authorization) before the enrollment , you can complete the 'verify' struct while defining the payment method object for the customer session.",
+    "Step 4: Start the enrollment process",
+    "Then create a configuration object. The essential parameters are the",
+    "countryCode",
+    ", which determines the country for which the enrollment process is configured, and",
+    ", which refers to the current enrollment's customer session.  The next code block presents an example of the parameter configuration.",
+    "countryCode",
+    "This parameter determines the country for which the enrollment process is being configured. It should be set to one of the following country codes: CO, BR, CL, PE, EC, UR, or MX.",
+    "Refers to the current enrollment's customer session.",
+    "* country can be one of CO, BR, CL, PE, EC, UR, MX",
+    "countryCode",
+    "Step 5: Mount the Secure Fields",
+    "After defining the parameters, you will define, configure, and mount the Secure Fields. For each Secure Field, you need to define the",
+    "options",
+    "secureFields.create",
+    "options.placeholder",
+    "options.styles",
+    "options.showError",
+    "options.onChange",
+    "An auxiliary function that can be configured and will run when the field content changes. Indicates if the fields have errors.",
+    "options.onBlur",
+    "options.onFocus",
+    "This allows for the definition of the field's error message.",
+    "function by selecting an HTML element using a valid CSS selector (",
+    "* Fields name, can be 'cvv' | 'pan' | 'expiration'",
+    "// All options are optional",
+    "options",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "'Card Number'",
+    "showError",
+    "// Indicates if the fields has error",
+    "onChange",
+    "// Trigger when blurring from input",
+    "// Trigger when focussing on input",
+    "onFocus",
+    "* Fields name, can be 'cvv' | 'pan' | 'expiration'",
+    "// All options are optional",
+    "options",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "'Card Expiration'",
+    "showError",
+    "// Indicates if the fields has error",
+    "onChange",
+    "// Trigger when blurring from input",
+    "// Trigger when focussing on input",
+    "onFocus",
+    "* Fields name, can be 'cvv' | 'pan' | 'expiration'",
+    "// All options are optional",
+    "options",
+    "'CVV'",
+    "* you can edit card form styles",
+    "* only you should write css then it will be injected into the iframe",
+    "*    color: red;",
+    "*    font-family: 'Luckiest Guy' !important;",
+    "'CVV'",
+    "showError",
+    "// Indicates if the fields has error",
+    "onChange",
+    "// Trigger when blurring from input",
+    "// Trigger when focussing on input",
+    "onFocus",
+    "// This will trigger an error if there are missing data",
+    "// You can catch it using a try/catch",
+    "// Required: You can create an input to get this formation",
+    "// Check your card processor to know if you need to send",
+    "// full object here https://docs.y.uno/reference/the-customer-object",
+    "secureFields.generateVaultedTokenWithInformation",
+    "*  This will trigger an error if there are missing data",
+    "*  You can catch it using a try/catch",
+    "*  Returns an object with the full response",
+    "*   code: string;",
+    "*   idempotency_key: string;",
+    "*   organization_code: string;",
+    "*   account_code: string;",
+    "*   customer_session: string;",
+    "*   type: Payment.Type;",
+    "*   category: Payment.Category;",
+    "*       action: string;",
+    "*       redirect: string | null;",
+    "*       raw_response: unknown;",
+    "*   created_at: Date;",
+    "*   updated_at: Date;",
+    "vaultedTokenWithInformation",
+    "generateVaultedTokenWithInformation",
+    "// Required: You can create an input to get this formation",
+    "// Check your card processor to know if you need to send",
+    "// full object here https://docs.y.uno/reference/the-customer-object"
+  ],
+  "https://docs.y.uno/docs/loader": [
+    ".  This way, the user experience is improved because they will see the loader while the merchant creates the payment.",
+    "in the method",
+    ". Check the documentation for"
+  ],
+  "https://docs.y.uno/docs/payment-status": [
+    "mountStatusPayment",
+    "checkoutSession",
+    "countryCode",
+    "mountStatusPayment",
+    "checkoutSession",
+    "* Country can be one of CO, BR, CL, PE, EC, UR, MX",
+    "countryCode",
+    "* Language can be one of es, en, pt",
+    "checkoutSession",
+    "* Call method that returns status, this won't render anything",
+    "* @return {'READY_TO_PAY' | 'CREATED' | 'SUCCEEDED' | 'REJECTED' | 'CANCELLED' | 'ERROR' | 'DECLINED' | 'PENDING' | 'EXPIRED' | 'VERIFIED' | 'REFUNDED'}",
+    "checkoutSession"
+  ],
+  "https://docs.y.uno/docs/sdk-customizations": [
+    "All elements used by the SDKs use prefixed classes starting with",
+    ". Therefore, if you need to change the SDK appearance to match your business style, you can use these classes to redefine the style.",
+    "Font",
+    "By default, the",
+    "font is used in the SDK elements. Therefore, to use it is necessary to add this font to your HTML.  Add the following link tag into your HTML to import the",
+    "\"https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap\"",
+    "this example",
+    "from the Demo App if you are unsure where to position the HTML tag. Alternatively, you can apply the font used on your system to the SDK elements using CSS, as shown in the example:",
+    "CSS",
+    "font-family"
+  ],
+  "https://docs.y.uno/docs/3ds-setup-sdk": [
+    "three_d_secure_setup_id",
+    "). For each payment, you need to generate a new",
+    "three_d_secure_setup_id",
+    ". To receive the",
+    "three_d_secure_setup_id",
+    "you will use",
+    "With the",
+    "three_d_secure_setup_id",
+    "<head>",
+    "To initiate the data collection necessary for the 3DS payment flow, you will use the",
+    "Yuno.threeDSecure.setup()",
+    "function. To initiate the",
+    "function, you will use the",
+    "three_d_secure_setup_id",
+    "obtained in the previous step. The following table lists all the required parameters when initializing the 3DS with the Yuno SDK and their descriptions.",
+    "Refers to the",
+    "three_d_secure_setup_id",
+    "publicApiKey",
+    "accountId",
+    "account-id",
+    "threeDSecure",
+    "publicApiKey",
+    "accountId",
+    "//SUCCEEDED or ERROR",
+    "three_d_secure_setup_id"
+  ],
+  "https://docs.y.uno/docs/demo-app": [
+    "account_code",
+    "public_apy_key",
+    "YUNO_CUSTOMER_ID",
+    "country",
+    "CO",
+    "CL",
+    "?country",
+    "CO"
+  ],
+  "https://docs.y.uno/docs/full-checkout-android": [
+    "'com.yuno.payments:android-sdk:{last_version}'",
+    "onCreate()",
+    "CustomApplication",
+    "Application",
+    "onCreate",
+    "onCreate",
+    "this",
+    "// This is a data class to use custom configs in the SDK.",
+    "cardFlow",
+    "CardFormType",
+    "CardFormType",
+    "// This is optional, CardFormType.ONE_STEP by default, this is to choose Payment and Enrollment Card flow.",
+    "Boolean",
+    "// This is to choose if show save card checkbox on cards flows.",
+    "Boolean",
+    "// This is to choose if keep Yuno loading screen until you create and continue with payment, this need an additional step that is shown below.",
+    "cardFormDeployed",
+    "Boolean",
+    "// This is only for SDK FULL, This is to choose if show card form deployed on payment methods list (TRUE) or if show normal card form in another screen (FALSE)",
+    "//This is to choose the language of the SDK, if you send null or don't send it, Yuno SDK will take device language.",
+    "isDynamicViewEnabled",
+    "Boolean",
+    "//This is to choose if you want to use dynamic view or not, if you send false or don't send it, Yuno SDK will take false.",
+    "cardFlow",
+    "CardFormType.ONE_STEP",
+    "startCompletePaymentFlow()",
+    "cardFormDeployed",
+    "isDynamicViewEnabled",
+    "startCompletePaymentFlow()",
+    "\".CustomApplication\"",
+    "onCreate",
+    "checkoutSession",
+    "countryCode",
+    "\"country_code_iso\"",
+    "callbackOTT",
+    "Unit",
+    "callbackPaymentState",
+    "Unit",
+    "merchantSessionId",
+    "checkoutSession",
+    "countryCode",
+    "callbackOTT",
+    "callbackPaymentState",
+    "callbackPaymentState",
+    "PAYMENT_STATE_SUCCEEDED",
+    "PAYMENT_STATE_FAIL",
+    "PAYMENT_STATE_REJECT",
+    "\"REJECT\"",
+    "PAYMENT_STATE_INTERNAL_ERROR",
+    "PAYMENT_STATE_STATE_CANCELED_BY_USER",
+    "\"CANCELED\"",
+    "PaymentMethodListView",
+    ".setOnSelectedEvent",
+    "\"@+id/list_payment_methods\"",
+    "\"match_parent\"",
+    "\"wrap_content\"",
+    "startPayment()",
+    "startPayment",
+    "callbackOTT",
+    "Unit",
+    "onActivityResult",
+    "callbackOTT",
+    ". The",
+    "showPaymentStatus",
+    "Boolean",
+    "callbackPaymentState",
+    "Unit",
+    "showPaymentStatus",
+    "cardFormType",
+    "Step by step"
+  ],
+  "https://docs.y.uno/docs/lite-checkout-android": [
+    "onCreate()",
+    "CustomApplication",
+    "Application",
+    "onCreate",
+    "onCreate",
+    "this",
+    "// This is a data class to use custom configs in the SDK.",
+    "cardFlow",
+    "CardFormType",
+    "CardFormType",
+    "// This is optional, CardFormType.ONE_STEP by default, this is to choose Payment and Enrollment Card flow.",
+    "Boolean",
+    "// This is to choose if show save card checkbox on cards flows.",
+    "Boolean",
+    "// This is to choose if keep Yuno loading screen until you create and continue with payment, this need an additional step that is shown below.",
+    "//This is to choose the language of the SDK, if you send null or don't send it, Yuno SDK will take device language.",
+    "isDynamicViewEnabled",
+    "Boolean",
+    "//This is to choose if you want to use dynamic view or not, if you send false or don't send it, Yuno SDK will take false.",
+    "cardFlow",
+    "CardFormType.ONE_STEP",
+    "startCompletePaymentFlow()",
+    "isDynamicViewEnabled",
+    "startCompletePaymentFlow()",
+    "\".CustomApplication\"",
+    "onCreate",
+    "checkoutSession",
+    "countryCode",
+    "\"country_code_iso\"",
+    "callbackOTT",
+    "Unit",
+    "callbackPaymentState",
+    "Unit",
+    "merchantSessionId",
+    "checkoutSession",
+    "countryCode",
+    "callbackOTT",
+    "callbackPaymentState",
+    "callbackPaymentState",
+    "PAYMENT_STATE_SUCCEEDED",
+    "PAYMENT_STATE_FAIL",
+    "PAYMENT_STATE_REJECT",
+    "\"REJECT\"",
+    "PAYMENT_STATE_INTERNAL_ERROR",
+    "PAYMENT_STATE_STATE_CANCELED_BY_USER",
+    "\"CANCELED\"",
+    "startPaymentLite",
+    "startPaymentLite",
+    "paymentSelected",
+    "PaymentSelected",
+    "callbackOTT",
+    "Unit",
+    "PaymentSelected",
+    "type",
+    "onActivityResult",
+    "callbackOTT",
+    ". The",
+    "showPaymentStatus",
+    "Boolean",
+    "callbackPaymentState",
+    "Unit",
+    "showPaymentStatus",
+    "cardFormType",
+    "Step by step"
+  ],
+  "https://docs.y.uno/docs/enrollment-android": [
+    "onCreate()",
+    "CustomApplication",
+    "Application",
+    "onCreate",
+    "onCreate",
+    "this",
+    "// This is a data class to use custom configs in the SDK.",
+    "cardFlow",
+    "CardFormType",
+    "CardFormType",
+    "// This is optional, CardFormType.ONE_STEP by default, this is to choose Payment and Enrollment Card flow.",
+    "Boolean",
+    "// This is to choose if show save card checkbox on cards flows.",
+    "Boolean",
+    "// This is to choose if keep Yuno loading screen until you create and continue with payment, this need an additional step that is shown below.",
+    "//This is to choose the language of the SDK, if you send null or don't send it, Yuno SDK will take device language.",
+    "isDynamicViewEnabled",
+    "Boolean",
+    "//This is to choose if you want to use dynamic view or not, if you send false or don't send it, Yuno SDK will take false.",
+    "cardFlow",
+    "CardFormType.ONE_STEP",
+    "startCompletePaymentFlow()",
+    "isDynamicViewEnabled",
+    "startCompletePaymentFlow()",
+    "\".CustomApplication\"",
+    "onCreate",
+    "Unit",
+    "//Default null | To register this callback is a must to call ```initEnrollment``` method on the onCreate method of activity.",
+    "Activity",
+    "countryCode",
+    "Boolean",
+    "Unit",
+    "// Default null | To register this callback is a must to call ```initEnrollment``` method on the onCreate method of activity.",
+    "cardFormType",
+    "Step by step"
+  ],
+  "https://docs.y.uno/docs/loader-android": [
+    "startCompletePaymentFlow",
+    "paymentSelected",
+    "PaymentSelected",
+    "showPaymentStatus",
+    "Boolean",
+    "createPaymentFun",
+    "Unit",
+    "callbackPaymentState",
+    "Unit",
+    "callbackOTT",
+    "Unit",
+    "createPaymentFun"
+  ],
+  "https://docs.y.uno/docs/sdk-customizations-android": [
+    "item",
+    "item",
+    "item",
+    "item",
+    "item",
+    "item",
+    "Button.Normal.White",
+    "Button.Normal.Green",
+    "Button.Normal.Purple.Big",
+    "\"Button.Normal.Purple\"",
+    "item",
+    "COLOR",
+    "item",
+    "item",
+    "COLOR",
+    "item",
+    "item",
+    "item",
+    "COLOR",
+    "screen_payment_card_form.xml",
+    "screen_payment_card_form.xml",
+    "\"@+id/imageView_close\"",
+    "CardNumberEditText",
+    "\"@+id/textField_number\"",
+    "TextView",
+    "TextView",
+    "\"@+id/textView_voucher_copy\"",
+    "TextFieldItemView",
+    "\"@+id/textField_name\"",
+    "TextFieldItemView",
+    "PhoneInformationView",
+    "ShimmerFrameLayout",
+    "\"match_parent\"",
+    "\"wrap_content\"",
+    "com.facebook.shimmer.ShimmerFrameLayout",
+    "\"match_parent\"",
+    "\"wrap_content\"",
+    "include",
+    "com.facebook.shimmer.ShimmerFrameLayout",
+    "TextView",
+    "TextView",
+    "\"@+id/textView_secure_payment\"",
+    "CustomYunoSwitch",
+    "\"@+id/switch_cardType\"",
+    "CustomYunoSwitch",
+    "\"@+id/switch_tooltip\"",
+    "\"@drawable/ic_thin_info\"",
+    "AppCompatCheckBox",
+    "\"@+id/checkBox_save_card\"",
+    "\"@+id/button_complete_form\""
+  ],
+  "https://docs.y.uno/docs/full-checkout-ios": [
+    "Ruby",
+    "Ruby",
+    "from",
+    "// This is optional, by default it configures .oneStep card form and disables save card checkbox.",
+    "cardFormType",
+    "CardFormType",
+    "// This is optional, .oneStep by default, this is to choose Payment and Enrollment Card flow.",
+    "appearance",
+    ".Appearance",
+    "// This is optional, by default uses Yuno styles.",
+    "// This is to choose if show save card checkbox on cards flows. It is false by default",
+    "cardFormFields",
+    "cardFormType",
+    "appearance",
+    "Yuno.startCheckout(with: self)",
+    "Yuno.startCheckout(with:)",
+    "checkoutSession",
+    "countryCode",
+    "with",
+    "with",
+    "checkoutSession",
+    "Refers to the current payment's checkout session.",
+    "countryCode",
+    "yunoCreatePayment(with token: String)",
+    "checkoutSession",
+    "checkoutSession",
+    "// Add view to your superview",
+    "startPayment",
+    "Swift",
+    ".startPayment",
+    "with",
+    "showPaymentStatus",
+    "showPaymentStatus",
+    "showPaymentStatus",
+    "Callback",
+    "Transaction state",
+    "cardFormType",
+    "Step by step"
+  ],
+  "https://docs.y.uno/docs/lite-checkout-ios": [
+    "Ruby",
+    "Ruby",
+    "from",
+    "// This is optional, by default it configures .oneStep card form and disables save card checkbox.",
+    "cardFormType",
+    "CardFormType",
+    "// This is optional, .oneStep by default, this is to choose Payment and Enrollment Card flow.",
+    "appearance",
+    ".Appearance",
+    "// This is optional, by default uses Yuno styles.",
+    "// This is to choose if show save card checkbox on cards flows. It is false by default",
+    "cardFormFields",
+    "cardFormType",
+    "appearance",
+    "Yuno.startCheckout(with: self)",
+    "Yuno.startCheckout(with:)",
+    "checkoutSession",
+    "countryCode",
+    "with",
+    "with",
+    "checkoutSession",
+    "Refers to the current payment's checkout session.",
+    "countryCode",
+    "yunoCreatePayment(with token: String)",
+    "startPaymentLite",
+    ".startPaymentLite",
+    "PaymentMethodSelected",
+    "paymentMethodType",
+    ".startPaymentLite",
+    "paymentSelected",
+    "paymentSelected",
+    "with",
+    "showPaymentStatus",
+    "showPaymentStatus",
+    "showPaymentStatus",
+    "Callback",
+    "Transaction state",
+    "cardFormType",
+    "Step by step"
+  ],
+  "https://docs.y.uno/docs/enrollment-ios": [
+    "Ruby",
+    "Ruby",
+    "from",
+    "countryCode",
+    "@IBAction",
+    "with",
+    "showPaymentStatus",
+    "countryCode",
+    "@IBAction",
+    "cardFormType"
+  ],
+  "https://docs.y.uno/docs/loader-1": [
+    "showPaymentStatus"
+  ],
+  "https://docs.y.uno/docs/sdk-customizations-ios": [
+    "Con",
+    "cardFormFields",
+    "cardFormFields",
+    ".expirationDateAndSecurityCode",
+    "cardFormFields",
+    "cardFormFields",
+    "appearance",
+    ".Appearance",
+    "fontFamily",
+    "\"Climate Crisis\"",
+    "buttonBackgroundColor",
+    ".yellow",
+    "buttonTitleColor",
+    "secondaryButtonBackgroundColor",
+    ".yellow",
+    "appearance",
+    "appearance"
+  ],
+  "https://docs.y.uno/docs/vtex": [
+    "Yuno and VTEX have joined forces to simplify payment processes for merchants worldwide. This partnership aims to streamline the payment experience and provide merchants with various payment methods catering to their customer's preferences.",
+    "By integrating Yuno's payment orchestration platform with VTEX's e-commerce solution, merchants can easily manage payments and offer diverse payment options. Yuno ensures customers can choose their preferred payment method from local cards to digital wallets. Yuno's plugin allows your store to accept payments seamlessly without redirecting customers to external pages, enhancing the shopping experience and increasing the conversion rate.",
+    "Yuno's plugin for VTEX is PCI compliant, ensuring that Yuno meets rigorous security standards when handling card data. Merchants can have peace of mind knowing that their customers' payment information is handled with utmost security and privacy.",
+    "The seamless integration between Yuno and VTEX makes it easy for merchants to incorporate Yuno's payment orchestration system into their existing setup. This enables them to focus on delivering exceptional products and services while providing a smooth payment experience for their customers.",
+    "Yuno offers several payment methods to meet your needs. The Yuno plugin on VTEX currently supports card payments, covering credit and debit cards. Our team is actively collaborating with VTEX to ensure that all Yuno connections are made available to you as soon as possible. We are committed to expanding the available payment options to enhance your experience.",
+    "Plugin integration",
+    "To start using the Yuno plugin on your VTEX store, you will need two essential elements:",
+    "Application Keys",
+    "tutorials to understand how to set and access this information.",
+    "Application Key: a private key generated when the Yuno account became productive.",
+    "Application Token: a productive public key generated when the Conekta account became productive.",
+    "Once you have this information, you can register the Yuno plugin affiliation. Follow the steps outlined in the",
+    "section. After completing the affiliation, you can",
+    "using the Yuno plugin. These two straightforward configuration processes will enable your clients on VTEX to access the Yuno checkout for making payments on their orders."
+  ],
+  "https://docs.y.uno/docs/registering-yuno-affiliation": [
+    "The first step to connect the Yuno plugin to your VTEX store is to enable the plugin.  Below you find a step-by-step guide on how to register the affiliation.",
+    "Log into your VTEX store account.",
+    "In the VTEX Admin, navigate to",
+    ". Alternatively, you can use the search bar at the top of the page and type",
+    "to find it.",
+    "Select the",
+    "Gateway Affiliations",
+    "tab, then click the",
+    "button to add a new affiliation.",
+    "You will see a list of plugins. Locate the Yuno plugin and click on it.",
+    "On the new page, enter the necessary information for the affiliation. We recommend using \"Yuno\" as the affiliation name. Fill in the VTEX account details (Application Key and Application Token) as well as the Yuno account details (Account ID, Public API Key, and Secret API Key). Check the",
+    "to learn how to access your account details. For Payment settlement, we recommend you select",
+    "Use Recommended Payment Processor Behavior",
+    "Once you have entered all the required information, click on the",
+    "button to save the affiliation.",
+    "After registering the Yuno plugin affiliation, you can proceed to configure the payment methods that will be processed by Yuno. Check the",
+    "Configuring payment conditions",
+    "section to learn how to add payment options to your VTEX account using Yuno."
+  ],
+  "https://docs.y.uno/docs/configuring-payment-conditions": [
+    "First, navigate to",
+    "and select",
+    "Payment Conditions",
+    "On the new page, for",
+    "Process with affiliation",
+    ". This ensures that Yuno will be your processing gateway for Visa credit card payments. You can also add conditions and configurations for full or installment payments on this page."
+  ],
+  "https://docs.y.uno/docs/configure-webhooks": [
+    "Configure Webhooks",
+    "type",
+    "purchase",
+    "authorize"
+  ],
+  "https://docs.y.uno/docs/examples": [
+    "Webhook attributes",
+    "account_id",
+    "type",
+    "\"account_id\"",
+    "\"type\"",
+    "\"payment.purchase\"",
+    "\"retry\"",
+    "\"fee_amount\"",
+    "\"items\"",
+    "\"amount\"",
+    "\"currency\"",
+    "\"sdk_action_required\"",
+    "\"country\"",
+    "\"created_at\"",
+    "\"customer_payer\"",
+    "\"city\"",
+    "\"country\"",
+    "\"browser_info\"",
+    "\"accept_header\"",
+    "\"screen_width\"",
+    "\"date_of_birth\"",
+    "\"first_name\"",
+    "\"ip_address\"",
+    "\"nationality\"",
+    "\"merchant_customer_id\"",
+    "\"country_code\"",
+    "\"shipping_address\"",
+    "\"city\"",
+    "\"country\"",
+    "\"amount\"",
+    "\"CARD\"",
+    "\"created_at\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"vault_on_success\"",
+    "\"authorization_code\"",
+    "\"number_length\"",
+    "\"security_code_length\"",
+    "\"brand\"",
+    "\"PREPAID RELOADABLE\"",
+    "\"type\"",
+    "\"transaction_id\"",
+    "\"account_id\"",
+    "\"accredited\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"updated_at\"",
+    "\"subscription_id\"",
+    "\"updated_at\"",
+    "\"idempotency_key\"",
+    "\"account_id\"",
+    "\"country\"",
+    "\"created_at\"",
+    "\"updated_at\"",
+    "\"amount\"",
+    "\"currency\"",
+    "\"COP\"",
+    "\"captured\"",
+    "\"sdk_action_required\"",
+    "\"customer_payer\"",
+    "\"organization_customer_external_id\"",
+    "\"merchant_customer_id\"",
+    "\"first_name\"",
+    "\"date_of_birth\"",
+    "\"ip_address\"",
+    "\"browser_info\"",
+    "\"city\"",
+    "\"country\"",
+    "\"shipping_address\"",
+    "\"city\"",
+    "\"country\"",
+    "\"country_code\"",
+    "\"shipping_amount\"",
+    "\"fee_amount\"",
+    "\"items\"",
+    "\"Clothes\"",
+    "\"brand\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"amount\"",
+    "\"merchant_reference\"",
+    "\"reason\"",
+    "\"created_at\"",
+    "\"updated_at\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"vault_on_success\"",
+    "\"authorization_code\"",
+    "\"number_length\"",
+    "\"security_code_length\"",
+    "\"brand\"",
+    "\"BLACK\"",
+    "\"type\"",
+    "\"CREDIT\"",
+    "\"provider_transaction_id\"",
+    "\"amount\"",
+    "\"currency\"",
+    "\"COP\"",
+    "\"approvedTransactionAmount\"",
+    "\"binInfo\"",
+    "\"cardCountry\"",
+    "\"type\"",
+    "\"credit\"",
+    "\"cardHolderName\"",
+    "\"created\"",
+    "\"merchantId\"",
+    "\"merchantName\"",
+    "\"paymentBrand\"",
+    "\"Mastercard\"",
+    "\"processorBankName\"",
+    "\"transactionReference\"",
+    "\"transactionReference\"",
+    "\"transaction_id\"",
+    "\"account_id\"",
+    "\"CHECKOUT\"",
+    "\"subscription_id\"",
+    "\"idempotency_key\"",
+    "\"account_id\"",
+    "\"country\"",
+    "\"CHARGEBACK\"",
+    "\"created_at\"",
+    "\"updated_at\"",
+    "\"amount\"",
+    "\"currency\"",
+    "\"COP\"",
+    "\"sdk_action_required\"",
+    "\"customer_payer\"",
+    "\"organization_customer_external_id\"",
+    "\"merchant_customer_id\"",
+    "\"first_name\"",
+    "\"date_of_birth\"",
+    "\"nationality\"",
+    "\"ip_address\"",
+    "\"browser_info\"",
+    "\"city\"",
+    "\"country\"",
+    "\"shipping_address\"",
+    "\"city\"",
+    "\"country\"",
+    "\"country_code\"",
+    "\"fee_amount\"",
+    "\"items\"",
+    "\"quantity\"",
+    "\"Clothes\"",
+    "\"brand\"",
+    "\"type\"",
+    "\"CHARGEBACK\"",
+    "\"CARD\"",
+    "\"amount\"",
+    "\"CHARGEBACK\"",
+    "\"merchant_reference\"",
+    "\"Transaction successful\"",
+    "\"reason\"",
+    "\"created_at\"",
+    "\"updated_at\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"vault_on_success\"",
+    "\"authorization_code\"",
+    "\"number_length\"",
+    "\"security_code_length\"",
+    "\"brand\"",
+    "\"category\"",
+    "\"BLACK\"",
+    "\"type\"",
+    "\"CREDIT\"",
+    "\"provider_transaction_id\"",
+    "\"transaction_id\"",
+    "\"account_id\"",
+    "\"CHARGEBACK\"",
+    "\"callback_url\"",
+    "\"SDK_CHECKOUT\"",
+    "\"account_id\"",
+    "\"type\"",
+    "\"retry\"",
+    "\"account_id\"",
+    "\"CARD\"",
+    "\"type\"",
+    "\"CARD\"",
+    "\"country\"",
+    "\"customer_id\"",
+    "\"sdk_action_required\"",
+    "\"created_at\"",
+    "\"updated_at\""
+  ],
+  "https://docs.y.uno/docs/enroll-payment-methods": [
+    "account_id",
+    "Checkout workflow",
+    "Checkout workflow",
+    "Checkout workflow",
+    "Workflow direto",
+    "merchant_customer_id",
+    "customer_id",
+    "customer_session",
+    "Checkout workflow",
+    "customer_session",
+    "customer_id",
+    "type",
+    "Checkout workflow",
+    "type",
+    "payment_method_type",
+    "type",
+    "type",
+    "Checkout workflow: use o endpoint",
+    "customer_session",
+    "provider.redirect.init_url"
+  ],
+  "https://docs.y.uno/docs/token-migration-process": [
+    "Account ID",
+    "First name",
+    "Payment method type",
+    "Payment method ID"
+  ],
+  "https://docs.y.uno/docs/via-api": [
+    "account_id",
+    "merchant_customer_id",
+    "customer_id",
+    "customer_id"
+  ],
+  "https://docs.y.uno/docs/3d-secure": [
+    "frictionless flow",
+    "Frictionless flow",
+    "Direct"
+  ],
+  "https://docs.y.uno/docs/direct-workflow": [
+    "Merchant Category Code (MCC)",
+    "Setup service",
+    "three_d_secure_setup_id",
+    "to continue with the payment.",
+    "Create Payment",
+    "card.three_d_secure_setup_id",
+    "payment_method",
+    "callback_url",
+    "callback_url",
+    "CREATED"
+  ],
+  "https://docs.y.uno/docs/payouts": [
+    "(Optional)",
+    "endpoint to complete the payout process."
+  ],
+  "https://docs.y.uno/docs/merchant-installments": [
+    "Secure Fields SDK"
+  ],
+  "https://docs.y.uno/docs/provider-installments": [
+    "Secure Fields SDK"
+  ],
+  "https://docs.y.uno/docs/subscriptions": [
+    "Assinaturas",
+    "CREATED",
+    "CANCELLED",
+    "COMPLETED",
+    "CANCELLED",
+    "merchant_customer_id",
+    "After creating the customer, you will need to",
+    "to use it in the subscription creation.",
+    "for your customer and the card enrolled. You will configure the subscription and define the payment method at this step. When creating the subscription, you can customize:"
+  ],
+  "https://docs.y.uno/docs/stored-credentials": [
+    "CIT",
+    "stored_credentials",
+    "UNSCHEDULED_CARD_ON_FILE",
+    "UNSCHEDULED_CARD_ON_FILE",
+    "\"account_id\": \"{{account-code}}\",",
+    "\"country\": \"CO\",",
+    "\"merchant_reference\" : \"reference-{{$randomUUID}}\",",
+    "\"amount\": {",
+    "\"currency\": \"COP\",",
+    "\"customer_payer\": {",
+    "\"type\":\"CARD\",",
+    "\"stored_credentials\":{",
+    "\"reason\":\"CARD_ON_FILE\","
+  ],
+  "https://docs.y.uno/docs/acquirers-advanced-informations": [
+    "ARS, BRL, CLP, COP, CRC, USD, GTQ, HNL, MXN, NIO, PEN, UYU",
+    "Specific Fields"
+  ],
+  "https://docs.y.uno/docs/adyen-acquirer": [
+    "Chipre",
+    "Tcheca"
+  ],
+  "https://docs.y.uno/docs/bac": [
+    "CRC, USD, FTQ, HNL, NIO, PAB"
+  ],
+  "https://docs.y.uno/docs/bbva-openpay-acquirer": [
+    "Openpay website"
+  ],
+  "https://docs.y.uno/docs/credibanco": [
+    "Receives electronic payments with high-quality standards and technology.",
+    "COP"
+  ],
+  "https://docs.y.uno/docs/fac": [
+    "First Atlantic Commerce (FAC)",
+    "First Atlantic Commerce provides online payment solutions and international credit card processing for merchants, banks, and partners worldwide. FAC is a payment gateway that enables merchants to accept and process credit and debit card payments online."
+  ],
+  "https://docs.y.uno/docs/izipay": [
+    "Izipay website"
+  ],
+  "https://docs.y.uno/docs/klap": [
+    "CLP"
+  ],
+  "https://docs.y.uno/docs/medianet": [
+    "Accepts credit and debit card payments, simplifying electronic payments."
+  ],
+  "https://docs.y.uno/docs/redeban": [
+    "COP"
+  ],
+  "https://docs.y.uno/docs/transbank": [
+    "Cards Mall →",
+    "WebPay Mall →",
+    "CLP"
+  ],
+  "https://docs.y.uno/docs/yuno-testing-gateway": [
+    "Routing",
+    "Not published",
+    "account_id",
+    "merchant_customer_id",
+    "customer_id",
+    "Crear OTT",
+    "and define the payment type as",
+    "CARD",
+    "type",
+    "customer_payer",
+    "CHECKOUT",
+    "payment_method",
+    "type",
+    "CARD",
+    "INSUFFICIENT_FUNDS",
+    "INVALID_SECURITY_CODE",
+    "INVALID_CARD_DATA",
+    "INSUFFICIENT_FUNDS",
+    "INVALID_SECURITY_CODE",
+    "INVALID_CARD_DATA",
+    "American Express",
+    "INSUFFICIENT_FUNDS",
+    "INVALID_SECURITY_CODE",
+    "INVALID_CARD_DATA",
+    "INSUFFICIENT_FUNDS",
+    "INVALID_SECURITY_CODE",
+    "INVALID_CARD_DATA",
+    "INSUFFICIENT_FUNDS",
+    "INVALID_SECURITY_CODE",
+    "INVALID_CARD_DATA",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/docs/worldpay-acquirer": [
+    "Worldpay website",
+    "Chipre",
+    "Isle",
+    "Ilhas Marshall"
+  ],
+  "https://docs.y.uno/docs/clearsale": [
+    "Chade",
+    "Chipre",
+    "Tcheca",
+    "Application API Key",
+    "Application Client ID",
+    "Application Client Secret"
+  ],
+  "https://docs.y.uno/docs/cybersource": [
+    "CyberSource webpage",
+    "Organization ID",
+    "Shared Secret"
+  ],
+  "https://docs.y.uno/docs/signifyd": [
+    "More than 100 countries.",
+    "items.name, items.quantity, items.unit_price.",
+    "Teams",
+    "Acesse",
+    "Teams",
+    "Organization ID",
+    "Shared Secret"
+  ],
+  "https://docs.y.uno/docs/riskified": [
+    "Fights fraud, sell more and create better customer experiences with this solution.",
+    "Log in to",
+    "Specify the endpoint in your account settings.",
+    "Click",
+    "and then select",
+    "Shop URL",
+    "and"
+  ],
+  "https://docs.y.uno/docs/adyen-processor": [
+    "Chipre"
+  ],
+  "https://docs.y.uno/docs/arcus": [
+    "Arcus website"
+  ],
+  "https://docs.y.uno/docs/braintree": [
+    "Braintree website",
+    "Chipre"
+  ],
+  "https://docs.y.uno/docs/bbva-openpay-processor": [
+    "Openpay website"
+  ],
+  "https://docs.y.uno/docs/credix": [
+    "Credix website",
+    "CREDIX",
+    "CRC, USD"
+  ],
+  "https://docs.y.uno/docs/daviplata": [
+    "COP"
+  ],
+  "https://docs.y.uno/docs/dlocal": [
+    "dLocal website"
+  ],
+  "https://docs.y.uno/docs/ebanx": [
+    "ARS, BRL, COP, CLP, CRC, USD, GTQ, MXN, PYG, PEN, UYU"
+  ],
+  "https://docs.y.uno/docs/kushki": [
+    "CLP, COP, USD, MXN, PEN"
+  ],
+  "https://docs.y.uno/docs/mercado-pago": [
+    "ARS, BRL, CLP, COP, MXN, PEN, UYU"
+  ],
+  "https://docs.y.uno/docs/nupay": [
+    "NuPay website"
+  ],
+  "https://docs.y.uno/docs/nuvei": [
+    "Nuvei is a global payment platform designed to accelerate businesses with a modular and scalable technology to offer all payment methods to succeed locally and globally."
+  ],
+  "https://docs.y.uno/docs/paymentez": [
+    "ARS, BRL, CLP, COP, CRC, USD, GTQ, HNL, MXN, NIO, PEN, UYU."
+  ],
+  "https://docs.y.uno/docs/paypal": [
+    "PayPal is an online payment platform that facilitates payments between individuals and businesses. With PayPal, your customers can make online payments to you almost anywhere in the world.",
+    "PayPal website"
+  ],
+  "https://docs.y.uno/docs/payu": [
+    "PayU website",
+    "ARS, BRL, CRC, CLP, COP, GTQ, HNL, MXN, NIO, PAB, PEN, USD, ZAR"
+  ],
+  "https://docs.y.uno/docs/payvalida": [
+    "Payvalida website",
+    "COP, CRC, USD, GTQ, PEN",
+    "The Payvalida system does not support decimals. Therefore, you should not use decimals when defining the payment",
+    "amount",
+    ". Otherwise, your payment may fail."
+  ],
+  "https://docs.y.uno/docs/payzen": [
+    "Payzen allows online businesses to accept and process payments through payment methods that can be integrated with web and mobile applications.",
+    "COP"
+  ],
+  "https://docs.y.uno/docs/place-to-pay": [
+    "PlaceToPay website",
+    "BZD, CLP, COP, CRC, HNL, MXN, PEN, USD, UYU"
+  ],
+  "https://docs.y.uno/docs/safetypay": [
+    "Enables online cash payments, bank transfers, and cross-border transactions for a global market of consumers.",
+    "SafetyPay website",
+    "BRL, CLP, COP, CRC, USD, GTQ, MXN, PEN"
+  ],
+  "https://docs.y.uno/docs/stripe": [
+    "Chipre",
+    "Tcheca",
+    "Note: American Express doesn't accept the currencies marked with *"
+  ],
+  "https://docs.y.uno/docs/t1pagos": [
+    "T1Pagos provides a payment gateway to make it easier for you to accept card payments and increase your approvement rate. With T1Pagos you can accept credit and debit card payments in Mexico."
+  ],
+  "https://docs.y.uno/docs/unlimint": [
+    "ARS, COP, MXN, PEN, USD"
+  ],
+  "https://docs.y.uno/docs/wibond": [
+    "Wibond provides financial inclusion to a large community, offering payment options according to the possibilities and profile of each user.",
+    "Wibond website",
+    "ARS, CLP"
+  ],
+  "https://docs.y.uno/docs/wompi": [
+    "COP, USD"
+  ],
+  "https://docs.y.uno/docs/worldline": [
+    "Worldline website"
+  ],
+  "https://docs.y.uno/docs/worldpay-processor": [
+    "Worldpay website",
+    "Chipre",
+    "Isle",
+    "Corea"
+  ],
+  "https://docs.y.uno/docs/payment-methods-by-processor": [
+    "Checkout Redirect",
+    "CODI",
+    "Efecty",
+    "Paycash",
+    "CoDi"
+  ],
+  "https://docs.y.uno/docs/acuotaz-bnpl": [
+    "country(transaction)",
+    "Crear Pago",
+    "Info",
+    "Info",
+    "You can choose the URL you want, but you must communicate it to the aCuotaz team. Your webhook’s URL must follow this format:"
+  ],
+  "https://docs.y.uno/docs/addi-bnpl": [
+    "first_name",
+    "telephone_number",
+    "telephone_country_code",
+    "country (transaction)",
+    "COP",
+    "Minimum number of installments",
+    "Client ID, Client Secret, Ally Slug, Callback Username e Callback Password.",
+    "Info",
+    "CANO",
+    "AMOUNT - CO",
+    "ORDER_ID",
+    "Country",
+    "Ally Slug",
+    "Callback Username",
+    "Callback Password"
+  ],
+  "https://docs.y.uno/docs/adyen-pix": [
+    "first_name",
+    "Account Code, API key.",
+    "Ir a",
+    "Transactions > Offers",
+    "PSP reference",
+    "Promote this offer to a sale",
+    "Ir a",
+    "Developers > API credentials",
+    "ws@Company.[YourCompanyAccount]",
+    "Save changes",
+    "Account Code"
+  ],
+  "https://docs.y.uno/docs/adyen-cards": [
+    "Chipre",
+    "Tcheca",
+    "American Express: 14 dias.",
+    "Account Code, API key.",
+    "CVE/CVV2/CVC3",
+    "CVE/CVV2/CVC3",
+    "Authorised",
+    "Developers > API credentials",
+    "ws@Company.[YourCompanyAccount]",
+    "Save changes",
+    "Account Code"
+  ],
+  "https://docs.y.uno/docs/arcus-cash": [
+    "Arcus - Cash",
+    "This page presents all information related to the Arcus connection using the Cash as payment. Use the following buttons to navigate to the desired section.",
+    "Depends on chain, each one has a permitted minimum and maximum.",
+    "Depends on chain, each one has a permitted minimum and maximum.",
+    "Cash to digital transactions, in a safe and instant way. This will serve as a link to offer banking services to the unbanked population.",
+    "Yes, Arcus Pay Reverse allows the cancellation of payment transaction previously made through any of the payment methods of the Arcus Pay network.",
+    "Coordinate with your designated TAM.",
+    "Log in to",
+    "Navigate to",
+    "Click on",
+    "Click",
+    "and then select",
+    "Select",
+    "as Payment Method",
+    "Introduce the",
+    "and the",
+    "Log in to",
+    "Navigate to",
+    "Click on",
+    "Add the Webhook",
+    "There is a KYB process where a Due Diligence of the shareholding structure of each client is made to know the real owner of the resources and it must be approved by Arcus' compliance team. In the technical aspect, a certification call must be made where the operational flow is certified."
+  ],
+  "https://docs.y.uno/docs/bac-cards": [
+    "BAC - Cards",
+    "CRC, USD, GTQ, HNL, NIO",
+    "Country"
+  ],
+  "https://docs.y.uno/docs/bradesco-pix": [
+    "This page presents all information related to the Bradesco connection using Pix as payment method. Use the following buttons to navigate to the desired section.",
+    "Certificate's Private Key",
+    "Ask for your credentials (For the field: Certificate's Private Key, please copy and paste the content of your “.pem; .key; .pkcs12” file).",
+    "Click",
+    "and then select",
+    "and",
+    "Certificate's Private Key",
+    "Configure the Webhook Pix in an endpoint."
+  ],
+  "https://docs.y.uno/docs/braintree-cards": [
+    "Braintree - Cards",
+    "Chipre",
+    "Merchant ID, Public Key, Private Key e Merchant Account ID.",
+    "American Express",
+    "American Express",
+    "UnionPay",
+    "UnionPay",
+    "UnionPay",
+    "Public Key",
+    "Private Key",
+    "Observations on the implementation",
+    "MerchantAccountID"
+  ],
+  "https://docs.y.uno/docs/cielo-cards": [
+    "Type of integration",
+    "Possibility to choose who will be responsible for financing installments",
+    "Each installment MUST have a minimum number of 5.00 BRL (meaning that a transaction with 2 installments must have a minimum value of 10.00 BRL; 3 installments must have a minimum value of 15.00 BRL etc.). If not, the transaction gets automatically rejected by the issuing bank"
+  ],
+  "https://docs.y.uno/docs/credix-cards": [
+    "Credix - Cards",
+    "CRC, USD",
+    "Type of integration"
+  ],
+  "https://docs.y.uno/docs/daviplata-banktransfer": [
+    "COP",
+    "1000 COP",
+    "CC",
+    "CE",
+    "Crear Pago",
+    "The response body of the Create Payment request will provide a redirect URL (payment_method.payment_method_detail.bank_transfer.redirect_url) to the DaviPlata service. On this page, select a document type and fill in the document number with",
+    "to continue with the payment.",
+    "Consumer Secret"
+  ],
+  "https://docs.y.uno/docs/dlocal-cards": [
+    "first_name",
+    "country(transaction)",
+    "ARS, BOB, BRL, CLP, COP, CRC, DOP, USD, GTQ, HNL, MXN, NIO, PYG, PEN, UYU, BDT, XAF, CNY, EGP, GHS, INR,\n            IDR, X0F, YEN, KES, MYR, MAD, NGN, PKR, PHP, RWF, ZAR, TZS, THB, TRY, UGX, VND",
+    "Possibility to choose who will be responsible for financing installments",
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/dlocal-checkout-redirect": [
+    "dLocal - Checkout Redirect",
+    "first_name",
+    "country(transaction)",
+    "Possibility to choose who will be responsible for financing installments",
+    "X-Login, X-Trans-Key y Secret Key.",
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/dlocal-codi": [
+    "first_name",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-efecty": [
+    "first_name",
+    "COP",
+    "1000 COP",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-khipu": [
+    "first_name",
+    "CLP",
+    "2000 CLP",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-oxxo": [
+    "first_name",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-pago-efectivo": [
+    "first_name",
+    "Redirect",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-pse": [
+    "first_name",
+    "COP",
+    "1.500 COP",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-spei": [
+    "first_name"
+  ],
+  "https://docs.y.uno/docs/dlocal-tarjeta-clave": [
+    "first_name",
+    "X-Login, X-Trans-Key y Secret Key.",
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/ebanx-cards": [
+    "first_name,",
+    "country,",
+    "city,",
+    "telephone_number",
+    "ARS, BRL, COP, CLP, CRC, USD, GTQ, MXN, PYG, PEN, UYU.",
+    "Chile: 1 CLP",
+    "Brazil: 1 (depending on your contract).",
+    "Argentina: 1 (depending on your contract).",
+    "Brazil: 12 (depending on your contract).",
+    "Colombia: 36 (depending on your contract).",
+    "Argentina: 12 (depending on your contract).",
+    "Merchant ID, Public Key, Private Key e Merchant Account ID.",
+    "American Express",
+    "American Express",
+    "Discover",
+    "MasterCard",
+    "MasterCard",
+    "CARNET (For Mexico only)",
+    "Cabal (For Argentina only)",
+    "Magna (For Chile only)",
+    "Integrations",
+    "Public Integration Key",
+    "Integrations"
+  ],
+  "https://docs.y.uno/docs/fac-cards": [
+    "FAC - Cards",
+    "JC-01-0A"
+  ],
+  "https://docs.y.uno/docs/getnet-cards": [
+    "Possibility to choose who will be responsible for financing installments"
+  ],
+  "https://docs.y.uno/docs/getnet-pix": [
+    "CLIENT_ID",
+    "CLIENT_SECRET",
+    "SELLER_ID",
+    "CLIENT_ID",
+    "CLIENT_SECRET",
+    "SELLER_ID"
+  ],
+  "https://docs.y.uno/docs/klap-cards": [
+    "CLP, USD",
+    "Possibility to choose who will be responsible for financing installments",
+    "Credit",
+    "Credit",
+    "Credit",
+    "Credit"
+  ],
+  "https://docs.y.uno/docs/kushki-cards": [
+    "first_name",
+    "telephone_number",
+    "CLP, COP, USD, MXN, PEN",
+    ": 50 CLP",
+    ": 500 COP",
+    "Possibility to choose who will be responsible for financing installments",
+    "CLP: 150",
+    "COP: 555"
+  ],
+  "https://docs.y.uno/docs/mercado-pago-checkout-pro": [
+    "first_name",
+    "items.id",
+    "items.title",
+    "items.unit_amount",
+    "country(transaction)",
+    "ARS, BRL, CLP, COP, MXN, PEN, UYU",
+    "Efecty: $ 5.000",
+    "Possibility to choose who will be responsible for financing of installments",
+    "Requirements to create a sandbox payment",
+    "American Express",
+    "American Express",
+    "American Express",
+    "American Express",
+    "American Express",
+    "CONT",
+    "CALL",
+    "For additional information, refer to the",
+    ". However, as a summary, you need to follow the next steps:",
+    "to use as a",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "Country",
+    "Access Token"
+  ],
+  "https://docs.y.uno/docs/mercado-pago-pse": [
+    "COP",
+    "1600 COP",
+    "Requirements to create a sandbox payment",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "201\n              (CREATED)"
+  ],
+  "https://docs.y.uno/docs/mercado-pago-wallet": [
+    "first_name",
+    "country(transaction)",
+    "ARS, BRL, CLP, COP, MXN, PEN, UYU",
+    "Requirements to create a sandbox payment",
+    "American Express",
+    "American Express",
+    "American Express",
+    "American Express",
+    "American Express",
+    "CONT",
+    "CALL",
+    "Create test users",
+    "to use as a",
+    "and as a",
+    "while developing the integration. Mercado Pago uses these test users to replicate the production environment, and they can only interact with other test users. If you use a real account to pay a checkout created by a test user, you will receive an error message (invalid_users_involved).",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "Country",
+    "Access Token",
+    "?customer=(sellername)"
+  ],
+  "https://docs.y.uno/docs/nupay-pix": [
+    "first_name",
+    "telephone_number",
+    "telephone_country_code",
+    "items.title",
+    "country(transaction)",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/docs/nupay-wallet": [
+    "Nupay - Wallet",
+    "Minimum number of installments",
+    "Maximum number of installments"
+  ],
+  "https://docs.y.uno/docs/nuvei-oxxo": [
+    "first_name",
+    "country",
+    "My Integration Settings"
+  ],
+  "https://docs.y.uno/docs/nuvei-spei": [
+    "This page presents all information related to the Nuvei connection using Bank Transfer as payment. Use the following buttons to navigate to the desired section.",
+    "first_name",
+    "telephone",
+    "country",
+    "My Integration Settings"
+  ],
+  "https://docs.y.uno/docs/paymentez-cards": [
+    "ARS, BRL, CLP, COP, CRC, USD, GTQ, HNL, MXN, NIO, PEN, UYU.",
+    "Chile: 12.",
+    "COP: 256",
+    "CLP: 256",
+    "Application Code",
+    "Application Key",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-daviplata": [
+    "COP",
+    "Redirect",
+    "Application Key",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-linktopay": [
+    "first_name",
+    "ARS, BRL, CLP, COP, CRC, USD, GTQ, HNL, MXN, NIO, PEN, UYU.",
+    "Chile: 6 meses.",
+    "Chile: 12.",
+    "COP: 256",
+    "CLP: 256",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-nequi": [
+    "This page presents all information related to the Paymentez (Nuvei company) connection using Wallet as payment. Use the following buttons to navigate to the desired section.",
+    "COP",
+    "100 COP",
+    "Redirect",
+    "Application Key",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-paycash": [
+    "This page presents all information related to the Paymentez (Nuvei company) connection using cash as payment. Use the following buttons to navigate to the desired section.",
+    "Direct, the payment reference is drawed in our SDK.",
+    "Application Key",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-sencillito": [
+    "This page presents all information related to the Paymentez (Nuvei company) connection using cash as payment. Use the following buttons to navigate to the desired section.",
+    "CLP",
+    "Direct",
+    "Application Key",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-webpay": [
+    "CLP",
+    "Possibility to choose who will be responsible for financing installments",
+    "Application Key",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paypal-smart-button": [
+    "Credit Card Generator for Testing"
+  ],
+  "https://docs.y.uno/docs/payu-cards": [
+    "PayU - Cards",
+    "nationality",
+    "telephone_number",
+    "country (transaction)",
+    "ARS, BRL, CRC, CLP, COP, GTQ, HNL, MXN, NIO, PAB, PEN, USD, ZAR",
+    "Possibility to choose who will be responsible for financing installments",
+    "Chile: 1",
+    "Chile: 48",
+    "Public Key",
+    "Account ID",
+    "Chile: 512325",
+    "MASTERCARD Prepaid Card",
+    "VISA International Card",
+    "Public Key",
+    "PayU Hub/PaymentsOS",
+    "Accounts",
+    "Public Key",
+    "Private Key",
+    "Public Key",
+    "Private Key",
+    "PayU Hub/PaymentsOS"
+  ],
+  "https://docs.y.uno/docs/payvalida-payment-link": [
+    "The Payvalida system does not support decimals. Therefore, you should not use decimals when defining the payment",
+    "amount",
+    ". Otherwise, your payment may fail.",
+    "COP, CRC, GTQ, PEN, USD",
+    "Possibility to choose who will be responsible for financing installments",
+    "Notes",
+    "MasterCard",
+    "MasterCard",
+    "Production",
+    "Notification Secret",
+    "Production",
+    "Notification URL"
+  ],
+  "https://docs.y.uno/docs/payzen-pse": [
+    "COP",
+    "1.500 COP",
+    "Login to the Payzen dashboard. In the menu navigate to",
+    "Select your store and go to the",
+    "Manage Rule",
+    "Notification URL"
+  ],
+  "https://docs.y.uno/docs/place-to-pay-cards": [
+    "Place to Pay - Cards",
+    "first_name",
+    "BZD, CLP, COP, CRC, HNL, MXN, PEN, USD, UYU",
+    "Possibility to choose who will be responsible for financing installments",
+    "CEP"
+  ],
+  "https://docs.y.uno/docs/rede-cards": [
+    "Possibility to choose who will be responsable for the financiation of installments",
+    "MasterCard",
+    "MasterCard",
+    "Sorocred",
+    "credit system",
+    "Affiliation Number",
+    "Integration Key"
+  ],
+  "https://docs.y.uno/docs/safetypay-payment-link": [
+    "SafetyPay - Payment Link",
+    "country(transaction)",
+    "ARS, BOB, BRL, CLP, COP, CRC, DOP, USD, GTQ, HNL, MXN, PYG, PEN, UYU",
+    "Bank-active:",
+    "BCI: CLP 500.000",
+    "Cash-active: COP 0",
+    "Cash-active:",
+    "Bank-active: BRL 46.000",
+    "Cash-active: BRL 2.680",
+    "Bank-active: CLP 6.700.000",
+    "Cash-active: CLP 6.700.000",
+    "Bank-active: CRC 1.790.000",
+    "Cash-active: CRC 1.790.000",
+    "Bank-active: COP 32.000.000",
+    "Cash-active: COP 6.000.000",
+    "Bank-active: USD 10.000",
+    "Cash-active:",
+    "Cash-active: USD 500",
+    "Bank-active: GTQ 65.000",
+    "Cash-active:",
+    "Bank-active: MXN 190.000",
+    "Cash-active: NIO 17.500",
+    "Cash-active:",
+    "Bank-active: PEN 30.000",
+    "Cash-active: PEN 30.000 / PEN 1.080",
+    "Confirm",
+    "SafetyPay DemoBank",
+    "Accounts",
+    "Generate New Credentials",
+    "Signature Key",
+    "Notification URL",
+    "Accounts",
+    "Notifications"
+  ],
+  "https://docs.y.uno/docs/stone-cards": [
+    "Stone - Cards",
+    "card.holder_name",
+    "Possibility to choose who will be responsible for financing installments"
+  ],
+  "https://docs.y.uno/docs/stp-spei": [
+    "Company Account",
+    "Bank Account",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/stp-codi": [
+    "STP - CoDi",
+    "first_name",
+    "telephone_number",
+    "Company Account",
+    "Bank Account",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/stripe-cards": [
+    "Stripe - Cards",
+    "Chipre",
+    "Note: American Express doesn't accept the currencies marked with *",
+    "Possibility to choose who will be responsible for financing installments",
+    "The card must be a consumer card – installments don’t support corporate cards.",
+    "The card must be issued by one of Stripe's supported issuers. The currency value must be MXN (pesos).",
+    "CVC",
+    "Mastercard (2-series)",
+    "American Express",
+    "American Express",
+    "Discover",
+    "UnionPay",
+    "Testing installments Mexico",
+    "CVC",
+    "Go to",
+    "Developers section",
+    "Go to",
+    "on the left menu.",
+    "Chave secreta",
+    "Set it on the",
+    "field on the Yuno dashboard.",
+    "Open the",
+    "Add your webhook endpoint’s HTTPS URL in",
+    "Select the event types you’re currently receiving in your local webhook endpoint in"
+  ],
+  "https://docs.y.uno/docs/t1pagos-cards": [
+    "first_name",
+    "Access Token.",
+    "Production",
+    "Access Tokens",
+    "Access Token",
+    "Production"
+  ],
+  "https://docs.y.uno/docs/transbank-cards": [
+    "CLP",
+    "Possibility to choose who will be responsible for financing installments",
+    "Integration Type",
+    "and"
+  ],
+  "https://docs.y.uno/docs/transbank-cards-mall": [
+    "CLP",
+    "Possibility to choose who will be responsible for financing installments",
+    "Prepaid MASTERCARD",
+    "Integration Type",
+    "Payment Method"
+  ],
+  "https://docs.y.uno/docs/transbank-webpay": [
+    "CLP",
+    "Possibility to choose who will be responsible for financing installments",
+    "Integration Type",
+    "and"
+  ],
+  "https://docs.y.uno/docs/transbank-webpay-mall": [
+    "CLP",
+    "Possibility to choose who will be responsible for financing installments",
+    "Merchant Code Mall, Merchant Code and Secret Key.",
+    "Integration Type"
+  ],
+  "https://docs.y.uno/docs/transfeera-pix": [
+    "This page presents all information related to the Transfeera connection using Pix as payment method. Use the following buttons to navigate to the desired section.",
+    "Telephone",
+    "CPF",
+    "CNPJ",
+    "CPF",
+    "CNPJ",
+    "Pix Key:",
+    "Chave Pix"
+  ],
+  "https://docs.y.uno/docs/unlimint-cards": [
+    "Unlimint - Cards",
+    "card_holder_name>",
+    "Possibility to choose who will be responsible for financing installments",
+    "Card PAN",
+    "Card PAN",
+    "Card PAN",
+    "Card PAN",
+    "Card PAN",
+    "Card PAN",
+    "Card PAN",
+    "billing_address.country:",
+    "billing_address.city:",
+    "Terminal Password",
+    "Callback Secret",
+    "Terminal Password",
+    "Callback Secret",
+    "Callbacks",
+    "Confirm"
+  ],
+  "https://docs.y.uno/docs/unlimint-checkout": [
+    "Unlimint - Checkout",
+    "first_name",
+    "ARS, COP, MXN, PEN, USD",
+    "Efecty",
+    "Paycash",
+    "Efecty",
+    "EWalletAccount",
+    "Acesse",
+    "Terminal Password",
+    "Callback Secret",
+    "Terminal Password",
+    "Callback Secret",
+    "Acesse",
+    "Callbacks",
+    "Confirm"
+  ],
+  "https://docs.y.uno/docs/wibond-bnpl": [
+    "Wibond - BNPL",
+    "This page presents all information about the Wibond connection using Buy Now, and Pay Later as payment. Use the following buttons to navigate to the desired section.",
+    "country(transaction)",
+    "ARS, CLP",
+    "Account/Wallet",
+    "Account"
+  ],
+  "https://docs.y.uno/docs/wompi-bancolombia": [
+    "first_name",
+    "country(transaction)",
+    "COP",
+    "1.500 COP",
+    "payment_method",
+    "public key",
+    "Public Key",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/wompi-cards": [
+    "Wompi - Cards",
+    "COP, USD",
+    "1.500 COP",
+    "The merchant will indicate the installments. However, the shopper must consent with the number of installments.",
+    "Varies depending on the issuing bank and credit card provider.",
+    "Varies depending on the issuing bank and credit card provider.",
+    "public key",
+    "Public Key",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/wompi-nequi": [
+    "first_name",
+    "telephone_number",
+    "country(transaction)",
+    "COP, USD",
+    "Public Key",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/wompi-pse": [
+    "telephone_number",
+    "telephone_country_code",
+    "COP",
+    "1.500 COP",
+    "public key",
+    "Public Key",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/wompi-tokenbox": [
+    "first_name",
+    "country(transaction)",
+    "COP",
+    "1.500 COP",
+    "Public Key",
+    "Private Key"
+  ],
+  "https://docs.y.uno/docs/worldpay-cards": [
+    "Worldpay - Cards",
+    "card_holder_name",
+    "Chipre",
+    "Isle",
+    "Corea",
+    "American Express",
+    "China Union Pay",
+    "Discover card",
+    "MasterCard",
+    "Coope Plus",
+    "Testing CVC/CVV",
+    "B - CVV/CVC not supplied by shopper/merchant",
+    "C - CVV/CVC not checked",
+    "NOT SENT TO ACQUIRER",
+    "C - CVV/CVC not checked",
+    "NO RESPONSE FROM ACQUIRER",
+    "C - CVV/CVC not checked",
+    "NOT CHECKED BY ACQUIRER",
+    "D - CVV/CVC not matched",
+    "A - CVV/CVC matched",
+    "Testing CVC/CVV for American Express",
+    "B - CVV/CVC not supplied by shopper/merchant",
+    "C - CVV/CVC not checked",
+    "NOT SENT TO ACQUIRER",
+    "C - CVV/CVC not checked",
+    "NO RESPONSE FROM ACQUIRER",
+    "C - CVV/CVC not checked",
+    "NOT CHECKED BY ACQUIRER",
+    "D - CVV/CVC not matched",
+    "C - CVV/CVC not checked",
+    "A - CVV/CVC matched",
+    "Other credentials:",
+    "Note your",
+    "New Username",
+    "for the connection.",
+    "Save XML Password"
+  ],
+  "https://docs.y.uno/docs/worldline-cards": [
+    "Worldline - Cards",
+    "first_name",
+    "country (transaction)",
+    "Possibility to choose who will be responsible for financing installments",
+    "American Express"
+  ],
+  "https://docs.y.uno/docs/wallets": [
+    "Here you find the complete list of Wallets' connections available on Yuno. Wallets let your customers use the stored cards they have with different providers. Select the desired wallet to access more information.",
+    "Click to  Pay"
+  ],
+  "https://docs.y.uno/docs/apple-pay": [
+    "merchant.com.adyen.merchantAccount",
+    "merchant.com.adyen.merchantAccount.test"
+  ],
+  "https://docs.y.uno/docs/google-pay": [
+    "Google Pay on the Web",
+    "For Adyen, merchants need to create a",
+    "testing account",
+    "MerchantAccount",
+    "and a",
+    "Google Wallet Test Account Sign-In",
+    "Create a Pass"
+  ],
+  "https://docs.y.uno/docs/click-to-pay": [
+    "Click To Pay",
+    "\"Click to Pay\" is an online payment solution designed to streamline and secure online transactions. It's based on the EMVCo secure payment standard, a global consortium comprising major card companies like Visa, MasterCard, American Express, and Discover.",
+    "Networks available in Yuno",
+    "MasterCard",
+    "Key Features and benefits:",
+    "Ease of Use",
+    ": It enables consumers to make online purchases with a single click, eliminating the need to manually enter credit card details for each purchase.",
+    "Enhanced Security",
+    ": Utilizes modern authentication standards to minimize fraud risk. This may include methods such as two-factor authentication or payment tokens.",
+    ": Offers a similar payment experience across all websites that support this technology, meaning consumers don’t have to learn different processes for each online store.",
+    "Integration with Card Brands",
+    ": Being backed by major card brands, \"Click to Pay\" is widely accepted and trusted.",
+    "Mobile and Desktop Compatibility",
+    ": Designed to work across a variety of devices, it facilitates online shopping on both desktops and mobile devices.",
+    "This feature not only enhances the customer experience but also aligns with modern digital payment trends, potentially increasing conversion rates and customer loyalty. By incorporating \"Click to Pay,\" you can offer a seamless checkout experience, reducing friction and addressing security concerns in online transactions.",
+    "In order to integrate and start offering Click to pay to your customers, follow these 3 simple steps:",
+    "Define the payment method route in the",
+    "Routing",
+    "section in order to be able to enable it in the Checkout Builder.",
+    "Enable Click to Pay in the",
+    "Checkout builder",
+    "Define the Card route: Taking in consideration that Click to pay is a wallet that stores credit card information, the",
+    "where you will need to define the providers for each scenario is the same as the",
+    "'Card' payment method",
+    "That's it! Thanks to Yuno's SDK you don't need to do anything else to support payments using Click to pay integration."
+  ],
+  "https://docs.y.uno/docs/yuno-connections": [
+    "America",
+    "Chipre"
+  ],
+  "https://docs.y.uno/docs/benin": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Benin. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/botswana": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Botswana. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/burundi": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Burundi. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/cameroon": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Cameroon. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/chad": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Chad. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/equatorial-guinea": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Equatorial Guinea. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/eritrea": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Eritrea. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/ethiopia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Ethiopia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/gabon-republic": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Gabon Republic. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/gambia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Gambia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/ghana": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Ghana. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/guinea-bissau": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Guinea-Bissau. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/heard-island-and-mcdonald-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Heard Island and McDonald Islands. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/ivory-coast": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Ivory Coast. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/kenya": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Kenya. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/lesotho": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Lesotho. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/liberia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Liberia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/libyan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Libyan. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/madagascar": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Madagascar. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/malawi": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Malawi. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/mali": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mali. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/mauritania": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mauritania. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/mauritius": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mauritius. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/mayotte": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mayotte. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/morocco": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Morocco. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/mozambique": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mozambique. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/namibia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Namibia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/niger": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Niger. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/republic-of-the-congo": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Republic of the Congo. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/reunion": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Reunion. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/rwanda": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Rwanda. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/saint-helena": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Saint Helena. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/senegal": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Senegal. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/sierra-leone": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Sierra Leone. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/somalia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Somalia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/south-africa": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from South Africa. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/south-sudan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from South Sudan. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/sudan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Sudan. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/swaziland": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Swaziland. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/tanzania": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tanzania. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/togo": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Togo. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/tunisia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tunisia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/western-sahara": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Western Sahara. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/zambia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Zambia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/zimbabwe": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Zimbabwe. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/antigua-and-barbuda": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Antigua and Barbuda. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/bahamas": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from the Bahamas. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/bermuda": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bermuda. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/british-virgin-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from British Virgin Islands. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/dominican-republic": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Dominican Republic. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/grenada": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Grenada. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/guadeloupe": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Guadeloupe. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/montserrat": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Montserrat. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/puerto-rico": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Puerto Rico. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/saint-lucia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Saint Lucia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/saint-pierre-and-miquelon": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Saint Pierre and Miquelon. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/suriname": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Suriname. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/trinidad-and-tobago": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Trinidad and Tobago. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/afghanistan": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/armenia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Armenia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/australia": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/azerbaijan-republic": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Azerbaijan Republic. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/bahrain": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bahrain. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/bangladesh": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bangladesh. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/bhutan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bhutan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/brunei": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Brunei. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/cambodia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Cambodia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/china": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from China. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/christmas-island": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Christmas Island. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/cocos-keeling-islands": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/cook-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Cook Islands. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/fiji": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Fiji. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/french-polynesia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from French Polynesia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/guam": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Guam. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/hong-kong": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/india": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/indonesia": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/iran": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Iran. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/iraq": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Iraq. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/israel": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Israel. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/japan": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/jordan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Jordan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/kazakhstan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Kazakhstan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/kiribati": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/kuwait": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/kyrgyztan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Kyrgyztan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/laos": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Laos. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/lebanon": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Lebanon. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/macao": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Macao. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/malaysia": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/maldives": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Maldives. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/marshall-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from the Marshall Islands. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/micronesia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Micronesia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/mongolia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Mongolia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/myanmar": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Myanmar. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/nauru": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Nauru. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/nepal": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Nepal. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/new-caledonia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from New Caledonia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/new-zealand": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from New Zealand. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/niue": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/norfolk-island": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Norfolk Island. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/northern-mariana-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Northern Mariana Islands. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/oman": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/pakistan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Pakistan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/palau": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Palau. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/palestinian-territory": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Palestinian Territory. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/papua-new-guinea": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Papua New Guinea. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/philippines": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from the Philippines. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/pitcairn-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Pitcairn Islands. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/qatar": [
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/samoa": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Samoa. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/saudi-arabia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Saudi Arabia. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/singapore": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Singapore. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/solomon-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Solomon Islands. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/south-korea": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from South Korea. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/sri-lanka": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Sri Lanka. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/syria": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Syria. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/taiwan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Taiwan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/tajikistan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tajikistan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/thailand": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Thailand. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/timor-leste": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Timor-Leste. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/tokelau": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tokelau. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/tonga": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tonga. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/turkmenistan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Turkmenistan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/tuvalu": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Tuvalu. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/united-arab-emirates": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from United Arab Emirates. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/uzbekistan": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Uzbekistan. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/vanuatu": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Vanuatu. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/vietnam": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Vietnam. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/wallis-and-futuna": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Wallis and Futuna. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/yemen": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Yemen. To learn more about a specific connection, simply click on its corresponding button in the list below.",
+    "Asia Pacific Country List"
+  ],
+  "https://docs.y.uno/docs/albania": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Albania. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/belarus": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Belarus. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/belgium": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Belgium. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/bosnia-and-hezergovina": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bosnia and Hezergovina. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/bulgaria": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Bulgaria. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/croatia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Croatia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/cyprus": [
+    "Chipre",
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Cyprus. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/czechia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Czechia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/denmark": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Denmark. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/estonia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Estonia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/faroe-islands": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Faroe Islands. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/finland": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Finland. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/georgia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Georgia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/gibraltar": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Gibraltar. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/greece": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Greece. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/guernsey": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Guernsey. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/hungary": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Hungary. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/ireland": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Ireland. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/isle": [
+    "Isle",
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Isle. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/italy": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Italy. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/jersey": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Jersey. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/latvia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Latvia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/liechtenstein": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Liechtenstein. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/lithuania": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Lithuania. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/luxembourg": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Luxembourg. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/malta": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Malta. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/moldova": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Moldova. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/monaco": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Monaco. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/montenegro": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Montenegro. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/north-macedonia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from North Macedonia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/norway": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Norway. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/poland": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Poland. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/san-marino": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from San Marino. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/serbia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Serbia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/slovakia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Slovakia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/slovenia": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Slovenia. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/svalbard-and-jan-mayen": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Svalbard and Jan Mayen. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/switzerland": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Switzerland. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/turkey": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Turkey. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/ukraine": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Ukraine. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ],
+  "https://docs.y.uno/docs/vatican-city": [
+    "Yuno has already integrated multiple processors, payment methods, acquires, and fraud solutions from Vatican City. To learn more about a specific connection, simply click on its corresponding button in the list below."
+  ]
+}

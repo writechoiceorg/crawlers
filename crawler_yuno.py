@@ -4,23 +4,27 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.extract_texts import extract_english_text
 from utils.json_handler import save_to_json
+from utils.error_handler import error_handler
 
 
 def handle_localize_widget(driver):
-    localize_widget = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "localize-widget"))
-    )
-    webdriver.ActionChains(driver).move_to_element(localize_widget).perform()
-    active_lang = (
-        WebDriverWait(driver, 10)
-        .until(EC.presence_of_element_located((By.ID, "localize-active-lang")))
-        .get_attribute("innerHTML")
-    )
-    spanish_link = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located(
-            (By.XPATH, '//a[contains(text(), "Español (América Latina)")]')
+    try:
+        localize_widget = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "localize-widget"))
         )
-    )
+        webdriver.ActionChains(driver).move_to_element(localize_widget).perform()
+        active_lang = (
+            WebDriverWait(driver, 10)
+            .until(EC.presence_of_element_located((By.ID, "localize-active-lang")))
+            .get_attribute("innerHTML")
+        )
+        spanish_link = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, '//a[contains(text(), "Español (América Latina)")]')
+            )
+        )
+    except Exception:
+        pass
 
     if "Português (Brasil)" in active_lang:
         spanish_link.click()
@@ -56,30 +60,36 @@ def interact_with_page(url, file_path, ignore_path):
             if link_url in visited_links:
                 continue
 
-            driver.get(link_url)
-            handle_localize_widget(driver)
-            title = driver.find_element(By.ID, "content-head").get_attribute(
-                "outerHTML"
-            )
+            try:
+                driver.get(link_url)
+                handle_localize_widget(driver)
+                title = driver.find_element(
+                    By.ID,
+                    "content-head",
+                ).get_attribute("outerHTML")
 
-            article_content = driver.find_element(
-                By.CLASS_NAME, "markdown-body"
-            ).get_attribute("outerHTML")
+                article_content = driver.find_element(
+                    By.CLASS_NAME, "markdown-body"
+                ).get_attribute("outerHTML")
 
-            full_content = title + article_content
+                full_content = title + article_content
 
-            english = extract_english_text(
-                full_content, link_url, file_path, ignore_path
-            )
+                english = extract_english_text(
+                    full_content, link_url, file_path, ignore_path
+                )
 
-            if english:
-                english_texts[link_url] = english
+                if english:
+                    english_texts[link_url] = english
 
-            visited_links.append(link_url)
+                visited_links.append(link_url)
 
-            save_to_json(file_path, english_texts)
-    except Exception as e:
-        print(f"Error occurred while processing {link_url}:\n {e}")
+                save_to_json(file_path, english_texts)
+            except Exception as e:
+                error_handler("./yuno/errors.json", link_url)
+                print(f"Error occurred while processing {link_url}:\n {e}")
+                pass
+    except Exception as err:
+        print(f"Something went wrong at: {link_url}\n {err}")
     finally:
         driver.quit()
 
@@ -88,7 +98,7 @@ def run_yuno_scraper():
     ignore_path = "./yuno/ignore.json"
 
     base_url1 = "https://docs.y.uno/docs/overview"
-    json_file_path1 = "./yuno/guides_missing_translation_guides.json"
+    json_file_path1 = "./yuno/guides_missing_translation.json"
     interact_with_page(base_url1, json_file_path1, ignore_path)
 
     print(f"Missing guides translations saved to {json_file_path1}")
