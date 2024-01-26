@@ -6,10 +6,6 @@ from bs4 import BeautifulSoup
 import json
 import langdetect
 import langid
-from os import environ
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 
 
 def read_json_file(file_path):
@@ -71,19 +67,32 @@ def save_to_json(file_path, data):
 
 
 def handle_localize_widget(driver):
-    # Hover over a div with id "localize-widget"
     localize_widget = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "localize-widget"))
     )
     webdriver.ActionChains(driver).move_to_element(localize_widget).perform()
-
-    # Click the link with content "English"
-    english_link = WebDriverWait(driver, 10).until(
+    active_lang = (
+        WebDriverWait(driver, 10)
+        .until(EC.presence_of_element_located((By.ID, "localize-active-lang")))
+        .get_attribute("innerHTML")
+    )
+    spanish_link = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located(
             (By.XPATH, '//a[contains(text(), "Español (América Latina)")]')
         )
     )
-    english_link.click()
+
+    if "Português (Brasil)" in active_lang:
+        spanish_link.click()
+    elif "Español (América Latina)" in active_lang:
+        portuguese_link = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, '//a[contains(text(), "Português (Brasil)")]')
+            )
+        )
+        portuguese_link.click()
+    else:
+        spanish_link.click()
 
 
 def handle_sidebar_links(driver):
@@ -93,40 +102,21 @@ def handle_sidebar_links(driver):
     return [link.get_attribute("href") for link in sidebar_links]
 
 
-def create_driver():
-    chrome_service = Service(environ["CHROMEWEBDRIVER"])
-    chrome_options = Options()
-    for option in [
-        "--headless",
-        "--disable-gpu",
-        "--window-size=1920,1200",
-        "--ignore-certificate-errors",
-        "--disable-extensions",
-        "--no-sandbox",
-        "--disable-dev-shm-usage",
-    ]:
-        chrome_options.add_argument(option)
-    return webdriver.Chrome(service=chrome_service, options=chrome_options)
-
-
 def interact_with_page(url, file_path):
     try:
-        # driver = webdriver.Chrome()
-        driver = create_driver()
+        driver = webdriver.Chrome()
         driver.get(url)
-
-        handle_localize_widget(driver)
 
         english_texts = {}
         links = handle_sidebar_links(driver)
         visited_links = []
 
-        for link_url in links[:1]:
+        for link_url in links:
             if link_url in visited_links:
                 continue
 
             driver.get(link_url)
-
+            handle_localize_widget(driver)
             title = driver.find_element(By.ID, "content-head").get_attribute(
                 "outerHTML"
             )
@@ -143,7 +133,8 @@ def interact_with_page(url, file_path):
                 english_texts[link_url] = english
 
             visited_links.append(link_url)
-        return english_texts
+
+            save_to_json(file_path, english_texts)
     except Exception as e:
         print(f"Error occurred while processing {link_url}:\n {e}")
     finally:
@@ -153,14 +144,16 @@ def interact_with_page(url, file_path):
 def run_yuno_scraper():
     base_url1 = "https://docs.y.uno/docs/overview"
     json_file_path1 = "./yuno/missing/guides_missing_translation_guides.json"
-    result1 = interact_with_page(base_url1, json_file_path1)
+    interact_with_page(base_url1, json_file_path1)
+
+    print(f"Missing guides translations saved to {json_file_path1}")
 
     base_url2 = "https://docs.y.uno/reference/introduction"
     json_file_path2 = "./yuno/missing/apiref_missing_translation.json"
-    result2 = interact_with_page(base_url2)
+    interact_with_page(base_url2, json_file_path2)
 
-    save_to_json(json_file_path1, result1)
-    save_to_json(json_file_path2, result2)
-
-    print(f"Missing guides translations saved to {json_file_path1}")
     print(f"Missing API ref translations saved to {json_file_path2}")
+
+
+if __name__ == "__main__":
+    run_yuno_scraper()
