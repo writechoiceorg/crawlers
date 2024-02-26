@@ -8,7 +8,17 @@ def ignore_cases(text, ignore_misses, ignore_data):
     if (
         text in ignore_data
         or text in ignore_misses
-        or text.startswith(("https://", "http://"))
+        or text.startswith(
+            (
+                "https://",
+                "http://",
+                "Exemplo:",
+                "Ejemplo:",
+                "Yuno has already integrated multiple processors",
+                "* ",
+                "//",
+            )
+        )
         or text in "📘🚧❗️👍."
         or not text
     ):
