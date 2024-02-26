@@ -1,1 +1,201 @@
-{}
+{
+  "https://docs.y.uno/reference/postman-collections": [
+    "Postman collection"
+  ],
+  "https://docs.y.uno/reference/eci-indicators-list": [
+    "eftpos: Although cobranded, transactions made through eftpos will receive ECI codes of 05/06/07, indicating the possible outcomes of authentication attempts.",
+    "UnionPay International: Transactions falling within the BIN ranges overlapping with UnionPay International will receive both ECI values - 05/06/07 and 02/01/00. These values signify different authentication results."
+  ],
+  "https://docs.y.uno/reference/purposes-list": [
+    "REAL_STATE",
+    "Payment of travel tickets or tourism agencies."
+  ],
+  "https://docs.y.uno/reference/transaction-category-list": [
+    "Buy Now Pay Later."
+  ],
+  "https://docs.y.uno/reference/create-customer": [
+    "Create Customer Response"
+  ],
+  "https://docs.y.uno/reference/update-customer": [
+    "POST/customers"
+  ],
+  "https://docs.y.uno/reference/create-customer-session": [
+    "Create Customer Session Response"
+  ],
+  "https://docs.y.uno/reference/create-checkout-session": [
+    "Create Checkout Session Response"
+  ],
+  "https://docs.y.uno/reference/transaction": [
+    "THREE_D_SECURE"
+  ],
+  "https://docs.y.uno/reference/the-payment-object": [
+    "screen_height",
+    "category",
+    "sponsor_id"
+  ],
+  "https://docs.y.uno/reference/create-payment": [
+    "Crear Pago",
+    "Create Payment Response"
+  ],
+  "https://docs.y.uno/reference/create-payment-with-payment-method-split-3ds": [
+    "Enable 3DS in your Yuno dashboard and indicate in your CARD routing for which scenarios you want your customers to be able to use it.",
+    "to initiate the payment workflow.",
+    "Callback_url in case a 3DS challenge is required",
+    "With the fields obtained in the previous step (",
+    "), initialize the Yuno's SDK 3DS() function to capture the",
+    "After initializing the SDK, for each card, consume the",
+    "endpoint to see wether or not your customer needs an additional 3DS challenge. If it doesn't, we'll continue with the payment and notify the final result.",
+    "Info needed in the request",
+    "Response: Updated 3DS transaction (with an",
+    "in case a 3DS challenge is required)",
+    "If the transactions requires a",
+    ", we will return a",
+    "set as redirect and an",
+    "for you to redirect your customers in order to complete the challenge. There will be as many redirect_urls as 3DS challenges required. If both cards require a 3DS challenge, you'll get two different urls to redirect your customer.",
+    "Finally, by",
+    "you'll receive the result of the 3DS challenge and the",
+    "A 3DS transaction behaves similar to a regular purchase transaction. It has different states that represent how the authorization is going. Once the 3DS transaction is SUCCEEDED, we'll to go to the processor and generate a PURCHASE transaction to charge the client.",
+    "Challenge is required and the init_url is returned by Yuno",
+    "Challenge is being completed by the user",
+    "Challenge is completed correctly",
+    "Challenge is completed and declined by the bank",
+    "An error occurred while redirecting to the users challenge"
+  ],
+  "https://docs.y.uno/reference/create-payment-with-payment-method-split-copy": [
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/reference/complete-payment": [
+    "When creating a payment that has 3DS enabled, in order to know if it requires a challenge or not, you'll need to consume the complete payment endpoint.",
+    "in order to verify the transaction. If the transaction does not need a challenge, we'll continue with the payment, but if it does, we'll return a",
+    "for you to redirect your customer to the bank environment and complete the challenge.  Once the challenge is completed, the user will be returned to the"
+  ],
+  "https://docs.y.uno/reference/bank-transfer-copy": [
+    "\"Test YAPPY\""
+  ],
+  "https://docs.y.uno/reference/bnpl-copy": [
+    "Crear pago",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/reference/cards": [
+    "\"first_name\": \"Braeden\",",
+    "\"ip_address\": null,",
+    "\"The cardholder is enrolled in Payer Authentication. Please authenticate the cardholder before continuing with the transaction.\""
+  ],
+  "https://docs.y.uno/reference/payment-link-copy": [
+    "Crear Pago",
+    "Crear Pago",
+    "\"sponsor_id\"",
+    "\"TARJETA_CLAVE\"",
+    "\"TARJETA_CLAVE\"",
+    "\"sponsor_id\""
+  ],
+  "https://docs.y.uno/reference/wallet": [
+    "Crear Pago",
+    "Crear Pago",
+    "\"workflow\": \"REDIRECT\",",
+    "\"Test MP Checkout pro\""
+  ],
+  "https://docs.y.uno/reference/the-payment-link-object": [
+    "shipping_amount",
+    "array of enums",
+    "Array of"
+  ],
+  "https://docs.y.uno/reference/create-payment-link": [
+    "Create Payment Link Response"
+  ],
+  "https://docs.y.uno/reference/cancel-payment-link": [
+    "This request cancels a payment link with a status equal to CREATED or USED."
+  ],
+  "https://docs.y.uno/reference/status-subscriptions": [
+    "COMPLETED"
+  ],
+  "https://docs.y.uno/reference/the-subscription-object": [
+    "COMPLETED",
+    "subscription_plan_id",
+    "next_at",
+    "security_code",
+    "Array of strings"
+  ],
+  "https://docs.y.uno/reference/create-subscription": [
+    "Create Subscription Response",
+    "billing_cycles",
+    "availability.finish_at",
+    "COMPLETED"
+  ],
+  "https://docs.y.uno/reference/update-subscription": [
+    "Create Subscription Response",
+    "billing_cycles",
+    "availability.finish_at",
+    "COMPLETED"
+  ],
+  "https://docs.y.uno/reference/create-payout": [
+    "Crear Payout",
+    "Create Payout Response"
+  ],
+  "https://docs.y.uno/reference/the-reports-object": [
+    "merchant_reference_id"
+  ],
+  "https://docs.y.uno/reference/reports-fields": [
+    "Below, you will find details of each report type.",
+    "The report fields are subject to modifications, and new fields can be added to the end of the current structure.",
+    "card_brand",
+    "card_holder_name",
+    "card_issuer_name",
+    "card_type",
+    "CREDIT",
+    "customer_first_name",
+    "customer_last_name",
+    "Check the Country reference.",
+    "M, F, NA, or NK.",
+    "Check the Country reference.",
+    "The beneficiary’s document number (MAX 40; MIN 3).",
+    "Check the Country reference.",
+    "card_brand",
+    "card_category",
+    "card_issuer_name",
+    "card_type",
+    "CREDIT",
+    "customer_last_name",
+    "Check the Country reference.",
+    "merchant_transaction_id",
+    "nationality",
+    "Check the Country reference.",
+    "payment_method_type",
+    "provider_transaction_id",
+    "payment_method_type",
+    "Identification of the Order assigned by your company. (MAX 255; MIN 3).",
+    "merchant_transaction_id",
+    "provider_transaction_id",
+    "card_type",
+    "CREDIT",
+    "card_brand",
+    "number_of_transactions",
+    "gross_currency",
+    "gross_credit",
+    "settlement_gross_amount",
+    "settlement_credit_fees",
+    "settlement_fee_taxes",
+    "settlement_batch_id",
+    "provider_merchant_id",
+    "settlement_batch_id",
+    "payment_method_type",
+    "merchant_transaction_id",
+    "provider_transaction_id",
+    "gross_currency",
+    "gross_credit",
+    "fee_rate",
+    "fx_rate",
+    "settlement_gross_amount",
+    "settlement_fee_taxes",
+    "settlement_net_credit",
+    "card_type",
+    "CREDIT",
+    "card_brand"
+  ],
+  "https://docs.y.uno/reference/download-a-report": [
+    "To retrieve the file content, use your API credentials to access the file specified by the report object"
+  ],
+  "https://docs.y.uno/reference/create-installments-plan": [
+    "Create Installments Plan response"
+  ]
+}

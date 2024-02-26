@@ -1,1 +1,1030 @@
-{}
+{
+  "https://docs.y.uno/docs/how-yuno-payment-flow-works": [
+    "Un",
+    "Un"
+  ],
+  "https://docs.y.uno/docs/developers-credentials": [
+    "Safeguarding your credentials",
+    "The security of your authentication credentials is paramount. Therefore, treat your credentials as confidential information and safeguard them diligently to prevent unauthorized access.",
+    "Immediate Action",
+    "If you suspect or detect any exposure of your credentials, please reach out to our support team promptly. Rapid response ensures the integrity of your operations."
+  ],
+  "https://docs.y.uno/docs/routing": [
+    "Configuring the dynamic routing",
+    "First, access your",
+    "account and select the option",
+    ". The Routing page separates the payment by",
+    "Not published",
+    "and",
+    "Published",
+    ". In the",
+    "Not published",
+    "tab, you will find the payment methods connected to your account that don’t have a published route.",
+    "Create new route",
+    "Add new condition",
+    ", and"
+  ],
+  "https://docs.y.uno/docs/insights": [
+    "Insights"
+  ],
+  "https://docs.y.uno/docs/accounts-management": [
+    "The Account Management section within the dashboard empowers users with the ability to create, edit, and conveniently organize organizational accounts. It equips you with the agility to manage access, streamline business operations, and uphold security. By creating, customizing, and navigating through multiple accounts, you gain control over your dashboard administration while fostering a seamless and secure environment.",
+    "Seamless Switching",
+    ": The dashboard's flexibility shines through as users can effortlessly switch between different accounts. This is achieved with just a few clicks, eliminating the need for separate credentials."
+  ],
+  "https://docs.y.uno/docs/teams-and-roles": [
+    "There are 5 types of default roles:",
+    "Read only",
+    "Assign this role when you invite Yuno team experts to join your team."
+  ],
+  "https://docs.y.uno/docs/create-payment-basic": [
+    "Create Payment"
+  ],
+  "https://docs.y.uno/docs/refund-payments": [
+    "Crear Pago",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/docs/full-checkout-sdk": [
+    "onLoading",
+    "onLoading",
+    "mountCheckout",
+    "mountCheckout",
+    "'click'",
+    "yuno.CreatePayment(oneTimeToken)",
+    "tokenWithInformation",
+    "The default value is true.",
+    "showLoading",
+    "issuersFormEnable",
+    "issuersFormEnable",
+    "texts",
+    "automaticallyUnmount"
+  ],
+  "https://docs.y.uno/docs/lite-checkout-sdk": [
+    "onLoading",
+    "onLoading",
+    "mountCheckoutLite",
+    "'click'",
+    "yunoCreatePayment(oneTimeToken)",
+    "tokenWithInformation",
+    "The default value is true.",
+    "showLoading",
+    "issuersFormEnable",
+    "issuersFormEnable",
+    "automaticallyUnmount"
+  ],
+  "https://docs.y.uno/docs/enrollment-lite-sdk": [
+    "showLoading",
+    "onLoading",
+    "issuersFormEnable",
+    "showLoading",
+    "onLoading",
+    "'There was an error'",
+    "The default value is true.",
+    "showLoading"
+  ],
+  "https://docs.y.uno/docs/secure-fields-payment": [
+    "'Card Number'",
+    "regarding the installments plan set for your account and chosen by the customer",
+    "amount: {",
+    "cardType",
+    "or",
+    "cardType",
+    "or"
+  ],
+  "https://docs.y.uno/docs/secure-fields-enrollment": [
+    "'Card Number'"
+  ],
+  "https://docs.y.uno/docs/loader": [
+    ".  This way, the user experience is improved because they will see the loader while the merchant creates the payment.",
+    "in the method",
+    ". Check the documentation for"
+  ],
+  "https://docs.y.uno/docs/payment-status": [
+    "The initialization of both solutions is the same. After adding the Yuno SDK into your system and creating an instance, check the desired status solution to learn how to use it.",
+    "function to define the",
+    "related to the payment, the",
+    ", the"
+  ],
+  "https://docs.y.uno/docs/sdk-customizations": [
+    "All elements used by the SDKs use prefixed classes starting with",
+    ". Therefore, if you need to change the SDK appearance to match your business style, you can use these classes to redefine the style.",
+    "Font",
+    "By default, the",
+    "font is used in the SDK elements. Therefore, to use it is necessary to add this font to your HTML.  Add the following link tag into your HTML to import the",
+    "this example",
+    "from the Demo App if you are unsure where to position the HTML tag. Alternatively, you can apply the font used on your system to the SDK elements using CSS, as shown in the example:",
+    "CSS"
+  ],
+  "https://docs.y.uno/docs/3ds-setup-sdk": [
+    "). For each payment, you need to generate a new",
+    ". To receive the",
+    "you will use",
+    "With the",
+    "To initiate the data collection necessary for the 3DS payment flow, you will use the",
+    "function. To initiate the",
+    "function, you will use the",
+    "obtained in the previous step. The following table lists all the required parameters when initializing the 3DS with the Yuno SDK and their descriptions.",
+    "Refers to the",
+    "publicApiKey",
+    "accountId",
+    "account-id",
+    "threeDSecure",
+    "publicApiKey",
+    "accountId"
+  ],
+  "https://docs.y.uno/docs/demo-app": [
+    "account_code",
+    "public_apy_key",
+    "YUNO_CUSTOMER_ID",
+    "?country"
+  ],
+  "https://docs.y.uno/docs/full-checkout-android": [
+    "'com.yuno.payments:android-sdk:{last_version}'"
+  ],
+  "https://docs.y.uno/docs/lite-checkout-android": [
+    "'com.yuno.payments:android-sdk:{last_version}'"
+  ],
+  "https://docs.y.uno/docs/enrollment-android": [
+    "Activity"
+  ],
+  "https://docs.y.uno/docs/sdk-customizations-android": [
+    "COLOR",
+    "COLOR",
+    "COLOR"
+  ],
+  "https://docs.y.uno/docs/full-checkout-ios": [
+    ".startPayment"
+  ],
+  "https://docs.y.uno/docs/registering-yuno-affiliation": [
+    "Gateway Affiliations",
+    "Use Recommended Payment Processor Behavior"
+  ],
+  "https://docs.y.uno/docs/configuring-payment-conditions": [
+    "Process with affiliation"
+  ],
+  "https://docs.y.uno/docs/configure-webhooks": [
+    "Configure Webhooks",
+    "purchase",
+    "authorize"
+  ],
+  "https://docs.y.uno/docs/examples": [
+    "payment method",
+    "\"cardHolderName\"",
+    "\"transactionStatus\""
+  ],
+  "https://docs.y.uno/docs/enroll-payment-methods": [
+    "Checkout workflow",
+    "Checkout workflow",
+    "Crear Cliente",
+    "Checkout workflow",
+    "Checkout workflow",
+    "payment_method_type",
+    "Checkout workflow: usar el endpoint",
+    "provider.redirect.init_url"
+  ],
+  "https://docs.y.uno/docs/card-verification": [
+    "Yuno lets you verify if the customer's credit card is real and is working. Our Credit Card Verification API is designed to empower your applications with a robust mechanism for validating credit card transactions, ensuring a seamless and secure payment experience for your users. This operation does not create any charges for your client.",
+    "With the Yuno card verification service, you can protect your business in real time:",
+    ": Instantly validate credit card details to ensure accuracy and authenticity.",
+    ": Mitigate the risk of fraudulent transactions by verifying the legitimacy of credit card information.",
+    "Seamless Integration",
+    ": Easily integrate our API into your existing payment processing system, minimizing development time and effort.",
+    "First, you need to define a route to use the card verification feature. When configuring the route, be sure to select:",
+    "Define the",
+    "Transaction type",
+    "to",
+    "With the above configurations, all card verifications will be processed following the configuration of the created route.",
+    "Select the correct provider",
+    "The credit card verification process isn't provided by all providers. Always contact your technical account manager to verify which providers support card verification.",
+    "In addition to creating the route, you need to choose when to use the validation. You can verify cards during the",
+    "or while making a credit",
+    ". Depending on your chosen process, you should use different endpoints or SDK functions.",
+    "Verify the card at the enrollment",
+    "You can verify the card at the enrollment whether you are using the Direct or SDK integrations.",
+    "SDK integration",
+    "If you are using an integration based on SDKs, you need to define the",
+    "object, informing the",
+    "when performing the enrollment. The code block below presents an example of card verification requests and responses using the SDK.",
+    "\"Card\"",
+    "\"Card\"",
+    "\"READY_TO_ENROLL\"",
+    "\"sdk_required_action\"",
+    "Access the",
+    "SDK integration",
+    "page for additional information related to the enrollment process.",
+    "To verify the card at the enrollment with the Direct integration, you will use the",
+    "endpoint. In addition to the",
+    "object, you need to provide the",
+    "object. Inside of the",
+    "object you define the",
+    "and provide",
+    "vault_on_success = true",
+    ". The code block below presents an example of card verification requests and responses using the",
+    "\"preferred\"",
+    "The verify feature at the enrollment is only available for PCI-compliant merchants when using the Direct integration.",
+    "Verify the card at the payment",
+    "If you want to verify the card using a payment operation, you need to fulfill two requirements:",
+    "Inform",
+    "inside of the",
+    "Following the above instructions, the resulting operation won't result in any charges for your client.",
+    "SDK integration",
+    "The code block below presents an example of card verification using the payment operation for an SDK integration.",
+    "Direct Integration",
+    "The code block below presents an example of card verification using the payment operation for a Direct integration.",
+    "The verify feature at the payment is only available for PCI-compliant merchants when using the Direct integration."
+  ],
+  "https://docs.y.uno/docs/token-migration-process": [
+    "Token migration is the process by which the card numbers stored in a provider are transferred to Yuno's vault. This process involves the generation of a new token for each card.",
+    "If Yuno's SFTP is preferred, we will request the public PGP key of the third-party vault/gateway. The key will encrypt credentials for a Yuno-created SFTP server, where the gateway can drop the exported payment methods for us to retrieve. Ideally, the public PGP key of the gateway should be hosted on a publicly accessible page.",
+    "Your responsibilities when migrating tokens",
+    "You are responsible for managing communication with your gateway provider throughout the migration process. The Yuno team will support and collaborate directly with the third-party vault/gateway to facilitate the importing process. However, you need to manage the process.",
+    "Migration options",
+    "Yuno defines a list of the required parameters for each customer and credit card to proceed with the migration process. The list of the required parameters is present below:",
+    "Account ID",
+    "First name",
+    "Country",
+    "Payment method type",
+    "Payment method ID",
+    "You can use the",
+    "Customer Object",
+    "and",
+    "Payment Method Object",
+    "to find all the possible parameters that can be used when importing/creating customers or enrolling payment objects.",
+    "Data transfer security",
+    "All data throughout the migration process is encripted and transfered using a safe method, such as SFTP.",
+    "To ensure efficient processing and prevent delays, please include the following information when communicating with Support:",
+    "The external identifier name to be used for the import.",
+    "An approximate count of the expected number of payment methods to be included (a rough estimate is acceptable).",
+    "Any known data gaps, such as missing names or expiration dates.",
+    "When making payments through Yuno, the platform connects to payment processors. Yuno tokenizes and encrypts the data to ensure data security, simplifying the PCI compliance process. However, you remain responsible for managing and protecting your customer's (the buyer's) data. In addition, you are responsible for communicating any additional fees or other issues to your customer."
+  ],
+  "https://docs.y.uno/docs/3d-secure": [
+    "Direct"
+  ],
+  "https://docs.y.uno/docs/direct-workflow": [
+    "Merchant Category Code (MCC)",
+    "Setup service",
+    "Create Payment",
+    "card.three_d_secure_setup_id"
+  ],
+  "https://docs.y.uno/docs/payouts": [
+    "(Optional)",
+    "endpoint to complete the payout process."
+  ],
+  "https://docs.y.uno/docs/merchant-installments": [
+    "Secure Fields SDK"
+  ],
+  "https://docs.y.uno/docs/provider-installments": [
+    "Secure Fields SDK"
+  ],
+  "https://docs.y.uno/docs/subscriptions": [
+    "CANCELLED",
+    "COMPLETED",
+    "CANCELLED",
+    ": using the",
+    "After creating the customer, you will need to",
+    "to use it in the subscription creation.",
+    "for your customer and the card enrolled. You will configure the subscription and define the payment method at this step. When creating the subscription, you can customize:"
+  ],
+  "https://docs.y.uno/docs/stored-credentials": [
+    "CIT",
+    "stored_credentials",
+    "UNSCHEDULED_CARD_ON_FILE",
+    "UNSCHEDULED_CARD_ON_FILE"
+  ],
+  "https://docs.y.uno/docs/payment-amount-details": [
+    "Our API offers flexibility in structuring payment amounts, accommodating various factors that may contribute to the total transaction sum. Whether it's base charges, taxes, fees, or tips, our system is designed to handle diverse components seamlessly. You can easily integrate and manage payments with different elements contributing to the overall amount",
+    "This feature enhances transparency and convenience for both merchants and customers, enabling seamless handling of payment details within the payment process.",
+    "Fee amount",
+    "A dedicated field (",
+    ") allows you to specify the fee amount for your services that is included in the transaction.",
+    "In the following example you can see a request that clarifies that a 180.00 COP fee amount is part of a 5000.00 COP final transaction. This field is for informational purposes, the",
+    "is already included in the final transaction amount and is not added separately.",
+    "header",
+    "header",
+    "header",
+    "header",
+    "header",
+    "\"stored_credentials\"",
+    "\"CARD_ON_FILE\"",
+    "A dedicated field (",
+    "additiona_data.order.shipping_amount",
+    ") allows you to specify the shipping amount that is included in the transaction.",
+    "In the following example you can see a request that clarifies that a 270.00 COP shipping amount is part of a 5000.00 COP final transaction. This field is for informational purposes, the",
+    "is already included in the final transaction amount and is not added separately.",
+    "header",
+    "header",
+    "header",
+    "header",
+    "header",
+    "\"stored_credentials\"",
+    "\"CARD_ON_FILE\"",
+    "A dedicated field (",
+    ") allows you to specify the tips amount that is included in the transaction.",
+    "In the following example you can see a request that clarifies that a 50.00 COP tip amount is part of a 5000.00 COP final transaction. This field is for informational purposes, the",
+    "is already included in the final transaction amount and is not added separately.",
+    "header",
+    "header",
+    "header",
+    "header",
+    "\"tip_amount\"",
+    "\"stored_credentials\"",
+    "\"CARD_ON_FILE\""
+  ],
+  "https://docs.y.uno/docs/acquirers-advanced-informations": [
+    "ARS, BRL, CLP, COP, CRC, USD, GTQ, HNL, MXN, NIO, PEN, UYU",
+    "Specific Fields"
+  ],
+  "https://docs.y.uno/docs/bbva-openpay-acquirer": [
+    "Openpay website"
+  ],
+  "https://docs.y.uno/docs/izipay": [
+    "Izipay website"
+  ],
+  "https://docs.y.uno/docs/klap": [
+    "Accepts credit, debit and prepaid card purchases throughout its network."
+  ],
+  "https://docs.y.uno/docs/prosa": [
+    "Receives purchases through different devices by accepting card payments."
+  ],
+  "https://docs.y.uno/docs/stone": [
+    "Stone is a leading Brazilian payment solutions company. They offer versatile payment options, such as Payment Links for sales without a website and secure Pix and Boleto payments."
+  ],
+  "https://docs.y.uno/docs/transbank": [
+    "Cards Mall →",
+    "WebPay Mall →"
+  ],
+  "https://docs.y.uno/docs/yuno-testing-gateway": [
+    "Not published"
+  ],
+  "https://docs.y.uno/docs/worldpay-acquirer": [
+    "Worldpay website",
+    "Isle",
+    "Corea"
+  ],
+  "https://docs.y.uno/docs/clearsale": [
+    "Isle",
+    "Application API Key",
+    "Application Client ID",
+    "Application Client Secret"
+  ],
+  "https://docs.y.uno/docs/cybersource": [
+    "CyberSource webpage",
+    "Organization ID",
+    "Shared Secret"
+  ],
+  "https://docs.y.uno/docs/signifyd": [
+    "More than 100 countries.",
+    "items.name, items.quantity, items.unit_price.",
+    "Teams",
+    "Teams",
+    "Shared Secret"
+  ],
+  "https://docs.y.uno/docs/riskified": [
+    "Shop URL"
+  ],
+  "https://docs.y.uno/docs/acuotaz": [
+    "With aCuotaz, you can receive online payments as installment plans without needing a credit card. It is a BNPL payment method, and the payments are made through Mercado Pago."
+  ],
+  "https://docs.y.uno/docs/adyen-processor": [
+    "Tcheca"
+  ],
+  "https://docs.y.uno/docs/arcus": [
+    "Arcus website"
+  ],
+  "https://docs.y.uno/docs/braintree": [
+    "Braintree website"
+  ],
+  "https://docs.y.uno/docs/bbva-openpay-processor": [
+    "Openpay website"
+  ],
+  "https://docs.y.uno/docs/credix": [
+    "Credix website",
+    "CREDIX",
+    "CRC, USD"
+  ],
+  "https://docs.y.uno/docs/dlocal": [
+    "dLocal website"
+  ],
+  "https://docs.y.uno/docs/nupay": [
+    "NuPay website"
+  ],
+  "https://docs.y.uno/docs/nuvei": [
+    "Nuvei is a global payment platform designed to accelerate businesses with a modular and scalable technology to offer all payment methods to succeed locally and globally."
+  ],
+  "https://docs.y.uno/docs/paypal": [
+    "PayPal website"
+  ],
+  "https://docs.y.uno/docs/payu": [
+    "PayU website"
+  ],
+  "https://docs.y.uno/docs/payvalida": [
+    "The Payvalida system does not support decimals. Therefore, you should not use decimals when defining the payment",
+    ". Otherwise, your payment may fail."
+  ],
+  "https://docs.y.uno/docs/payzen": [
+    "Payzen allows online businesses to accept and process payments through payment methods that can be integrated with web and mobile applications."
+  ],
+  "https://docs.y.uno/docs/place-to-pay": [
+    "Place to Pay is a solution to accompany your digital transaction processes in different channels, with the highest security and functionalities that adapt to the needs of your business.",
+    "PlaceToPay website"
+  ],
+  "https://docs.y.uno/docs/safetypay": [
+    "Enables online cash payments, bank transfers, and cross-border transactions for a global market of consumers.",
+    "SafetyPay website"
+  ],
+  "https://docs.y.uno/docs/stripe": [
+    "Note: American Express doesn't accept the currencies marked with *"
+  ],
+  "https://docs.y.uno/docs/t1pagos": [
+    "T1Pagos provides a payment gateway to make it easier for you to accept card payments and increase your approvement rate. With T1Pagos you can accept credit and debit card payments in Mexico."
+  ],
+  "https://docs.y.uno/docs/wibond": [
+    "Wibond provides financial inclusion to a large community, offering payment options according to the possibilities and profile of each user.",
+    "Wibond website"
+  ],
+  "https://docs.y.uno/docs/wompi": [
+    "Wompi provides payment gateway services to individuals, small and large companies so that they can offer their customers a wide payment alternative for the sale of their products. With Wompi, you can easily create and customize payment links through Short Links or QR Codes and share them with your customers through social networks, email, chat, etc."
+  ],
+  "https://docs.y.uno/docs/worldline": [
+    "Worldline is a Payments technology company’s purpose is to design and operate digital payment and transactional solutions that enable sustainable economic growth and reinforce trust and security to users.",
+    "Worldline website"
+  ],
+  "https://docs.y.uno/docs/worldpay-processor": [
+    "Worldpay website",
+    "Tcheca",
+    "Isle"
+  ],
+  "https://docs.y.uno/docs/payment-methods-by-processor": [
+    "Checkout Redirect",
+    "Paycash",
+    "CoDi"
+  ],
+  "https://docs.y.uno/docs/acuotaz-bnpl": [
+    "country(transaction)",
+    "Info",
+    "Info",
+    "You can choose the URL you want, but you must communicate it to the aCuotaz team. Your webhook’s URL must follow this format:"
+  ],
+  "https://docs.y.uno/docs/addi-bnpl": [
+    "telephone_number",
+    "telephone_country_code",
+    "country (transaction)",
+    "Minimum number of installments",
+    "Client ID, Client Secret, Ally Slug, Callback Username y Callback Password.",
+    "Crear Pago",
+    "Info",
+    "CANO",
+    "AMOUNT - CO",
+    "ORDER_ID",
+    "Country",
+    "Ally Slug",
+    "Callback Username",
+    "Callback Password"
+  ],
+  "https://docs.y.uno/docs/adyen-pix": [
+    "Account Code, API key.",
+    "Transactions > Offers",
+    "PSP reference",
+    "Promote this offer to a sale",
+    "Developers > API credentials",
+    "ws@Company.[YourCompanyAccount]",
+    "Save changes",
+    "Account Code"
+  ],
+  "https://docs.y.uno/docs/adyen-cards": [
+    "Account Code, API key.",
+    "CVE/CVV2/CVC3",
+    "CVE/CVV2/CVC3",
+    "Authorised",
+    "Ir a",
+    "Developers > API credentials",
+    "ws@Company.[YourCompanyAccount]",
+    "Save changes",
+    "Account Code"
+  ],
+  "https://docs.y.uno/docs/arcus-cash": [
+    "Arcus - Cash"
+  ],
+  "https://docs.y.uno/docs/bac-cards": [
+    "BAC - Cards",
+    "CRC, USD, GTQ, HNL, NIO",
+    "Amex",
+    "Country"
+  ],
+  "https://docs.y.uno/docs/bradesco-pix": [
+    "Certificate's Private Key",
+    "Certificate's Private Key"
+  ],
+  "https://docs.y.uno/docs/braintree-cards": [
+    "Braintree - Cards",
+    "UnionPay",
+    "UnionPay",
+    "UnionPay",
+    "Public Key",
+    "Private Key",
+    "Observations on the implementation",
+    "MerchantAccountID"
+  ],
+  "https://docs.y.uno/docs/cielo-cards": [
+    "Possibility to choose who will be responsible for financing installments",
+    "Each installment MUST have a minimum number of 5.00 BRL (meaning that a transaction with 2 installments must have a minimum value of 10.00 BRL; 3 installments must have a minimum value of 15.00 BRL etc.). If not, the transaction gets automatically rejected by the issuing bank"
+  ],
+  "https://docs.y.uno/docs/credix-cards": [
+    "Credix - Cards",
+    "CRC, USD"
+  ],
+  "https://docs.y.uno/docs/daviplata-banktransfer": [
+    "The response body of the Create Payment request will provide a redirect URL (payment_method.payment_method_detail.bank_transfer.redirect_url) to the DaviPlata service. On this page, select a document type and fill in the document number with",
+    "to continue with the payment.",
+    "Consumer Secret"
+  ],
+  "https://docs.y.uno/docs/dlocal-cards": [
+    "country(transaction)",
+    "Possibility to choose who will be responsible for financing installments",
+    "X-Login, X-Trans-Key y Secret Key.",
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/dlocal-checkout-redirect": [
+    "dLocal - Checkout Redirect",
+    "country(transaction)",
+    "Possibility to choose who will be responsible for financing installments",
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/dlocal-codi": [
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-efecty": [
+    "Redirect",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-khipu": [
+    "2000 CLP",
+    "Redirect",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-oxxo": [
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-pago-efectivo": [
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-pse": [
+    "1.500 COP",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-spei": [
+    "Redirect",
+    "Settings > Integration"
+  ],
+  "https://docs.y.uno/docs/dlocal-tarjeta-clave": [
+    "Settings > Integration",
+    "Settings > Integration",
+    "Payins notification URL",
+    "Refunds and Chargebacks URL"
+  ],
+  "https://docs.y.uno/docs/ebanx-cards": [
+    "first_name,",
+    "country,",
+    "city,",
+    "telephone_number",
+    "ARS, BRL, COP, CLP, CRC, USD, GTQ, MXN, PYG, PEN, UYU.",
+    "Chile: 1 CLP",
+    "Brazil: 1 (depending on your contract).",
+    "Argentina: 1 (depending on your contract).",
+    "Brazil: 12 (depending on your contract).",
+    "Discover",
+    "MasterCard",
+    "MasterCard",
+    "CARNET (For Mexico only)",
+    "Cabal (For Argentina only)",
+    "Magna (For Chile only)",
+    "Integrations",
+    "Public Integration Key",
+    "a Integrations"
+  ],
+  "https://docs.y.uno/docs/fac-cards": [
+    "FAC - Cards",
+    "JC-01-0A"
+  ],
+  "https://docs.y.uno/docs/getnet-cards": [
+    "Possibility to choose who will be responsible for financing installments"
+  ],
+  "https://docs.y.uno/docs/klap-cards": [
+    "CLP, USD",
+    "Possibility to choose who will be responsible for financing installments",
+    "Commerce ID",
+    "Common data of all testing cards",
+    "Cards to generate successful transaction without authentication",
+    "Card Brand/Type",
+    "MasterCard/Credit",
+    "MasterCard/Prepaid",
+    "Cards to generate successful transaction with authentication",
+    "Card Brand/Type",
+    "Cards to generate rejected transaction due to failed authentication",
+    "MasterCard",
+    "Commerce ID"
+  ],
+  "https://docs.y.uno/docs/kushki-cards": [
+    "telephone_number",
+    ": 50 CLP",
+    ": 500 COP",
+    "Possibility to choose who will be responsible for financing installments",
+    "CLP: 150",
+    "COP: 555",
+    "*Any other OTP value will result in a declined validation.",
+    "Log in to Kushki dashboard (there is a",
+    "and",
+    "Copy the values under the",
+    "and",
+    "Click",
+    "and then select",
+    ", and",
+    "Share the Merchant ID (ID de Comercio) with your TAM in order to setup yours webhook notifications. How to get your Merchant ID:",
+    "Log in to Kushki dashboard (there is a",
+    "and",
+    "Copy the value on the right top corner under the legend",
+    "Verification of the flow with the commerce using real transactions."
+  ],
+  "https://docs.y.uno/docs/mercado-pago-api": [
+    "No, but it is important to inform the estimated volumes of a new integration in order to warn about the\n            dimensioning to the tech teams, if necessary.",
+    "Possibility to choose who will be responsible for financing installments",
+    "Requirements to create a sandbox payment",
+    "CONT",
+    "CALL",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "Country",
+    "Access Token",
+    "You will also be able to experiment and test if the indicated URL is receiving notifications\n                correctly, being able to verify the request, the response given by the server and the description of the\n                event.",
+    ": When you receive a notification on your platform, Mercado Pago waits for a response to validate\n            that you received it correctly. For that, you must return an",
+    "201\n              (CREATED)",
+    ". If this response is not sent, it will be understood that you have not received the\n            notification and a further attempt to send it will be made until you submit the response.",
+    "If the merchant is part of a group of corporations that Mercado Pago follows-up punctually, a call to\n            validate the integration should be made, the test payments in Mercado Pago's system should ve revised,\n            thinking on a progressive roll-out method, etc."
+  ],
+  "https://docs.y.uno/docs/mercado-pago-checkout-pro": [
+    "items.title",
+    "country(transaction)",
+    "Efecty: $ 5.000",
+    "Possibility to choose who will be responsible for financing of installments",
+    "Requirements to create a sandbox payment",
+    "CONT",
+    "CALL",
+    "For additional information, refer to the",
+    ". However, as a summary, you need to follow the next steps:",
+    "to use as a",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "Country",
+    "Access Token"
+  ],
+  "https://docs.y.uno/docs/mercado-pago-pse": [
+    "1600 COP",
+    "No, but it is important to inform the estimated volumes of a new integration in order to warn about the dimensioning to the tech teams, if necessary.",
+    "Requirements to create a sandbox payment",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "201\n              (CREATED)",
+    ". If this response is not sent, it will be understood that you have not received the notification and a further attempt to send it will be made until you submit the response."
+  ],
+  "https://docs.y.uno/docs/mercado-pago-wallet": [
+    "country(transaction)",
+    "Requirements to create a sandbox payment",
+    "CONT",
+    "CALL",
+    "Create test users",
+    "to use as a",
+    "and as a",
+    "while developing the integration. Mercado Pago uses these test users to replicate the production environment, and they can only interact with other test users. If you use a real account to pay a checkout created by a test user, you will receive an error message (invalid_users_involved).",
+    "Public Key",
+    "Access Token",
+    "Public Key",
+    "Access Token",
+    "Country",
+    "Access Token"
+  ],
+  "https://docs.y.uno/docs/nupay-pix": [
+    "telephone_number",
+    "telephone_country_code",
+    "items.id",
+    "items.title",
+    "country(transaction)",
+    "Crear Pago"
+  ],
+  "https://docs.y.uno/docs/nupay-wallet": [
+    "Nupay - Wallet",
+    "Minimum number of installments",
+    "Maximum number of installments"
+  ],
+  "https://docs.y.uno/docs/nuvei-oxxo": [
+    "telephone",
+    "My Integration Settings"
+  ],
+  "https://docs.y.uno/docs/nuvei-spei": [
+    "This page presents all information related to the Nuvei connection using Bank Transfer as payment. Use the following buttons to navigate to the desired section.",
+    "telephone",
+    "Redirect",
+    "My Integration Settings"
+  ],
+  "https://docs.y.uno/docs/paymentez-cards": [
+    "Chile: 12.",
+    "COP: 256",
+    "CLP: 256",
+    "Application Code",
+    "Application Key",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-daviplata": [
+    "Redirect",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-linktopay": [
+    "Chile: 12.",
+    "COP: 256",
+    "CLP: 256",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-nequi": [
+    "100 COP",
+    "Redirect",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-paycash": [
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-pse": [
+    "1.500 COP",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code"
+  ],
+  "https://docs.y.uno/docs/paymentez-sencillito": [
+    "Direct",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paymentez-webpay": [
+    "Possibility to choose who will be responsible for financing installments",
+    "Application Code",
+    "To start the integration you will need to request to the Nuvei/Paymentez Team, integrations@paymentez.com, a Development/Sandbox account.",
+    "Nuvei/Paymentez will create an Application and give you the",
+    "Application Code",
+    ". From now this will be the identifier for your Application in the whole integration. In the Nuvei/Paymentez admin system you will find your transactions, application settings, including application URLs and",
+    "Application Key",
+    ", and other configurations.",
+    "Country",
+    "Application Key",
+    "Application Code",
+    "Provide URL to Nuvei/Paymentez's staff."
+  ],
+  "https://docs.y.uno/docs/paypal-smart-button": [
+    "Credit Card Generator for Testing"
+  ],
+  "https://docs.y.uno/docs/payu-cards": [
+    "PayU - Cards",
+    "telephone_number",
+    "country (transaction)",
+    "Chile: Supported (multiple and partial voids not applicable).",
+    "Peru: Supported (to support multiple and partial voids, you must enable multiple captures in your provider\n            configuration).",
+    "Installments are supported for credit cards, not supported for Panama and Mexico. For Mexico, if\n              installments are required, commercial team should set the months without interests configuration or\n              integrate PayU's promotions API.",
+    "Possibility to choose who will be responsible for financing installments",
+    "Supported in Argentina and Mexico.",
+    "Installments are managed per country.",
+    "Chile: 1",
+    "Argentina: 24 (except for Naranja that supports up to 12).",
+    "Chile: 48",
+    "Up to 120 days after the transaction date for local cards and 180 days for international cards.",
+    "No, there is an option to check them through the control panel.",
+    "External 3DS 2.0 available for Brazil and Colombia supported for Visa and Mastercard.",
+    "If you want to perform tests through PayU, you need to use the following credentials in the request,\n              depending on the country of your account:",
+    "Public Key",
+    "Account ID",
+    "Chile: 512325",
+    "Test cards Argentina:",
+    "AMEX Credit Card",
+    "ARGENCARD Credit Card",
+    "CABAL Credit Card",
+    "CENCOSUD Credit Card",
+    "DINERS Credit Card",
+    "MASTERCARD Credit Card",
+    "NARANJA Credit Card",
+    "SHOPPING Credit Card",
+    "VISA Credit Card",
+    "AMEX Credit Card",
+    "DINERS Credit Card",
+    "ELO Credit Card",
+    "HIPERCARD Credit Card",
+    "MASTERCARD Credit Card",
+    "VISA Credit Card",
+    "Test cards Chile:",
+    "AMEX Credit Card",
+    "Follow the testing values according to the expected result",
+    "DINERS Credit Card",
+    "Follow the testing values according to the expected result",
+    "MASTERCARD Credit Card",
+    "MASTERCARD Prepaid Card",
+    "VISA Credit Card",
+    "VISA International Card",
+    "Test cards Colombia:",
+    "AMEX Credit Card",
+    "CODENSA Credit Card",
+    "CRM Credit Card",
+    "DAVIVIENDA Credit Card",
+    "DINERS Credit Card",
+    "MASTERCARD Credit Card",
+    "NEQUI Credit Card",
+    "VISA Credit Card",
+    "Test cards Mexico:",
+    "AMEX Credit Card",
+    "MASTERCARD Credit Card",
+    "VISA Credit Card",
+    "MASTERCARD Credit Card",
+    "VISA Credit Card",
+    "AMEX Credit Card",
+    "DINERS Credit Card",
+    "MASTERCARD Credit Card",
+    "VISA Credit Card",
+    "To get approved transactions",
+    "Send APPROVED in the name of the cardholder.",
+    "Send 777 in the CVV of the card (for AMEX, use 7777).",
+    "The test parameter and the description also define the state. If it doesn't work with test set as false,\n            change its value to true.",
+    "Send the month of the expiration date of the card less than 6 and the year must be 2023 or higher.\n            Example:\n            05/2025.",
+    "To get declined transactions",
+    "Send REJECTED in the name of the cardholder.",
+    "Send 666 in the CVV of the card (for AMEX, use 6666).",
+    "The test parameter and the description also define the state. If it doesn’t work with test set as false,\n            change its value to true.",
+    "Send the month of the expiration date of the card higher than 6 and the year must be 2023 or higher.\n            Example: 07/2027.",
+    "Aditional information",
+    "For the card number you must enter a valid number, corresponding to the franchise sent in the request. You\n            can use an online card generator for testing purposes or use one of the cards available for your country\n            mentioned before.",
+    "To test cards in Chile, use the cardholder name, CVV and expiration date displayed in the example cards.",
+    "There are two dashboards to obtain PayU credentials. PayU Latam to obtain the administrative module\n            credentials and PayU Hub/PaymentsOS where Latam credentials are configured and users can follow-up payments:",
+    "Click",
+    "and then select",
+    "In this window, you find the",
+    "Public Key",
+    "and",
+    "which allows you to\n              authenticate your commerce during the integration procedure.",
+    "PayU Hub/PaymentsOS",
+    "Log in to",
+    "Navigate to",
+    "Accounts",
+    "and",
+    "Select your created",
+    "and get your",
+    "Public Key",
+    "and",
+    "Private\n                  Key",
+    "Click",
+    "and then select",
+    "and credentials:",
+    "Public Key",
+    "and",
+    "Private Key",
+    "PayU Hub/PaymentsOS",
+    "Login to the",
+    "and\n                open the Webhooks configuration page (Accounts > Webhooks).",
+    "Select the test or live relevant environment.",
+    "Enter an endpoint (the HTTPS URL), that Webhooks notifications should be sent to.",
+    "Select the events to track from the Payment Event Alerts list.",
+    "Select the business units to associate with the endpoint from the Associated Business Units list.",
+    "*Maximum Number of Webhooks: For each business unit in the live environment, you can configure maximum 10\n              webhooks per event. In the test environment, this is limited to 5 webhooks per event."
+  ],
+  "https://docs.y.uno/docs/payvalida-payment-link": [
+    "The Payvalida system does not support decimals. Therefore, you should not use decimals when defining the payment",
+    ". Otherwise, your payment may fail.",
+    "COP, CRC, GTQ, PEN, USD",
+    "Possibility to choose who will be responsible for financing installments",
+    "MasterCard",
+    "MasterCard",
+    "Production",
+    "Notification Secret",
+    "Production",
+    "Notification URL"
+  ],
+  "https://docs.y.uno/docs/payzen-pse": [
+    "1.500 COP",
+    "Login to the Payzen dashboard. In the menu navigate to",
+    "Select your store and go to the",
+    "Manage Rule",
+    "Notification URL"
+  ],
+  "https://docs.y.uno/docs/place-to-pay-cards": [
+    "Place to Pay - Cards",
+    "Possibility to choose who will be responsible for financing installments"
+  ],
+  "https://docs.y.uno/docs/rede-cards": [
+    "Possibility to choose who will be responsable for the financiation of installments",
+    "MasterCard",
+    "MasterCard",
+    "Sorocred",
+    "credit system",
+    "Mastercard (BIN 2)",
+    "Affiliation Number",
+    "Integration Key"
+  ],
+  "https://docs.y.uno/docs/safetypay-payment-link": [
+    "SafetyPay - Payment Link",
+    "country(transaction)",
+    "ARS, BOB, BRL, CLP, COP, CRC, DOP, USD, GTQ, HNL, MXN, PYG, PEN, UYU",
+    "Bank-active:",
+    "BCI: CLP 500.000",
+    "Cash-active: COP 0",
+    "Cash-active:",
+    "Bank-active: BRL 46.000",
+    "Cash-active: BRL 2.680",
+    "Bank-active: CLP 6.700.000",
+    "Cash-active: CLP 6.700.000",
+    "Bank-active: CRC 1.790.000",
+    "Cash-active: CRC 1.790.000",
+    "Bank-active: COP 32.000.000",
+    "Cash-active: COP 6.000.000",
+    "Bank-active: USD 10.000",
+    "Cash-active:",
+    "Cash-active: USD 500",
+    "Bank-active: GTQ 65.000",
+    "Cash-active:",
+    "Bank-active: MXN 190.000",
+    "Cash-active: NIO 17.500",
+    "Cash-active:",
+    "Bank-active: PEN 30.000",
+    "Cash-active: PEN 30.000 / PEN 1.080",
+    "Currency",
+    "Confirm",
+    "Crear Pago",
+    "SafetyPay DemoBank",
+    "Accounts",
+    "Generate New Credentials",
+    "Signature Key",
+    "Notification URL",
+    "Accounts",
+    "Notifications"
+  ]
+}
