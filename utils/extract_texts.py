@@ -13,12 +13,6 @@ def extract_text(html_content):
 def extract_english_text(html_content, url, file_path, ignore_path):
     soup = BeautifulSoup(html_content, "html.parser")
     ignore_data = read_json_file(ignore_path)
-    # ignore_misses = read_json_file(file_path)
-    # if not ignore_misses:
-    #     ignore_misses = {}
-    #     ignore_misses[url] = []
-    # if url not in ignore_misses.keys():
-    #     ignore_misses[url] = []
     translated_data = read_json_file(file_path)
     english_text = []
     for text in soup.stripped_strings:
