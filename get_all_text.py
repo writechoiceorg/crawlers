@@ -2,9 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from utils.extract_texts import extract_english_text
+from utils.extract_texts import extract_text
 from utils.json_handler import save_to_json
 from utils.error_handler import error_handler
+from crawler_yuno import handle_sidebar_links
 
 
 def handle_localize_widget(driver):
@@ -18,41 +19,24 @@ def handle_localize_widget(driver):
             .until(EC.presence_of_element_located((By.ID, "localize-active-lang")))
             .get_attribute("innerHTML")
         )
-        spanish_link = WebDriverWait(driver, 10).until(
+        english_link = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
-                (By.XPATH, '//a[contains(text(), "Español (América Latina)")]')
+                (By.XPATH, '//a[contains(text(), "English")]')
             )
         )
     except Exception:
         pass
 
-    if "Português (Brasil)" in active_lang:
-        spanish_link.click()
-    elif "Español (América Latina)" in active_lang:
-        portuguese_link = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located(
-                (By.XPATH, '//a[contains(text(), "Português (Brasil)")]')
-            )
-        )
-        portuguese_link.click()
-    else:
-        spanish_link.click()
+    if "English" not in active_lang:
+        english_link.click()
 
 
-def handle_sidebar_links(driver):
-    selector = ".Sidebar1t2G1ZJq-vU1 a"
-    sidebar_links = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, selector))
-    )
-    return [link.get_attribute("href") for link in sidebar_links]
-
-
-def interact_with_page(url, file_path, ignore_path, translated_path):
+def interact_with_page(url, file_path):
     try:
         driver = webdriver.Chrome()
         driver.get(url)
 
-        english_texts = {}
+        texts = {}
         links = handle_sidebar_links(driver)
         visited_links = []
 
@@ -75,16 +59,12 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
 
                 full_content = title + article_content
 
-                english = extract_english_text(
-                    full_content, link_url, translated_path, ignore_path
-                )
-
-                if english:
-                    english_texts[link_url] = english
+                if full_content:
+                    texts[link_url] = extract_text(full_content)
 
                 visited_links.append(link_url)
 
-                save_to_json(file_path, english_texts)
+                save_to_json(file_path, texts)
             except Exception as e:
                 error_handler("./yuno/errors.json", link_url)
                 print(f"Error occurred while processing {link_url}:\n {e}")
@@ -95,23 +75,19 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
         driver.quit()
 
 
-def run_yuno_scraper():
-    ignore_path = "./yuno/ignore.json"
-
-    translated_path = "./yuno/translated/guides.json"
+def run_page_text_reader():
     base_url = "https://docs.y.uno/docs/overview"
-    json_file_path = "./yuno/guides_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    json_file_path = "./yuno/translated/guides.json"
+    interact_with_page(base_url, json_file_path)
 
     print(f"Missing guides translations saved to {json_file_path}")
 
-    translated_path = "./yuno/translated/apiref.json"
     base_url = "https://docs.y.uno/reference/introduction"
-    json_file_path = "./yuno/apiref_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    json_file_path = "./yuno/translated/apiref.json"
+    interact_with_page(base_url, json_file_path)
 
     print(f"Missing API ref translations saved to {json_file_path}")
 
 
 if __name__ == "__main__":
-    run_yuno_scraper()
+    run_page_text_reader()

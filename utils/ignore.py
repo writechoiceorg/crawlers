@@ -1,4 +1,8 @@
-def ignore_cases(text, ignore_misses, ignore_data):
+def check_if_translated(text, data):
+    return True if text in data else False
+
+
+def ignore_cases(text, ignore_data):
     try:
         int(text)
         return True
@@ -7,14 +11,12 @@ def ignore_cases(text, ignore_misses, ignore_data):
 
     if (
         text in ignore_data
-        or text in ignore_misses
         or text.startswith(
             (
                 "https://",
                 "http://",
                 "Exemplo:",
                 "Ejemplo:",
-                "Yuno has already integrated multiple processors",
                 "* ",
                 "//",
             )
