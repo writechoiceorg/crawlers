@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from utils.extract_texts import extract_text
 from utils.json_handler import save_to_json
 from utils.error_handler import error_handler
-from crawler_yuno import handle_sidebar_links
+from yuno_crawler import handle_sidebar_links
 
 
 def handle_localize_widget(driver):
@@ -66,7 +66,7 @@ def interact_with_page(url, file_path):
 
                 save_to_json(file_path, texts)
             except Exception as e:
-                error_handler("./yuno/errors.json", link_url)
+                error_handler("./yuno/translated/errors.json", link_url)
                 print(f"Error occurred while processing {link_url}:\n {e}")
                 pass
     except Exception as err:
@@ -80,13 +80,13 @@ def run_page_text_reader():
     json_file_path = "./yuno/translated/guides.json"
     interact_with_page(base_url, json_file_path)
 
-    print(f"Missing guides translations saved to {json_file_path}")
+    print(f"Guides translations saved to {json_file_path}")
 
     base_url = "https://docs.y.uno/reference/introduction"
     json_file_path = "./yuno/translated/apiref.json"
     interact_with_page(base_url, json_file_path)
 
-    print(f"Missing API ref translations saved to {json_file_path}")
+    print(f"API ref translations saved to {json_file_path}")
 
 
 if __name__ == "__main__":
