@@ -1,6 +1,14 @@
 [
   "https://docs.y.uno/docs/choose-the-right-integration-for-you",
-  "https://docs.y.uno/docs/choose-the-right-integration-for-you",
   "https://docs.y.uno/docs/lite-sdk-merchant-initiated-transactions",
-  "https://docs.y.uno/docs/lite-sdk-complementary-features"
+  "https://docs.y.uno/docs/lite-sdk-complementary-features",
+  "https://docs.y.uno/docs/choose-the-right-integration-for-you",
+  "https://docs.y.uno/docs/audit-logs",
+  "https://docs.y.uno/docs/secure-fields-merchant-initiated-transactions",
+  "https://docs.y.uno/docs/secure-fields-complementary-features",
+  "https://docs.y.uno/docs/izipay",
+  "https://docs.y.uno/docs/niubiz",
+  "https://docs.y.uno/docs/riskified",
+  "https://docs.y.uno/reference/api-environments",
+  "https://docs.y.uno/reference/response-codes"
 ]
