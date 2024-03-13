@@ -87,12 +87,12 @@ def run_pagbank_crawler():
 
     print(f"Missing translations saved to {json_file_path}")
 
-    # base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
-    # translated_path = "./pagbank/translated/apiref.json"
-    # json_file_path = "./pagbank/apiref_missing_translation.json"
-    # interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
+    translated_path = "./pagbank/translated/apiref.json"
+    json_file_path = "./pagbank/apiref_missing_translation.json"
+    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
 
-    # print(f"Missing translations saved to {json_file_path}")
+    print(f"Missing translations saved to {json_file_path}")
 
 
 if __name__ == "__main__":

@@ -17,6 +17,7 @@ def ignore_cases(text, ignore_data):
                 "http://",
                 "Exemplo:",
                 "Ejemplo:",
+                "Example:",
                 "* ",
                 "//",
             )
