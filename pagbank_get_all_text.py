@@ -81,7 +81,7 @@ def run_page_text_reader():
     print(f"Guides translations saved to {json_file_path}")
 
     base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
-    json_file_path = "./yuno/translated/apiref.json"
+    json_file_path = "./pagbank/translated/apiref.json"
     interact_with_page(base_url, json_file_path)
 
     print(f"API ref translations saved to {json_file_path}")
