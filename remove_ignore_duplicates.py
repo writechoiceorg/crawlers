@@ -10,5 +10,5 @@ def remove_duplicates(path):
 
 
 if __name__ == "__main__":
-    path = "./yuno/ignore.json"
+    path = "duplicates_base.json"
     remove_duplicates(path)
