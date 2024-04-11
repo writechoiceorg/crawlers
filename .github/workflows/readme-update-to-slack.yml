@@ -29,4 +29,4 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          python send_slack_notification.py "${{ steps.changed_content.outputs.content }}" "${{ steps.commit_author.outputs.author }}" "${{ github.repository }}"
+          python send_slack_notification.py "${{ steps.changed_content.outputs }}" "${{ steps.commit_author.outputs.author }}" "${{ github.repository }}"
