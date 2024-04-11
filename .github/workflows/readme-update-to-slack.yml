@@ -33,6 +33,5 @@ jobs:
           curl -X POST -H 'Content-type: application/json' --data '{
             "Message": "${{ steps.commit_comparison_url.outputs.comparison_url }}",
             "Assignee": "U05GG8NJF7U",
-            "AssigneeName": "cassiano@writechoice.io",
             "Origin_Repo": "'"${{ github.repository }}"'"
           }' "${{ secrets.SLACK_WEBHOOK_URL }}"
