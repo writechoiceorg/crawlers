@@ -21,6 +21,8 @@ It will save all phrases without translation in a JSON file, with the URL as the
 }
 ```
 
+It updates README.md
+
 ### Ignoring strings
 
 To ignore strings from pages, add it to the `ignore.json` file.
