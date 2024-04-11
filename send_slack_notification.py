@@ -4,7 +4,7 @@ import sys
 
 
 def send_slack_notification(message, assignee, origin_repo):
-    webhook_url = os.environ.get("SLACK_WEBHOOK_URL")
+    webhook_url = "https://hooks.slack.com/triggers/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"
     print(webhook_url)
     if webhook_url is None:
         print("SLACK_WEBHOOK_URL environment variable is not set.")
