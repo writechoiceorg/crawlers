@@ -27,7 +27,7 @@ jobs:
 
       - name: Send Slack notification
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{ "Message": "'"${{ steps.changed_content.outputs.content }}"'", "Assignee": "'"${{ steps.commit_author.outputs.author }}"'", "Origin_Repo": "'"${{ github.repository }}"'" }' "${{ secrets.SLACK_WEBHOOK_URL }}"
+          curl -X POST -H 'Content-type: application/json' --data '{ "Message": "'"${{ steps.changed_content.outputs.content }}"'", "Assignee": "U02QWCKQNEB", "Origin_Repo": "'"${{ github.repository }}"'" }' "${{ secrets.SLACK_WEBHOOK_URL }}"
 
       # - name: Run Python script
       #   env:
