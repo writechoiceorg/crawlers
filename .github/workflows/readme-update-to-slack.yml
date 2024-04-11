@@ -35,8 +35,3 @@ jobs:
             "Assignee": "U05GG8NJF7U",
             "Origin_Repo": "'"${{ github.repository }}"'"
           }' "${{ secrets.SLACK_WEBHOOK_URL }}"
-      # - name: Run Python script
-      #   env:
-      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      #   run: |
-      #     python send_slack_notification.py "${{ steps.changed_content.outputs }}" "${{ steps.commit_author.outputs.author }}" "${{ github.repository }}"
