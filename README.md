@@ -21,7 +21,8 @@ It will save all phrases without translation in a JSON file, with the URL as the
 }
 ```
 
-It updates README.md FINAL
+It updates README.md
+
 
 ### Ignoring strings
 
