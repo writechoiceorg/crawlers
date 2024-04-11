@@ -14,7 +14,7 @@ def send_slack_notification(message, assignee, origin_repo):
     if response.status_code == 200:
         print("Notification sent successfully.")
     else:
-        print(f"Failed to send notification. Status code: {response.status_code}")
+        print(f"Failed to send notification. Response: {response}")
 
 
 if __name__ == "__main__":
