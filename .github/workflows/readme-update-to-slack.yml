@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Get commit author
         id: commit_author
         run: echo "::set-output name=author::$(git log -1 --pretty=format:'%an')"
@@ -20,12 +20,8 @@ jobs:
         id: changed_content
         run: echo "::set-output name=content::$(git diff HEAD^ README.md | tail -n +5)"
 
-      - name: Send notification to Slack
+      - name: Run Python script
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{
-            "Message": "The changed content from the file",
-            "Assignee": "The user that made the update",
-            "Origin_Repo": "The name of the repository"
-          }' $SLACK_WEBHOOK_URL
+          python send_slack_notification.py "${{ steps.changed_content.outputs.content }}" "${{ steps.commit_author.outputs.author }}" "${{ github.repository }}" "${{ secrets.SLACK_WEBHOOK_URL }}"
