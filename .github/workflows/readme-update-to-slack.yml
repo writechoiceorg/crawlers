@@ -16,19 +16,25 @@ jobs:
         id: commit_author
         run: echo "author=$(git log -1 --pretty=format:'%an')" >> $GITHUB_OUTPUT
 
-      - name: Get changed content
-        id: changed_content
+      - name: Get last commit
+        id: last_commit
+        run: echo "::set-output name=commit_sha::$(git rev-parse HEAD)"
+
+      - name: Generate commit comparison URL
+        id: commit_comparison_url
         run: |
-          if git show HEAD:README.md &>/dev/null; then
-            git show HEAD:README.md
-          else
-            echo ""
-          fi
+          repo_name="${{ github.repository }}"
+          last_commit="${{ steps.last_commit.outputs.commit_sha }}"
+          echo "https://github.com/${repo_name}/compare/${last_commit}...HEAD"
+          echo "::set-output name=comparison_url::https://github.com/${repo_name}/compare/${last_commit}...HEAD"
 
       - name: Send Slack notification
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{ "Message": "'"${{ steps.changed_content.outputs.content }}"'", "Assignee": "U02QWCKQNEB", "Origin_Repo": "'"${{ github.repository }}"'" }' "${{ secrets.SLACK_WEBHOOK_URL }}"
-
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "Message": "Changes in README.md: ${{ steps.commit_comparison_url.outputs.comparison_url }}",
+            "Assignee": "'"${{ steps.commit_author.outputs.author }}"'",
+            "Origin_Repo": "'"${{ github.repository }}"'"
+          }' "${{ secrets.SLACK_WEBHOOK_URL }}"
       # - name: Run Python script
       #   env:
       #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
