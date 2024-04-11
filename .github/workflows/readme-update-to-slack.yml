@@ -25,7 +25,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{
-            "Message": "'"${{ steps.changed_content.outputs.content }}"'",
-            "Assignee": "'"${{ steps.commit_author.outputs.author }}"'",
-            "Origin_Repo": "'"${{ github.repository }}"'"
+            "Message": "The changed content from the file",
+            "Assignee": "The user that made the update",
+            "Origin_Repo": "The name of the repository"
           }' $SLACK_WEBHOOK_URL
