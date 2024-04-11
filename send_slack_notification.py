@@ -3,7 +3,9 @@ import sys
 
 
 def send_slack_notification(message, assignee, origin_repo, webhook_url):
+    print(assignee)
     data = {"Message": message, "Assignee": assignee, "Origin_Repo": origin_repo}
+    print(data)
     response = requests.post(webhook_url, json=data)
     if response.status_code == 200:
         print("Notification sent successfully.")
