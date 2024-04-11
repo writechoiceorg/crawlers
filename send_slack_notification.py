@@ -5,10 +5,11 @@ import sys
 
 def send_slack_notification(message, assignee, origin_repo):
     webhook_url = os.environ.get("SLACK_WEBHOOK_URL")
+    print(webhook_url)
     if webhook_url is None:
         print("SLACK_WEBHOOK_URL environment variable is not set.")
         sys.exit(1)
-    data = {"Message": "message", "Assignee": "assignee", "Origin_Repo": "origin_repo"}
+    data = {"Message": message, "Assignee": assignee, "Origin_Repo": origin_repo}
     print(data)
     headers = {"Content-type": "application/json"}
     response = requests.post(webhook_url, json=data, headers=headers)
