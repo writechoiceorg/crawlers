@@ -1,0 +1,31 @@
+name: Notify on README.md update
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  notify_on_readme_update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Get commit author
+        id: commit_author
+        run: echo "::set-output name=author::$(git log -1 --pretty=format:'%an')"
+
+      - name: Get changed content
+        id: changed_content
+        run: echo "::set-output name=content::$(git diff HEAD^ README.md | tail -n +5)"
+
+      - name: Send notification to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "Message": "'"${{ steps.changed_content.outputs.content }}"'",
+            "Assignee": "'"${{ steps.commit_author.outputs.author }}"'",
+            "Origin_Repo": "'"${{ github.repository }}"'"
+          }' $SLACK_WEBHOOK_URL
