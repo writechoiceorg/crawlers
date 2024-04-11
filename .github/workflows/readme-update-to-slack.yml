@@ -18,7 +18,12 @@ jobs:
 
       - name: Get changed content
         id: changed_content
-        run: echo "::set-output name=content::$(git diff HEAD^ README.md | tail -n +5)"
+        run: |
+          if git show HEAD:README.md &>/dev/null; then
+            git show HEAD:README.md
+          else
+            echo ""
+          fi
 
       - name: Run Python script
         env:
