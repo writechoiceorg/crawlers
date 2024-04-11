@@ -31,7 +31,7 @@ jobs:
       - name: Send Slack notification
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{
-            "Message": "Changes in README.md: ${{ steps.commit_comparison_url.outputs.comparison_url }}",
+            "Message": "${{ steps.commit_comparison_url.outputs.comparison_url }}",
             "Assignee": "U05GG8NJF7U",
             "Origin_Repo": "'"${{ github.repository }}"'"
           }' "${{ secrets.SLACK_WEBHOOK_URL }}"
