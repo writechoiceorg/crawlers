@@ -8,15 +8,13 @@ def send_slack_notification(message, assignee, origin_repo):
     if webhook_url is None:
         print("SLACK_WEBHOOK_URL environment variable is not set.")
         sys.exit(1)
-    data = {"Message": message, "Assignee": assignee, "Origin_Repo": origin_repo}
+    data = {"Message": "message", "Assignee": "assignee", "Origin_Repo": "origin_repo"}
     print(data)
     headers = {"Content-type": "application/json"}
     response = requests.post(webhook_url, json=data, headers=headers)
-    if response.status_code == 200:
-        print("Notification sent successfully.")
-    else:
-        print(f"Failed to send notification. Status code: {response.status_code}")
-        print("Response content:", response.content.decode("utf-8"))
+
+    print(f"Status code: {response.status_code}")
+    print("Response content:", response.content.decode("utf-8"))
 
 
 if __name__ == "__main__":
