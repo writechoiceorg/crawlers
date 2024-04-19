@@ -1,1 +1,10 @@
-[]
+[
+  "https://docs.y.uno/docs/complementary-features-full-sdk",
+  "https://docs.y.uno/docs/headless-sdk-payment-android",
+  "https://docs.y.uno/docs/headless-sdk-enrollment-android",
+  "https://docs.y.uno/docs/headless-sdk-payment-ios",
+  "https://docs.y.uno/docs/headless-sdk-enrollment-ios",
+  "https://docs.y.uno/docs/transaction-retries",
+  "https://docs.y.uno/docs/getnet",
+  "https://docs.y.uno/docs/transfeera"
+]
