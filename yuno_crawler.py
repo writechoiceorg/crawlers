@@ -59,7 +59,7 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
         for link_url in links:
             if link_url in visited_links:
                 continue
-            if link_url == "https://docs.y.uno/docs/algeria":
+            if link_url == "https://docs.y.uno/docs/algeria-connections":
                 break
             try:
                 driver.get(link_url)
