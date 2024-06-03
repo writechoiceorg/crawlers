@@ -30,7 +30,7 @@ def yuno_choices():
         print("------------------------------------------")
         print("Do you want to:")
         print("------------------------------------------")
-        print("1. Run crawler")
+        print("1. Run bot")
         print("2. Update translated content")
         print("3. Go back")
         print("------------------------------------------")
@@ -55,7 +55,7 @@ def yuno_choices():
 def pagbank_choices():
     while True:
         print("Do you want to:")
-        print("1. Run crawler")
+        print("1. Run bot")
         print("2. Update translated content")
         print("3. Go back")
         print("------------------------------------------")
