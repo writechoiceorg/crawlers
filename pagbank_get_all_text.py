@@ -73,19 +73,19 @@ def interact_with_page(url, file_path):
         driver.quit()
 
 
-def run_page_text_reader():
+def run_pagbank_text_reader():
     base_url = "https://dev.pagbank.uol.com.br/docs/o-pagbank"
-    json_file_path = "./pagbank/translated/guides.json"
+    json_file_path = "./_internal/pagbank/translated/guides.json"
     interact_with_page(base_url, json_file_path)
 
     print(f"Guides translations saved to {json_file_path}")
 
     base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
-    json_file_path = "./pagbank/translated/apiref.json"
+    json_file_path = "./_internal/pagbank/translated/apiref.json"
     interact_with_page(base_url, json_file_path)
 
     print(f"API ref translations saved to {json_file_path}")
 
 
 if __name__ == "__main__":
-    run_page_text_reader()
+    run_pagbank_text_reader()

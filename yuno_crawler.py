@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.extract_texts import extract_english_text
 from utils.json_handler import save_to_json
-from utils.error_handler import error_handler
 
 
 def handle_localize_widget(driver):
@@ -47,7 +46,7 @@ def handle_sidebar_links(driver):
     return [link.get_attribute("href") for link in sidebar_links]
 
 
-def interact_with_page(url, file_path, ignore_path, translated_path):
+def yuno_crawler(url, file_path, ignore_path, translated_path):
     try:
         driver = webdriver.Chrome()
         driver.get(url)
@@ -55,6 +54,7 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
         english_texts = {}
         links = handle_sidebar_links(driver)
         visited_links = []
+        errors = []
 
         for link_url in links:
             if link_url in visited_links:
@@ -86,29 +86,37 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
 
                 save_to_json(file_path, english_texts)
             except Exception as e:
-                error_handler("./yuno/errors.json", link_url)
+                # error_handler("./yuno/errors.json", link_url)
+                errors.append(link_url)
                 print(f"Error occurred while processing {link_url}:\n {e}")
                 pass
     except Exception as err:
         print(f"Something went wrong at: {link_url}\n {err}")
     finally:
         driver.quit()
+    return errors
 
 
 def run_yuno_scraper():
-    ignore_path = "./yuno/ignore.json"
+    ignore_path = "./_internal/yuno/ignore.json"
 
-    translated_path = "./yuno/translated/guides.json"
+    translated_path = "./_internal/yuno/translated/guides.json"
     base_url = "https://docs.y.uno/docs/overview"
-    json_file_path = "./yuno/guides_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    json_file_path = "./yuno_guides_missing_translation.json"
+    errors = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
+
+    if errors:
+        save_to_json("./yuno_guides_errors.json", errors)
 
     print(f"Missing guides translations saved to {json_file_path}")
 
-    translated_path = "./yuno/translated/apiref.json"
+    translated_path = "./_internal/yuno/translated/apiref.json"
     base_url = "https://docs.y.uno/reference/introduction"
-    json_file_path = "./yuno/apiref_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    json_file_path = "./yuno_apiref_missing_translation.json"
+    errors = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
+
+    if errors:
+        save_to_json("./yuno_apiref_errors.json", errors)
 
     print(f"Missing API ref translations saved to {json_file_path}")
 

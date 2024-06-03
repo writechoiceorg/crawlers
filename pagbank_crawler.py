@@ -30,7 +30,7 @@ def handle_sidebar_links(driver):
     return [link.get_attribute("href") for link in sidebar_links]
 
 
-def interact_with_page(url, file_path, ignore_path, translated_path):
+def pagbank_crawler(url, file_path, ignore_path, translated_path):
     try:
         driver = webdriver.Chrome()
         driver.get(url)
@@ -78,19 +78,19 @@ def interact_with_page(url, file_path, ignore_path, translated_path):
 
 
 def run_pagbank_crawler():
-    ignore_path = "./pagbank/ignore.json"
+    ignore_path = "./_internal/pagbank/ignore.json"
 
     base_url = "https://dev.pagbank.uol.com.br/docs/o-pagbank"
-    translated_path = "./pagbank/translated/guides.json"
-    json_file_path = "./pagbank/guides_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    translated_path = "./_internal/pagbank/translated/guides.json"
+    json_file_path = "./pagbank_guides_missing_translation.json"
+    pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)
 
     print(f"Missing translations saved to {json_file_path}")
 
     base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
-    translated_path = "./pagbank/translated/apiref.json"
-    json_file_path = "./pagbank/apiref_missing_translation.json"
-    interact_with_page(base_url, json_file_path, ignore_path, translated_path)
+    translated_path = "./_internal/pagbank/translated/apiref.json"
+    json_file_path = "./pagbank_apiref_missing_translation.json"
+    pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)
 
     print(f"Missing translations saved to {json_file_path}")
 
