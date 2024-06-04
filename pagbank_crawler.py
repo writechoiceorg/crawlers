@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.extract_texts import extract_non_english_text
 from utils.json_handler import save_to_json
-from utils.error_handler import error_handler
 
 
 def handle_localize_widget(driver):
@@ -38,6 +37,7 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
         non_english_texts = {}
         links = handle_sidebar_links(driver)
         visited_links = []
+        errors = []
 
         for link_url in links:
             if link_url in visited_links:
@@ -66,15 +66,15 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
                 visited_links.append(link_url)
 
                 save_to_json(file_path, non_english_texts)
-            except Exception as e:
-                error_handler("./pagbank/errors.json", link_url)
-                print(f"Error occurred while processing {link_url}:\n {e}")
+            except Exception:
+                errors.append(link_url)
+                print(f"Error occurred while processing {link_url}")
                 pass
-        return non_english_texts
-    except Exception as e:
-        print(f"Error occurred while processing {link_url}:\n {e}")
+    except Exception:
+        print(f"Error occurred while processing {link_url}")
     finally:
         driver.quit()
+    return errors
 
 
 def run_pagbank_crawler():
@@ -83,16 +83,24 @@ def run_pagbank_crawler():
     base_url = "https://dev.pagbank.uol.com.br/docs/o-pagbank"
     translated_path = "./_internal/pagbank/translated/guides.json"
     json_file_path = "./pagbank_guides_missing_translation.json"
-    pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)
+    errors_guides = pagbank_crawler(
+        base_url, json_file_path, ignore_path, translated_path
+    )
 
-    print(f"Missing translations saved to {json_file_path}")
+    if errors_guides:
+        save_to_json("./pagbank_guides_errors.json", errors_guides)
+
+    print(f"Missing guides translations saved at {json_file_path}")
 
     base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
     translated_path = "./_internal/pagbank/translated/apiref.json"
     json_file_path = "./pagbank_apiref_missing_translation.json"
-    pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)
+    errors_api = pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)
 
-    print(f"Missing translations saved to {json_file_path}")
+    if errors_api:
+        save_to_json("./pagbank_apiref_errors.json", errors_api)
+
+    print(f"Missing API ref translations saved at {json_file_path}")
 
 
 if __name__ == "__main__":

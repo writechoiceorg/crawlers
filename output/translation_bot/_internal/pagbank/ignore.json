@@ -2583,5 +2583,19 @@
   "}}",
   "}},",
   "}}}},",
-  "• Invalid data (code:"
+  "• Invalid data (code:",
+  "Ex: ftp:/teste.com",
+  "account_inactive_origin",
+  "invalid_tax_id",
+  "instrument.pix.tax_id",
+  "invalid_tax_id",
+  "transfer_invalid_ispb",
+  "transfer_invalid_ispb",
+  "transfer_permission",
+  "transfer_pix_cnpj_invalid",
+  "transfer_pix_error_creditor",
+  "instrument.pix.key",
+  "Pix key value is invalid.",
+  "transfer_required_object_pix",
+  "instrument.pix"
 ]

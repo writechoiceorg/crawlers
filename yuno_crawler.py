@@ -85,13 +85,12 @@ def yuno_crawler(url, file_path, ignore_path, translated_path):
                 visited_links.append(link_url)
 
                 save_to_json(file_path, english_texts)
-            except Exception as e:
-                # error_handler("./yuno/errors.json", link_url)
+            except Exception:
                 errors.append(link_url)
-                print(f"Error occurred while processing {link_url}:\n {e}")
+                print(f"Error occurred while processing {link_url}")
                 pass
-    except Exception as err:
-        print(f"Something went wrong at: {link_url}\n {err}")
+    except Exception:
+        print(f"Something went wrong at: {link_url}")
     finally:
         driver.quit()
     return errors
@@ -103,22 +102,22 @@ def run_yuno_scraper():
     translated_path = "./_internal/yuno/translated/guides.json"
     base_url = "https://docs.y.uno/docs/overview"
     json_file_path = "./yuno_guides_missing_translation.json"
-    errors = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
+    errors_guides = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
 
-    if errors:
-        save_to_json("./yuno_guides_errors.json", errors)
+    if errors_guides:
+        save_to_json("./yuno_guides_errors.json", errors_guides)
 
-    print(f"Missing guides translations saved to {json_file_path}")
+    print(f"Missing guides translations saved at {json_file_path}")
 
     translated_path = "./_internal/yuno/translated/apiref.json"
     base_url = "https://docs.y.uno/reference/introduction"
     json_file_path = "./yuno_apiref_missing_translation.json"
-    errors = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
+    errors_api = yuno_crawler(base_url, json_file_path, ignore_path, translated_path)
 
-    if errors:
-        save_to_json("./yuno_apiref_errors.json", errors)
+    if errors_api:
+        save_to_json("./yuno_apiref_errors.json", errors_api)
 
-    print(f"Missing API ref translations saved to {json_file_path}")
+    print(f"Missing API ref translations saved at {json_file_path}")
 
 
 if __name__ == "__main__":
