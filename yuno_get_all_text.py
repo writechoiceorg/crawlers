@@ -90,4 +90,5 @@ def run_page_text_reader():
 
 
 if __name__ == "__main__":
+
     run_page_text_reader()
