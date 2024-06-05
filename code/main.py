@@ -1,105 +1,202 @@
+import tkinter as tk
+import requests
+from tkinter import messagebox, simpledialog
 from pagbank_crawler import run_pagbank_crawler
 from yuno_crawler import run_yuno_scraper
 from pagbank_get_all_text import run_pagbank_text_reader
 from yuno_get_all_text import run_yuno_text_reader
-from time import sleep
+
+CURRENT_VERSION = "1.0.0"
+GITHUB_REPO = "writechoiceorg/crawlers"
 
 
 def password_check():
-    password = input("Enter password: ")
+    password = simpledialog.askstring("Password", "Enter password:", show="*")
     is_correct = password == "123456"
     tries = 3
-    while not is_correct:
-        sleep(0.5)
-        password = input(f"Wrong password... Try again({tries}): ")
-        is_correct = password == "123456"
+    while not is_correct and tries > 0:
         tries -= 1
-        if tries == 0:
-            break
+        password = simpledialog.askstring(
+            "Password", f"Wrong password... Try again({tries}):", show="*"
+        )
+        is_correct = password == "123456"
     return is_correct
 
 
 def invalid_choice():
-    print("------------------------------------------")
-    print("Invalid choice. Please enter 1, 2, or 3.")
-    sleep(1)
+    messagebox.showerror("Invalid Choice", "Invalid choice. Please enter 1, 2, or 3.")
 
 
-def yuno_choices():
-    while True:
-        print("------------------------------------------")
-        print("Do you want to:")
-        print("------------------------------------------")
-        print("1. Run bot")
-        print("2. Update translated content")
-        print("3. Go back")
-        print("------------------------------------------")
+def run_yuno_bot():
+    run_yuno_scraper()
+    messagebox.showinfo("Info", "Yuno bot run successfully")
 
-        yuno_choice = input("Enter the number of your choice: ")
-        sleep(0.5)
 
-        if yuno_choice == "1":
-            run_yuno_scraper()
-        elif yuno_choice == "2":
-            correct_password = password_check()
-            if correct_password:
-                run_yuno_text_reader()
-            else:
-                break
-        elif yuno_choice == "3":
-            break
+def update_yuno_content():
+    correct_password = password_check()
+    if correct_password:
+        run_yuno_text_reader()
+        messagebox.showinfo("Info", "Yuno content updated successfully")
+
+
+def run_pagbank_bot():
+    run_pagbank_crawler()
+    messagebox.showinfo("Info", "Pagbank bot run successfully")
+
+
+def update_pagbank_content():
+    correct_password = password_check()
+    if correct_password:
+        run_pagbank_text_reader()
+        messagebox.showinfo("Info", "Pagbank content updated successfully")
+
+
+def check_for_updates():
+    try:
+        response = requests.get(
+            f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
+        )
+        response.raise_for_status()
+        latest_version = response.json()["tag_name"]
+        if latest_version != CURRENT_VERSION:
+            messagebox.showinfo(
+                "Update Available",
+                f"A new version {latest_version} is available. Please update.",
+            )
         else:
-            invalid_choice()
+            messagebox.showinfo(
+                "No Update Available", "You are using the latest version."
+            )
+    except requests.RequestException as e:
+        messagebox.showerror("Update Check Failed", f"Failed to check for updates: {e}")
 
 
-def pagbank_choices():
-    while True:
-        print("Do you want to:")
-        print("1. Run bot")
-        print("2. Update translated content")
-        print("3. Go back")
-        print("------------------------------------------")
+def create_main_window():
+    root = tk.Tk()
+    root.title("Service Selector")
 
-        pagbank_choice = input("Enter the number of your choice: ")
+    # Set minimum size for the window
+    root.wm_minsize(400, 300)
 
-        if pagbank_choice == "1":
-            run_pagbank_crawler()
-        elif pagbank_choice == "2":
-            correct_password = password_check()
-            if correct_password:
-                run_pagbank_text_reader()
-        elif pagbank_choice == "3":
-            break
-        else:
-            invalid_choice()
+    # Set styles
+    bg_color = "#f0f0f0"
+    button_color = "#4CAF50"
+    button_fg_color = "#ffffff"
+    font = ("Helvetica", 12)
 
+    root.configure(bg=bg_color)
 
-def main():
-    while True:
-        print("------------------------------------------")
-        print("Which service do you want to work with?")
-        print("------------------------------------------")
-        print("1. Yuno")
-        print("2. Pagbank")
-        print("3. Exit")
-        print("------------------------------------------")
+    def yuno_choices():
+        tk.Label(
+            content_frame,
+            text="Yuno Choices",
+            font=("Helvetica", 16, "bold"),
+            bg=bg_color,
+        ).pack(pady=10)
+        tk.Button(
+            content_frame,
+            text="Run Yuno bot",
+            command=run_yuno_bot,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Update Yuno translated content",
+            command=update_yuno_content,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame, text="Go back", command=lambda: show_main_options()
+        ).pack(pady=5)
 
-        service_choice = input("Enter the number of your choice: ")
-        sleep(0.5)
+    def pagbank_choices():
+        tk.Label(
+            content_frame,
+            text="Pagbank Choices",
+            font=("Helvetica", 16, "bold"),
+            bg=bg_color,
+        ).pack(pady=10)
+        tk.Button(
+            content_frame,
+            text="Run Pagbank bot",
+            command=run_pagbank_bot,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Update Pagbank translated content",
+            command=update_pagbank_content,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame, text="Go back", command=lambda: show_main_options()
+        ).pack(pady=5)
 
-        if service_choice == "1":
-            yuno_choices()
+    def show_main_options():
+        for widget in content_frame.winfo_children():
+            widget.destroy()
+        tk.Button(
+            content_frame,
+            text="Yuno",
+            command=yuno_choices,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+            width=20,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Pagbank",
+            command=pagbank_choices,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+            width=20,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Check for Updates",
+            command=check_for_updates,
+            bg="#2196F3",
+            fg=button_fg_color,
+            font=font,
+            width=20,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Exit",
+            command=root.quit,
+            bg="#f44336",
+            fg=button_fg_color,
+            font=font,
+            width=20,
+        ).pack(pady=5)
 
-        elif service_choice == "2":
-            pagbank_choices()
+    header_frame = tk.Frame(root, bg=bg_color)
+    header_frame.pack(pady=10)
 
-        elif service_choice == "3":
-            print("Exiting...")
-            sleep(2)
-            break
-        else:
-            invalid_choice()
+    tk.Label(
+        header_frame,
+        text="Translation BOT",
+        font=("Helvetica", 18, "bold"),
+        bg=bg_color,
+    ).pack()
+
+    content_frame = tk.Frame(root, bg=bg_color)
+    content_frame.pack(pady=10)
+
+    show_main_options()
+
+    root.mainloop()
 
 
 if __name__ == "__main__":
-    main()
+    create_main_window()

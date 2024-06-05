@@ -56,7 +56,7 @@ def yuno_crawler(url, file_path, ignore_path, translated_path):
         visited_links = []
         errors = []
 
-        for link_url in links:
+        for link_url in links[:1]:
             if link_url in visited_links:
                 continue
             if link_url == "https://docs.y.uno/docs/algeria-connections":
