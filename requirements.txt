@@ -1,5 +1,0 @@
-beautifulsoup4==4.10.0
-langid==1.1.6
-langdetect
-selenium==3.141.0
-chromedriver_autoinstaller==0.2.2
