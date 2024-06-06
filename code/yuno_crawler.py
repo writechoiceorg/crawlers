@@ -56,7 +56,7 @@ def yuno_crawler(url, file_path, ignore_path, translated_path):
         visited_links = []
         errors = []
 
-        for link_url in links[:1]:
+        for link_url in links:
             if link_url in visited_links:
                 continue
             if link_url == "https://docs.y.uno/docs/algeria-connections":
@@ -96,7 +96,7 @@ def yuno_crawler(url, file_path, ignore_path, translated_path):
     return errors
 
 
-def run_yuno_scraper():
+def run_yuno_guides():
     ignore_path = "./_internal/yuno/ignore.json"
 
     translated_path = "./_internal/yuno/translated/guides.json"
@@ -109,6 +109,10 @@ def run_yuno_scraper():
 
     print(f"Missing guides translations saved at {json_file_path}")
 
+
+def run_yuno_apiref():
+    ignore_path = "./_internal/yuno/ignore.json"
+
     translated_path = "./_internal/yuno/translated/apiref.json"
     base_url = "https://docs.y.uno/reference/introduction"
     json_file_path = "./yuno_apiref_missing_translation.json"
@@ -118,7 +122,3 @@ def run_yuno_scraper():
         save_to_json("./yuno_apiref_errors.json", errors_api)
 
     print(f"Missing API ref translations saved at {json_file_path}")
-
-
-if __name__ == "__main__":
-    run_yuno_scraper()

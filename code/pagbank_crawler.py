@@ -77,7 +77,7 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
     return errors
 
 
-def run_pagbank_crawler():
+def run_pagbank_guides():
     ignore_path = "./_internal/pagbank/ignore.json"
 
     base_url = "https://dev.pagbank.uol.com.br/docs/o-pagbank"
@@ -92,6 +92,10 @@ def run_pagbank_crawler():
 
     print(f"Missing guides translations saved at {json_file_path}")
 
+
+def run_pagbank_apiref():
+    ignore_path = "./_internal/pagbank/ignore.json"
+
     base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
     translated_path = "./_internal/pagbank/translated/apiref.json"
     json_file_path = "./pagbank_apiref_missing_translation.json"
@@ -101,7 +105,3 @@ def run_pagbank_crawler():
         save_to_json("./pagbank_apiref_errors.json", errors_api)
 
     print(f"Missing API ref translations saved at {json_file_path}")
-
-
-if __name__ == "__main__":
-    run_pagbank_crawler()
