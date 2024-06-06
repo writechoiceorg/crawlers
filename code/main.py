@@ -1,13 +1,63 @@
 import tkinter as tk
-import requests
 from tkinter import messagebox, simpledialog
+import requests
+import os
+import zipfile
+import io
+import shutil
+import sys
+import subprocess
 from pagbank_crawler import run_pagbank_crawler
 from yuno_crawler import run_yuno_scraper
 from pagbank_get_all_text import run_pagbank_text_reader
 from yuno_get_all_text import run_yuno_text_reader
+from time import sleep
 
-CURRENT_VERSION = "1.0.0"
-GITHUB_REPO = "writechoiceorg/crawlers"
+GITHUB_REPO = "writechoiceorg/bot"
+CURRENT_VERSION = "v1.0.7"
+
+
+def check_for_updates():
+    try:
+        response = requests.get(
+            f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
+        )
+        response.raise_for_status()
+        latest_version = response.json()["tag_name"]
+        if latest_version != CURRENT_VERSION:
+            if messagebox.askyesno(
+                "Update Available",
+                f"A new version {latest_version} is available. Do you want to update?",
+            ):
+                download_url = response.json()["zipball_url"]
+                download_update(download_url)
+        else:
+            messagebox.showinfo(
+                "No Update Available", "You are using the latest version."
+            )
+    except requests.RequestException as e:
+        messagebox.showerror("Update Check Failed", f"Failed to check for updates: {e}")
+
+
+def download_update(download_url):
+    try:
+        response = requests.get(download_url, stream=True)
+        response.raise_for_status()
+        zip_path = os.path.join(os.path.dirname(sys.executable), "update.zip")
+        with open(zip_path, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        launch_updater(zip_path)
+    except Exception as e:
+        messagebox.showerror("Download Failed", f"Failed to download the update: {e}")
+
+
+def launch_updater(zip_path):
+    updater_executable = os.path.join(os.path.dirname(sys.executable), "updater.exe")
+    subprocess.Popen(
+        [updater_executable, zip_path, os.path.dirname(sys.executable)], shell=True
+    )
+    sys.exit()
 
 
 def password_check():
@@ -15,6 +65,7 @@ def password_check():
     is_correct = password == "123456"
     tries = 3
     while not is_correct and tries > 0:
+        sleep(0.5)
         tries -= 1
         password = simpledialog.askstring(
             "Password", f"Wrong password... Try again({tries}):", show="*"
@@ -51,34 +102,12 @@ def update_pagbank_content():
         messagebox.showinfo("Info", "Pagbank content updated successfully")
 
 
-def check_for_updates():
-    try:
-        response = requests.get(
-            f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
-        )
-        response.raise_for_status()
-        latest_version = response.json()["tag_name"]
-        if latest_version != CURRENT_VERSION:
-            messagebox.showinfo(
-                "Update Available",
-                f"A new version {latest_version} is available. Please update.",
-            )
-        else:
-            messagebox.showinfo(
-                "No Update Available", "You are using the latest version."
-            )
-    except requests.RequestException as e:
-        messagebox.showerror("Update Check Failed", f"Failed to check for updates: {e}")
-
-
 def create_main_window():
     root = tk.Tk()
-    root.title("Service Selector")
+    root.title(f"Translation Bot - {CURRENT_VERSION}")
 
-    # Set minimum size for the window
     root.wm_minsize(400, 300)
 
-    # Set styles
     bg_color = "#f0f0f0"
     button_color = "#4CAF50"
     button_fg_color = "#ffffff"
@@ -87,6 +116,8 @@ def create_main_window():
     root.configure(bg=bg_color)
 
     def yuno_choices():
+        for widget in content_frame.winfo_children():
+            widget.destroy()
         tk.Label(
             content_frame,
             text="Yuno Choices",
@@ -100,6 +131,7 @@ def create_main_window():
             bg=button_color,
             fg=button_fg_color,
             font=font,
+            width=20,
         ).pack(pady=5)
         tk.Button(
             content_frame,
@@ -108,12 +140,21 @@ def create_main_window():
             bg=button_color,
             fg=button_fg_color,
             font=font,
+            width=20,
         ).pack(pady=5)
         tk.Button(
-            content_frame, text="Go back", command=lambda: show_main_options()
+            content_frame,
+            text="Go back",
+            command=show_main_options,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+            width=20,
         ).pack(pady=5)
 
     def pagbank_choices():
+        for widget in content_frame.winfo_children():
+            widget.destroy()
         tk.Label(
             content_frame,
             text="Pagbank Choices",
@@ -127,6 +168,7 @@ def create_main_window():
             bg=button_color,
             fg=button_fg_color,
             font=font,
+            width=20,
         ).pack(pady=5)
         tk.Button(
             content_frame,
@@ -135,9 +177,16 @@ def create_main_window():
             bg=button_color,
             fg=button_fg_color,
             font=font,
+            width=20,
         ).pack(pady=5)
         tk.Button(
-            content_frame, text="Go back", command=lambda: show_main_options()
+            content_frame,
+            text="Go back",
+            command=show_main_options,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+            width=20,
         ).pack(pady=5)
 
     def show_main_options():
@@ -185,7 +234,7 @@ def create_main_window():
 
     tk.Label(
         header_frame,
-        text="Translation BOT",
+        text="Translation Bot",
         font=("Helvetica", 18, "bold"),
         bg=bg_color,
     ).pack()
