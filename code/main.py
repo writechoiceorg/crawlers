@@ -9,9 +9,10 @@ from yuno_crawler import run_yuno_apiref, run_yuno_guides
 from pagbank_get_all_text import run_pagbank_text_reader
 from yuno_get_all_text import run_yuno_text_reader
 from time import sleep
+from packaging import version
 
 GITHUB_REPO = "writechoiceorg/bot"
-CURRENT_VERSION = "v1.0.8"
+CURRENT_VERSION = "v1.0.9"
 
 
 def search_updates():
@@ -21,7 +22,10 @@ def search_updates():
         )
         response.raise_for_status()
         latest_version = response.json()["tag_name"]
-        if latest_version != CURRENT_VERSION:
+        current_num = CURRENT_VERSION.lstrip("v")
+        latest_num = latest_version.lstrip("v")
+
+        if version.parse(latest_num) > version.parse(current_num):
             if messagebox.askyesno(
                 "Update Available",
                 f"A new version {latest_version} is available. Do you want to update?",
@@ -39,25 +43,6 @@ def check_for_updates():
     update = search_updates()
     if not update:
         messagebox.showinfo("No Update Available", "You are using the latest version.")
-    # try:
-    #     response = requests.get(
-    #         f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
-    #     )
-    #     response.raise_for_status()
-    #     latest_version = response.json()["tag_name"]
-    #     if latest_version != CURRENT_VERSION:
-    #         if messagebox.askyesno(
-    #             "Update Available",
-    #             f"A new version {latest_version} is available. Do you want to update?",
-    #         ):
-    #             download_url = response.json()["zipball_url"]
-    #             download_update(download_url)
-    #     else:
-    #         messagebox.showinfo(
-    #             "No Update Available", "You are using the latest version."
-    #         )
-    # except requests.RequestException as e:
-    #     messagebox.showerror("Update Check Failed", f"Failed to check for updates: {e}")
 
 
 def download_update(download_url):
@@ -135,7 +120,7 @@ def update_pagbank_content():
 
 def create_main_window():
     root = tk.Tk()
-    root.title(f"Bot - {CURRENT_VERSION}")
+    root.title(f"Translation bot - {CURRENT_VERSION}")
 
     root.wm_minsize(400, 300)
 
@@ -150,6 +135,10 @@ def create_main_window():
     font = (main_font, 12, "bold")
 
     root.configure(bg=bg_color)
+
+    icon_path = "./_internal/imgs/wc-icon.png"
+    window_icon = tk.PhotoImage(file=icon_path)
+    root.iconphoto(False, window_icon)
 
     def yuno_choices():
         for widget in content_frame.winfo_children():
@@ -286,12 +275,18 @@ def create_main_window():
     header_frame = tk.Frame(root, bg=bg_color)
     header_frame.pack(pady=5)
 
-    tk.Label(
-        header_frame,
-        text="Translation bot",
-        font=(main_font, 18, "bold"),
-        bg=bg_color,
-    ).pack()
+    img = tk.PhotoImage(file="./_internal/imgs/logo-wc.png")
+
+    img_label = tk.Label(root, image=img, bg=bg_color)
+    img_label.image = img
+    img_label.pack()
+
+    # tk.Label(
+    #     header_frame,
+    #     text="Translation bot",
+    #     font=(main_font, 18, "bold"),
+    #     bg=bg_color,
+    # ).pack()
 
     content_frame = tk.Frame(root, bg=bg_color)
     content_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
