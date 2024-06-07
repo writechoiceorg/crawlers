@@ -12,7 +12,7 @@ from time import sleep
 from packaging import version
 
 GITHUB_REPO = "writechoiceorg/bot"
-CURRENT_VERSION = "v1.0.9"
+CURRENT_VERSION = "v1.0.10"
 
 
 def search_updates():
