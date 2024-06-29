@@ -39,7 +39,7 @@ def ideal_crawler(url, file_path, ignore_path, translated_path):
         visited_links = []
         errors = []
 
-        for link_url in links[:2]:
+        for link_url in links:
             if link_url in visited_links:
                 continue
             try:
@@ -105,6 +105,3 @@ def run_ideal_apiref():
         save_to_json("./ideal_apiref_errors.json", errors_api)
 
     print(f"Missing API ref translations saved at {json_file_path}")
-
-
-run_ideal_guides()

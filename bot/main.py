@@ -148,7 +148,7 @@ def create_main_window():
     button_color = "#4CAF50"
     button_color_pagbank = "#18a589"
     button_color_yuno = "#513CE1"
-    button_color_ideal = "##00D1A2"
+    button_color_ideal = "#00D1A2"
     button_fg_color = "#ffffff"
     button_width = 26
     font = (main_font, 12, "bold")
