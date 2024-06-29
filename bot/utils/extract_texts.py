@@ -14,10 +14,9 @@ def extract_english_text(html_content, url, translated_path, ignore_path):
     soup = BeautifulSoup(html_content, "html.parser")
     ignore_data = read_json_file(ignore_path)
     translated_data = read_json_file(translated_path)
+    translated_data.setdefault(url, [])
     english_text = []
     for text in soup.stripped_strings:
-        if not translated_data[url]:
-            translated_data[url] = []
         if check_if_translated(text, translated_data[url]):
             continue
         elif is_translated(text, "en") and not ignore_cases(text, ignore_data):

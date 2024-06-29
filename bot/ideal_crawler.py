@@ -78,8 +78,8 @@ def ideal_crawler(url, file_path, ignore_path, translated_path):
 
 
 def run_ideal_guides():
-    ignore_path = "./utils/ideal/ignore.json"
-    translated_path = "./utils/ideal/translated/guides.json"
+    ignore_path = "./_internal/utils/ideal/ignore.json"
+    translated_path = "./_internal/utils/ideal/translated/guides.json"
     json_file_path = "./ideal_guides_missing_translation.json"
 
     base_url = "https://docs.ideal.pr.gov/docs/getting-started"

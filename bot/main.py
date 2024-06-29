@@ -14,7 +14,7 @@ from packaging import version
 # from yuno_get_all_text import run_yuno_text_reader
 
 GITHUB_REPO = "writechoiceorg/bot"
-CURRENT_VERSION = "v1.0.13"
+CURRENT_VERSION = "v1.1.0"
 
 
 def search_updates():
