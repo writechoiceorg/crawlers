@@ -6,6 +6,7 @@ import sys
 import subprocess
 from pagbank_crawler import run_pagbank_apiref, run_pagbank_guides
 from yuno_crawler import run_yuno_apiref, run_yuno_guides
+from ideal_crawler import run_ideal_apiref, run_ideal_guides
 from time import sleep
 from packaging import version
 
@@ -13,7 +14,7 @@ from packaging import version
 # from yuno_get_all_text import run_yuno_text_reader
 
 GITHUB_REPO = "writechoiceorg/bot"
-CURRENT_VERSION = "v1.0.13"
+CURRENT_VERSION = "v1.1.0"
 
 
 def search_updates():
@@ -125,11 +126,21 @@ def run_pagbank_bot_apiref():
 #         messagebox.showinfo("Info", "Pagbank content updated successfully")
 
 
+def run_ideal_bot_guides():
+    run_ideal_guides()
+    messagebox.showinfo("Info", "Ideal guides check successful")
+
+
+def run_ideal_bot_apiref():
+    run_ideal_apiref()
+    messagebox.showinfo("Info", "Ideal API check successful")
+
+
 def create_main_window():
     root = tk.Tk()
     root.title(f"Translation bot - {CURRENT_VERSION}")
 
-    root.wm_minsize(400, 300)
+    root.wm_minsize(500, 400)
 
     main_font = "Inter"
 
@@ -137,6 +148,7 @@ def create_main_window():
     button_color = "#4CAF50"
     button_color_pagbank = "#18a589"
     button_color_yuno = "#513CE1"
+    button_color_ideal = "#00D1A2"
     button_fg_color = "#ffffff"
     button_width = 26
     font = (main_font, 12, "bold")
@@ -239,6 +251,52 @@ def create_main_window():
             width=button_width,
         ).pack(pady=5)
 
+    def ideal_choices():
+        for widget in content_frame.winfo_children():
+            widget.destroy()
+        tk.Label(
+            content_frame,
+            text="IDEAL",
+            font=(main_font, 16, "bold"),
+            bg=bg_color,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Guides",
+            command=run_ideal_bot_guides,
+            bg=button_color_ideal,
+            fg=button_fg_color,
+            font=font,
+            width=button_width,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="API Reference",
+            command=run_ideal_bot_apiref,
+            bg=button_color_ideal,
+            fg=button_fg_color,
+            font=font,
+            width=button_width,
+        ).pack(pady=5)
+        # tk.Button(
+        #     content_frame,
+        #     text="Update translated database",
+        #     command=update_pagbank_content,
+        #     bg=button_color_pagbank,
+        #     fg=button_fg_color,
+        #     font=font,
+        #     width=button_width,
+        # ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="Back",
+            command=show_main_options,
+            bg="#2196F3",
+            fg=button_fg_color,
+            font=font,
+            width=button_width,
+        ).pack(pady=5)
+
     def show_main_options():
         for widget in content_frame.winfo_children():
             widget.destroy()
@@ -255,6 +313,15 @@ def create_main_window():
             content_frame,
             text="Pagbank",
             command=pagbank_choices,
+            bg=button_color,
+            fg=button_fg_color,
+            font=font,
+            width=button_width,
+        ).pack(pady=5)
+        tk.Button(
+            content_frame,
+            text="IDEAL",
+            command=ideal_choices,
             bg=button_color,
             fg=button_fg_color,
             font=font,
