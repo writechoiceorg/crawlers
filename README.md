@@ -1,3 +1,9 @@
+## Generate new version
+
+```
+pyinstaller --noconfirm --onedir --windowed --icon "C:/Users/gabri/Desktop/WriteChoice/crawlers/bot/utils/imgs/wc-icon.ico" --name "bot" --add-data "C:/Users/gabri/Desktop/WriteChoice/crawlers/bot/utils;utils/"  "C:/Users/gabri/Desktop/WriteChoice/crawlers/bot/main.py"
+```
+
 ## Bot Releases
 
 #### Stage changes
