@@ -1,5 +1,5 @@
 def check_if_translated(text, data):
-    return True if text in data else False
+    return bool(data) and text in data
 
 
 def ignore_cases(text, ignore_data):

@@ -59,7 +59,6 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
                 non_english = extract_non_english_text(
                     full_content, link_url, translated_path, ignore_path
                 )
-
                 if non_english:
                     non_english_texts[link_url] = non_english
 
@@ -71,7 +70,7 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
                 print(f"Error occurred while processing {link_url}")
                 pass
     except Exception:
-        print(f"Error occurred while processing {link_url}")
+        print(f"Error occurred while processing Pagbank Docs {link_url}")
     finally:
         driver.quit()
     return errors
@@ -80,7 +79,7 @@ def pagbank_crawler(url, file_path, ignore_path, translated_path):
 def run_pagbank_guides():
     ignore_path = "./_internal/utils/pagbank/ignore.json"
 
-    base_url = "https://dev.pagbank.uol.com.br/docs/o-pagbank"
+    base_url = "https://developer.pagbank.com.br/docs/o-pagbank"
     translated_path = "./_internal/utils/pagbank/translated/guides.json"
     json_file_path = "./pagbank_guides_missing_translation.json"
     errors_guides = pagbank_crawler(
@@ -96,7 +95,7 @@ def run_pagbank_guides():
 def run_pagbank_apiref():
     ignore_path = "./_internal/utils/pagbank/ignore.json"
 
-    base_url = "https://dev.pagbank.uol.com.br/reference/introducao"
+    base_url = "https://developer.pagbank.com.br/reference/introducao"
     translated_path = "./_internal/utils/pagbank/translated/apiref.json"
     json_file_path = "./pagbank_apiref_missing_translation.json"
     errors_api = pagbank_crawler(base_url, json_file_path, ignore_path, translated_path)

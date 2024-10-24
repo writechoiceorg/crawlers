@@ -31,9 +31,8 @@ def extract_non_english_text(html_content, url, translated_path, ignore_path):
 
     non_english_text = []
     for text in soup.stripped_strings:
-        if check_if_translated(text, translated_data[url]):
+        if check_if_translated(text, translated_data.get(url)):
             continue
         elif not is_translated(text, "en") and not ignore_cases(text, ignore_data):
             non_english_text.append(text)
-
     return non_english_text

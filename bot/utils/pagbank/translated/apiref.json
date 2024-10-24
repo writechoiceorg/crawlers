@@ -1,5 +1,5 @@
 {
-  "https://dev.pagbank.uol.com.br/reference/introducao": [
+  "https://developer.pagbank.com.br/reference/introducao": [
     "Introdução",
     "Bem-vindo ao guia do desenvolvedor das APIs do PagBank. Neste guia, você encontrará todas as informações necessárias para integrar e utilizar as funcionalidades oferecidas pelas nossas APIs. Estas foram implementadas seguindo o padrão RESTful. Utilizamos protocolos HTTP padrão, onde as respostas às solicitações HTTP são retornadas em formato JSON. Todas as operações podem ser realizadas por meio de requisições GET, POST e PUT.",
     "Serviços",
@@ -27,7 +27,7 @@
     "EDI",
     "O sistema de Intercâmbio Eletrônico de Dados (EDI) possibilita que transmita de forma eficiente extratos eletrônicos. Essa solução permite que os você reconciliem suas transações de vendas e pagamentos de maneira ágil e simplificada."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-chave-publica": [
+  "https://developer.pagbank.com.br/reference/criar-chave-publica": [
     "Criar chave pública",
     "Este endpoint permite que você crie uma chave pública. Chaves públicas são utilizadas para criptografia de cartões e autenticação 3DS.",
     "No corpo da requisição é necessário informar o tipo do recurso desejado. Por hora, apenas o tipo",
@@ -38,7 +38,7 @@
     "chaves públicas",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-chave-publica": [
+  "https://developer.pagbank.com.br/reference/consultar-chave-publica": [
     "Consultar chave pública",
     "Este endpoint permite que você consulte a chave pública existente na sua conta.",
     "📘",
@@ -46,7 +46,7 @@
     "chaves públicas",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-chave-publica": [
+  "https://developer.pagbank.com.br/reference/alterar-chave-publica": [
     "Alterar chave pública",
     "Este endpoint permite que você altere a chave pública vinculada a sua conta. A chave pública antiga continuará válida por 7 dias após você realizar a atualização.",
     "📘",
@@ -54,7 +54,7 @@
     "chaves públicas",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-aplicacao": [
+  "https://developer.pagbank.com.br/reference/criar-aplicacao": [
     "Criar aplicação",
     "Este endpoint permite que você crie um recurso de aplicação. Criar uma aplicação permite que você realize ações em nome dos usuários.",
     "📘",
@@ -62,7 +62,7 @@
     "Connect",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-aplicacao": [
+  "https://developer.pagbank.com.br/reference/consultar-aplicacao": [
     "Consultar aplicação",
     "Este endpoint permite que você consulte detalhes de uma aplicação a partir do",
     "client_id",
@@ -76,7 +76,7 @@
     "Connect",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/solicitar-autorizacao-via-connect-authorization": [
+  "https://developer.pagbank.com.br/reference/solicitar-autorizacao-via-connect-authorization": [
     "Solicitar autorização via Connect Authorization",
     "🚧",
     "Esse recurso não é acessado através de um endpoint de API",
@@ -110,7 +110,7 @@
     "Connect Authorization",
     "para mais informações sobre os passos necessários para solicitar a autorização."
   ],
-  "https://dev.pagbank.uol.com.br/reference/solicitar-autorizacao-via-sms": [
+  "https://developer.pagbank.com.br/reference/solicitar-autorizacao-via-sms": [
     "Solicitar autorização via SMS",
     "Este endpoint permite que você solicite a autorização do vendedor. A confirmação da autorização é realizada pelo envio código de autenticação via SMS para o número de telefone cadastrado na conta do vendedor.",
     "📘",
@@ -118,7 +118,7 @@
     "guia",
     "para mais informações sobre os passos necessários para solicitar a autorização via SMS."
   ],
-  "https://dev.pagbank.uol.com.br/reference/obter-access-token": [
+  "https://developer.pagbank.com.br/reference/obter-access-token": [
     "Obter access token",
     "Este endpoint permite que você faça a troca do código de autorização (",
     "sms_code",
@@ -137,7 +137,7 @@
     "Connect challenge",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/obter-access-token-para-transferencia": [
+  "https://developer.pagbank.com.br/reference/obter-access-token-para-transferencia": [
     "Obter access token para transferência",
     "Este endpoint permite que você obtenha o",
     "access_token",
@@ -151,7 +151,7 @@
     "Connect",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/renovar-access-token": [
+  "https://developer.pagbank.com.br/reference/renovar-access-token": [
     "Renovar access token",
     "Esse endpoint permite que você faça a atualização do",
     "access token",
@@ -169,7 +169,7 @@
     "Connect",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/revogar-access-token": [
+  "https://developer.pagbank.com.br/reference/revogar-access-token": [
     "Revogar access token",
     "Este endpoint permite que você revogue o acesso à conta de um usuário. O",
     "access_token",
@@ -179,7 +179,7 @@
     "Connect",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-connect": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-connect": [
     "Códigos de erro",
     "Ao fazer requisições para a API Connect, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Os códigos de erro apresentados na tabela abaixo podem ocorrer durante a interação com a API Connect. Esses códigos são acompanhados por pequenas descrições. Consulte a tabela abaixo para obter mais informações sobre cada código de erro e o respectivo cenário.",
@@ -242,7 +242,7 @@
     "invalid_public_key",
     "A Public Key encontrada não é uma chave válida."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-certificado-digital": [
+  "https://developer.pagbank.com.br/reference/criar-certificado-digital": [
     "Criar certificado digital",
     "Este endpoint permite que você gere um certificado digital. Os parâmetros",
     "key",
@@ -254,7 +254,7 @@
     "certificado digital",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-certificado-digital": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-certificado-digital": [
     "Códigos de erro",
     "Ao fazer requisições para criar um certificado digital, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Os códigos de erro apresentados na tabela abaixo podem ocorrer durante a criação de certificados digitais. Esses códigos são acompanhados por pequenas descrições. Consulte a tabela abaixo para obter mais informações sobre cada código de erro e o respectivo cenário.",
@@ -272,7 +272,7 @@
     "Connect challenge",
     "tenha excedido o tempo de validade de 30 segundos."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-account": [
+  "https://developer.pagbank.com.br/reference/objeto-account": [
     "Objeto Account",
     "Este objeto é responsável por apresentar todos os dados disponíveis para criar uma conta.",
     "Atributos",
@@ -581,7 +581,7 @@
     ", os escopos criados são accounts.read e payments.create.",
     "Exemplo: accounts.read"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-conta": [
+  "https://developer.pagbank.com.br/reference/criar-conta": [
     "Criar conta",
     "Este endpoint permite que você crie uma conta. Consulte o",
     "objeto Account",
@@ -591,7 +591,7 @@
     "cadastro de clientes",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-conta": [
+  "https://developer.pagbank.com.br/reference/consultar-conta": [
     "Consultar conta",
     "Este endpoint permite que você consulte uma conta por meio de um",
     "account_id",
@@ -605,7 +605,7 @@
     "cadastro de clientes",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-cadastro": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-cadastro": [
     "Códigos de erro",
     "Ao fazer requisições para a API Connect, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Os códigos de erro apresentados na tabela abaixo podem ocorrer durante a interação com a API Connect. Esses códigos são acompanhados por pequenas descrições. Consulte a tabela abaixo para obter mais informações sobre cada código de erro e o respectivo cenário.",
@@ -627,7 +627,7 @@
     "Falha na criação de conta",
     "O processo de criação foi iniciado por outro canal diferente da API. O usuário precisa acessar o email para finalizar a criação de conta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-order": [
+  "https://developer.pagbank.com.br/reference/objeto-order": [
     "Objeto Order",
     "Esse objeto representa o fechamento do carrinho de compras. Contém informações que identifica o que está sendo adquirido, o comprador, endereço de entrega e demais informações relevantes.",
     "Atributos",
@@ -1312,7 +1312,7 @@
     "DELETE",
     "PUT"
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-charge": [
+  "https://developer.pagbank.com.br/reference/objeto-charge": [
     "Objeto Charge",
     "Este objeto é responsável por apresentar todos os dados disponíveis em uma cobrança, ou seja, na iniciação de um pagamento.",
     "Atributos",
@@ -1536,7 +1536,7 @@
     "first_digits",
     "Int (6 caracteres)"
   ],
-  "https://dev.pagbank.uol.com.br/reference/casos-de-uso": [
+  "https://developer.pagbank.com.br/reference/casos-de-uso": [
     "Casos de Uso",
     "O PagBank oferece diversas opções para criar e pagar pedidos utilizando diferentes meios de pagamento. Nesta página, você encontrará guias que irão ajudá-lo a entender cada processo, além de exemplos de requisições e respostas. A lista foi dividida entre os processos que te permitem criar e pagar um pedido e aqueles que são utilizados apenas para criar pedidos.",
     "Selecione o guia de criação de pedido que atenda a sua necessidade:",
@@ -1563,7 +1563,7 @@
     "Divisão do pagamento",
     "Essas informações serão úteis para orientá-lo em cada etapa do processo, permitindo que você escolha a melhor opção conforme as as suas necessidades."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pedido-simples": [
+  "https://developer.pagbank.com.br/reference/criar-pedido-simples": [
     "Criar pedido",
     "Esse guia descreve como criar um pedido utilizando a API de pedidos do PagBank. Essa é a abordagem mais simples para se criar um pedido apresentada nos",
     "Casos de uso",
@@ -1717,7 +1717,7 @@
     "Objeto Charge",
     "com os dados do meio de pagamento e do valor da cobrança serão eviados ao PagBank através dessa requisição."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pedido-pedido-com-qr-code": [
+  "https://developer.pagbank.com.br/reference/criar-pedido-pedido-com-qr-code": [
     "Criar pedido com QR Code (PIX)",
     "Esse guia descreve como criar um pedido com QR Code. No PagBank, todo pedido criado com QR Code suporta apenas o PIX como meio de pagamento.",
     "Para que o QR Code aceite o pagamento PIX, é necessário que você possua pelo menos uma chave PIX de endereçamento ativa associada à sua conta PagBank. Se você possuir várias chaves de endereçamento cadastradas, será dada prioridade à utilização de uma chave de endereçamento aleatória.",
@@ -2010,7 +2010,7 @@
     "media = image/png",
     "fornece a URL para acessar a imagem do QR Code."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pedido-cartao-facilitador-pagamento": [
+  "https://developer.pagbank.com.br/reference/criar-pedido-cartao-facilitador-pagamento": [
     "Criar pedido com cartão (facilitadores de pagamento)",
     "Esse guia descreve como facilitadores de pagamento podem criar um pedido utilizando Cartão de Crédito.",
     "Particularidades da criação de pedido para facilitadores de pagamento",
@@ -2690,7 +2690,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-transacao-com-repasse-de-taxa": [
+  "https://developer.pagbank.com.br/reference/criar-transacao-com-repasse-de-taxa": [
     "Criar pedido com repasse de taxa ao comprador",
     "Esse guia descreve como criar um um pedido com pagamento parcelado e com a taxa repassados ao comprador. As taxas das parcelas podem ser repassados de forma integral ou parcial.",
     "Etapas necessárias",
@@ -3801,7 +3801,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-cartao": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-cartao": [
     "Criar e pagar um pedido com cartão",
     "Esse guia descreve como criar e pagar um pedido com Cartão de Crédito sem redirecionar o seu cliente para o ambiente do PagBank. Dessa forma, você tem maior controle sobre a experiência do cliente durante o processo de pagamento. Para implementar esse processo você irá utilizar:",
     "O SDK do PagBank para criptografar os dados do cartão.",
@@ -4436,7 +4436,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-cartao-clientes-pci": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-cartao-clientes-pci": [
     "Criar e pagar pedido com cartão (clientes PCI)",
     "Esse guia descreve como criar e pagar um pedido com cartão caso você seja esteja em confirmidade com as regras PCI. Esse fluxo de criação e pagamento aceita como meio de pagamento cartões de crédido e débito.",
     "Para a utilização dessa solução você deverá ter realizado o processo de homologação e ter apresentado o certificado PCI ao PagBank. Do contrário, você não conseguirá gerar transações com o cartão aberto. Caso você ainda não tenha homologado sua integração, acesse a página",
@@ -4976,7 +4976,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-token-bandeira": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-token-bandeira": [
     "Criar e pagar pedido com token de bandeira",
     "A Tokenização de Bandeira é um serviço que substitui os dados sensíveis do cartão do portador (PAN, CVV, Validade) por \"tokens\", que são números alternativos. Esses tokens substituem o PAN de 16 dígitos, o CVV de 3 dígitos e a validade do cartão (mm/aa). O processo de tokenização oferece benefícios significativos:",
     "Aumento de Segurança: A tecnologia protege as informações do titular do cartão, substituindo os dados sensíveis originais por números alternativos exclusivos.",
@@ -7077,7 +7077,7 @@
     "\"POST\"",
     "}\n  ]\n}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-token-pagbank": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-token-pagbank": [
     "Criar e pagar pedido com token PagBank",
     "A tokenização PagBank é um serviço de segurança que permite armazenar de forma segura os dados dos cartões dos compradores. Os dados do cartão são salvos no fluxo de cobrança com cartão de crédito, onde você pode optar por salvar o cartão utilizado na compra. Assim, o token resultante pode ser utilizado em compras futuras, substituindo os dados do cartão.",
     "Este modelo é recomendado para:",
@@ -8079,7 +8079,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-recorencia": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-recorencia": [
     "Criar e pagar pedido com indicação de recorrência",
     "Esse guia descreve como criar e pagar um pedido com indicação de recorrência. Ao utilizar esse recurso você irá informar ao PagBank que o pedido está relacionado a um pagamento recorrente. Este recurso é ideal se o se:",
     "Seu negócio presta um serviço de uso contínuo.",
@@ -9165,7 +9165,7 @@
     "\"POST\"",
     "}\n  ]\n}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-3ds-validacao-externa": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-3ds-validacao-externa": [
     "Criar e pagar com autenticação 3DS externa",
     "Esse guia descreve como criar e pagar um pedido utilizando autenticação 3DS com validação externa ao sistema do PagBank. Portanto, você irá utilizar um serviço complementar ao PagBank para realizar a autenticação do usuário e depois, irá criar e pagar o pedido usando o sistema PagBank. Essa opção cobre pagamento utilizando Cartões de Crédito e Débito.",
     "O sistema de autenticação de cartões 3DS é um protocolo de autenticação utilizado em transações online com cartão para garantir a segurança do pagamento. Ele pode exigir a validação do titular do cartão por meio de autenticação adicional, como senha, código de verificação ou reconhecimento biométrico.",
@@ -10150,7 +10150,7 @@
     "charges.payment_response.message",
     "existentes no corpo da resposta."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-3ds-validacao-pagbank": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-3ds-validacao-pagbank": [
     "Criar e pagar com autenticação 3DS do PagBank",
     "Esse guia descreve como criar e pagar um pedido utilizando autenticação 3DS, utilizando o sistema de validação do PagBank. Essa opção cobre pagamento utilizando Cartões de Crédito e Débito.",
     "O sistema de autenticação de cartões 3DS é um protocolo de autenticação utilizado em transações online com cartão para garantir a segurança do pagamento. Ele pode exigir a validação do titular do cartão por meio de autenticação adicional, como senha, código de verificação ou reconhecimento biométrico.",
@@ -11399,7 +11399,7 @@
     "payment_method.card.number = 6505050000001109",
     "amount.value = 6509"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pagar-pedido-com-boleto": [
+  "https://developer.pagbank.com.br/reference/criar-pagar-pedido-com-boleto": [
     "Criar e pagar pedido com Boleto",
     "Esse guia descreve como criar e pagar um pedido utilizando Boleto como meio de pagamento. Esse método de pagamento impõe um valor mínimo de R$0,20 para cada transação.",
     "Para a criação e pagamento do pedido utilizando Boleto, você irá utilizar o endpoint",
@@ -11981,7 +11981,7 @@
     "Simulador",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-um-pedido-com-pagar-com-pagbank-qr-code": [
+  "https://developer.pagbank.com.br/reference/criar-um-pedido-com-pagar-com-pagbank-qr-code": [
     "Criar pedido com Pagar com PagBank (QR Code)",
     "Através desse endpoint é possível criar um pedido com QR Code, gerado através da API Order que pode ser pago com o Pagar com PagBank.",
     "📘",
@@ -12074,7 +12074,7 @@
     "Atenção",
     ": Para Simular o Pagamento, será necessário baixar o aplicativo PagBank na loja Play Store/Apple Store em Produção."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-um-pedido-com-pagar-com-pagbank-deeplink": [
+  "https://developer.pagbank.com.br/reference/criar-um-pedido-com-pagar-com-pagbank-deeplink": [
     "Criar pedido com Pagar com PagBank (Deeplink)",
     "Através desse endpoint é possível criar um pedido com Deeplink, que pode ser pago com o super app Pagbank.",
     "📘",
@@ -12323,7 +12323,7 @@
     "Não pode informar link inválido",
     "Ex: ftp:/teste.com.br"
   ],
-  "https://dev.pagbank.uol.com.br/reference/simular-pagamento-pagar-com-pagbank-deeplink": [
+  "https://developer.pagbank.com.br/reference/simular-pagamento-pagar-com-pagbank-deeplink": [
     "Simular pagamento Pagar com PagBank (Deeplink )",
     "Este endpoint possibilita a simulação de pagamento do deeplink, de acordo com os métodos de pagamento que o pagador queira utilizar (saldo ou cartão de crédito). Será possível simular o pagamento com sucesso e negado.",
     "Para simular o pagamento é necessário possuir o",
@@ -12480,7 +12480,7 @@
     "Criar um pedido com Deeplink Pagar com PagBank",
     "Criar um pedido com QR Code Pagar com PagBank"
   ],
-  "https://dev.pagbank.uol.com.br/reference/divisao-de-pagamento": [
+  "https://developer.pagbank.com.br/reference/divisao-de-pagamento": [
     "Divisão do pagamento",
     "Este guia descreve como criar um pedido com divisão do pagamento no PagBank. A plataforma do PagBank oferece a opção de criar subtransações para cada pedido, permitindo que você direcione automaticamente parcelas do valor da transação para cada uma das partes envolvidas. Assim, você pode encaminhar os fundos para todos os recebedores sem a necessidade de criar novas transações.",
     "Um exemplo prático dessa funcionalidade ocorre durante a compra de um cliente em um marketplace. Quando o cliente efetua o pagamento, é possível direcionar automaticamente os fundos para as três partes envolvidas:",
@@ -12504,7 +12504,7 @@
     "Consulte a divisão do pagamento",
     "Cancelamento de pedido com divisão de pagamento"
   ],
-  "https://dev.pagbank.uol.com.br/reference/como-utilizar-a-divisao-de-pagamento": [
+  "https://developer.pagbank.com.br/reference/como-utilizar-a-divisao-de-pagamento": [
     "Como utilizar a divisão do pagamento",
     "Você define a opção de divisão do pagamento ao escolher a forma de pagamento. Portanto, existem duas formas de utilizar a divisão do pagamento:",
     "Crie o pedido",
@@ -12537,7 +12537,7 @@
     "Consultar divisão do pagamento",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/crie-e-depois-pague-pedido-com-divisao-do-pagamento": [
+  "https://developer.pagbank.com.br/reference/crie-e-depois-pague-pedido-com-divisao-do-pagamento": [
     "Crie e depois pague o pedido com divisão do pagamento",
     "Nessa opção, inicialmente o pedido é criado utilizando o endpoint",
     "Criar pedido",
@@ -13023,7 +13023,7 @@
     "\"GET\"",
     "}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/crie-e-pague-pedido-com-divisao-do-pagamento": [
+  "https://developer.pagbank.com.br/reference/crie-e-pague-pedido-com-divisao-do-pagamento": [
     "Crie e pague um pedido com divisão do pagamento",
     "Quando você cria e paga o pedido com divisão de pagamento, somente o endpoint",
     "Criar pedido",
@@ -14125,7 +14125,7 @@
     "SPLI_XXXXXXXXX",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/pedido-com-divisao-de-pagamento-com-pix": [
+  "https://developer.pagbank.com.br/reference/pedido-com-divisao-de-pagamento-com-pix": [
     "Pedido com divisão de pagamento com PIX",
     "Segue abaixo exemplo de pedido com divisão de pagamento para QR Code PIX. Para mais informações de criação de pedidos com QR Code consulte",
     "pedido com QR code",
@@ -14524,7 +14524,7 @@
     "\"POST\"",
     "}\n    ]\n}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/pre-autorizar-e-capturar-parcialmente-um-pedido-com-divisao-do-pagamento": [
+  "https://developer.pagbank.com.br/reference/pre-autorizar-e-capturar-parcialmente-um-pedido-com-divisao-do-pagamento": [
     "Pré-autorizar e capturar parcialmente um pedido com divisão do pagamento",
     "Para pré autorizar um pedido com divisão de pagamento basta criar um pedido com divisão de pagamento sem a captura, informando o objeto \"capture\" como false. E para capturar parcialmente um pedido com divisão de pagamento, deve-se seguir as recomendações da página",
     "capturar pagamento",
@@ -14779,7 +14779,7 @@
     "\"GET\"",
     "}\n    ]\n}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/consulte-a-divisao-do-pagamento": [
+  "https://developer.pagbank.com.br/reference/consulte-a-divisao-do-pagamento": [
     "Consulte a divisão do pagamento",
     "Para consultar os dados da divisão do pagamento você irá utilizar o endpoint",
     "Consultar divisão do pagamento",
@@ -14791,7 +14791,7 @@
     "SPLI_XXXXXXXXX",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/cancelamento-de-pedido-com-divisao-de-pagamento": [
+  "https://developer.pagbank.com.br/reference/cancelamento-de-pedido-com-divisao-de-pagamento": [
     "Cancelamento de pedido com divisão de pagamento",
     "Caso exista a necessidade, você pode realizar o cancelamento de pedidos com divisão de pagamento. Existem duas opções para realizar esse cancelamento:",
     "Proporcional",
@@ -14952,7 +14952,7 @@
     "8000",
     "}\n         }\n      ]\n   }\n}"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-pedido": [
+  "https://developer.pagbank.com.br/reference/criar-pedido": [
     "Criar pedido",
     "Este endpoint permite que você crie um pagamento. Dependendo do método de pagamento selecionado, você pode criar e pagar o pedido utilizando apenas este endpoint.",
     "📘",
@@ -14961,15 +14961,15 @@
     "Casos de uso",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-pedido": [
+  "https://developer.pagbank.com.br/reference/consultar-pedido": [
     "Consultar pedido",
     "Este endpoint permite que você consulte pedidos previamente criados por meio de um identificador do pedido PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-pedido-parametros": [
+  "https://developer.pagbank.com.br/reference/consultar-pedido-parametros": [
     "Consultar pedido através de parâmetros",
     "Este endpoint permite que você consulte pedidos previamente criados por meio de parâmetros."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-divisao-do-pagamento": [
+  "https://developer.pagbank.com.br/reference/consultar-divisao-do-pagamento": [
     "Consultar divisão do pagamento",
     "Este endpoint permite que você faça uma consulta dos dados da divisão do pagamento de um pedido.",
     "📘",
@@ -14977,25 +14977,25 @@
     "Esse endpoint usa uma URL base diferente dos demais endpoints da API Connect:",
     "https://sandbox.api.pagseguro.com/splits/"
   ],
-  "https://dev.pagbank.uol.com.br/reference/pagar-pedido": [
+  "https://developer.pagbank.com.br/reference/pagar-pedido": [
     "Pagar pedido",
     "Este endpoint permite que você realize o pagamento de um pedido previamente criado por meio de um identificador do pedido PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-pagamento": [
+  "https://developer.pagbank.com.br/reference/consultar-pagamento": [
     "Consultar pagamento",
     "Este endpoint permite que você consulte o status de um pagamento por meio de seu identificador da cobrança gerado pelo PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/reference/capturar-pagamento": [
+  "https://developer.pagbank.com.br/reference/capturar-pagamento": [
     "Capturar pagamento",
     "Este endpoint permite que você capture transações pré-autorizadas por meio de um identificador da cobrança fornecido pelo PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/reference/cancelar-pagamento": [
+  "https://developer.pagbank.com.br/reference/cancelar-pagamento": [
     "Cancelar pagamento",
     "Este endpoint permite que você devolva o valor pago ao comprador, tanto para desfazer uma pré-autorização ou reembolsar um pagamento capturado. Acesse a página para maiores informações ou o guia de como realizar",
     "Cancelamento de pedido com divisão de pagamento",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-sessao-autenticacao-3ds": [
+  "https://developer.pagbank.com.br/reference/criar-sessao-autenticacao-3ds": [
     "Criar sessão de autenticação 3DS",
     "Este endpoint permite gerar uma",
     "session",
@@ -15010,7 +15010,7 @@
     "Validade da session",
     "Após sua criação, a session tem uma validade de 30 minutos, expirando após esse intervalo. Se você estiver no meio de uma operação e a session expirar, você deve criar uma nova e continuar o processo do mesmo ponto."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-taxas-transacao": [
+  "https://developer.pagbank.com.br/reference/consultar-taxas-transacao": [
     "Consultar taxas de uma transação",
     "Este endpoint permite que você consulte as taxas de vendas das transações e exiba o repasse dos juros de parcelamento aos seus clientes.",
     "📘",
@@ -15022,14 +15022,14 @@
     "Códigos de erro",
     "para maiores informações."
   ],
-  "https://dev.pagbank.uol.com.br/reference/validar-armanezar-cartao-pagbank": [
+  "https://developer.pagbank.com.br/reference/validar-armanezar-cartao-pagbank": [
     "Validar e armazenar um cartão no PagBank",
     "Este endpoint permite que você valide e armazene um cartão no sistema do PagBank.",
     "Caso você se depare com algum erro ao utilizar esse endpoint, acesse a página",
     "Códigos de erro",
     "para maiores informações."
   ],
-  "https://dev.pagbank.uol.com.br/reference/webhooks": [
+  "https://developer.pagbank.com.br/reference/webhooks": [
     "Webhooks",
     "Os webhooks permitem que os aplicativos forneçam informações em tempo real sempre que um evento ocorre sem a necessidade de solicitações constantes. Assim, requisições sucessivas para verificar se o status da operação foi alterada tornam-se desnecessárias. Após configurar os webhooks, o Pagbank enviará notificações via webhook para seu ambiente sempre que um evento (uma mudança de status de transação) acontecer, possibilitando a automação de seus processos de gestão de vendas.",
     "📘",
@@ -16145,7 +16145,7 @@
     "transaction",
     ">"
   ],
-  "https://dev.pagbank.uol.com.br/reference/confirmar-autenticidade-da-notificacao": [
+  "https://developer.pagbank.com.br/reference/confirmar-autenticidade-da-notificacao": [
     "Confirmar autenticidade da notificação",
     "O campo da assinatura no header contém uma assinatura gerada por meio do algoritmo",
     "SHA-256",
@@ -16625,7 +16625,7 @@
     "ATENÇÃO",
     "Se os tokens não coincidirem, o evento recebido deve ser descartado pois não será confiável."
   ],
-  "https://dev.pagbank.uol.com.br/reference/motivos-de-compra-negada": [
+  "https://developer.pagbank.com.br/reference/motivos-de-compra-negada": [
     "Motivos de compra negada",
     "Na tabela a seguir você encontra todas as possíveis mensagens de compra negada e seus respectivos códigos de resposta. Com essas informações, você pode facilmente tratar essas respostas e possibilitar uma melhor experiência ao seu comprador quando o pagamento não for autorizado.",
     "Essas mensagens são",
@@ -17256,7 +17256,7 @@
     "CONSULTAR CREDENCIADOR",
     "SIM"
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-order": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-order": [
     "Códigos de erro",
     "Ao fazer requisições para a API de Pedidos, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Nesta página também são apresentadas as listas de erros relacionadas aos endpoints",
@@ -17592,7 +17592,7 @@
     "Ocorre quando a aplicação identifica um erro interno não mapeado.",
     "500"
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-transferencia": [
+  "https://developer.pagbank.com.br/reference/objeto-transferencia": [
     "Objeto Transferência",
     "Este objeto é responsável por apresentar todos os dados disponíveis em uma transferência.",
     "Atributos",
@@ -17705,7 +17705,7 @@
     "Contém as URLs que receberão as notificações do pedido (por ora, somente aceitamos uma url apenas. Aceitaremos mais URLs em breve.)",
     "Exemplo: https://webhook.site/067fc99b-88e7-4e30-8f74-609901413fe7"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-transferencia": [
+  "https://developer.pagbank.com.br/reference/criar-transferencia": [
     "Criar transferência",
     "Este endpoint permite que você solicite uma transferência de valor entre contas. Essa transferência pode ser entre contas PagBank (",
     "type",
@@ -17721,7 +17721,7 @@
     "transferências",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-transferencia-pelo-codigo-transacao": [
+  "https://developer.pagbank.com.br/reference/consultar-transferencia-pelo-codigo-transacao": [
     "Consultar transferência pelo código da transação",
     "Este endpoint permite que você consulte uma lista de transferências que foram agrupadas em um curto período de tempo. A busca deve ser feita baseado no identificador",
     "transaction_code",
@@ -17734,7 +17734,7 @@
     "transferências",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-transferencia-pelo-id-do-cliente-ou-periodo": [
+  "https://developer.pagbank.com.br/reference/consultar-transferencia-pelo-id-do-cliente-ou-periodo": [
     "Consultar transferência pelo ID do cliente ou período",
     "Este endpoint permite que você consulte uma lista de transferências já solicitadas. A busca pode ser feita baseado no identificador",
     "reference_id",
@@ -17747,7 +17747,7 @@
     "transferências",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-transferencia-pelo-id": [
+  "https://developer.pagbank.com.br/reference/consultar-transferencia-pelo-id": [
     "Consultar transferência pelo ID",
     "Este endpoint permite que você consulte uma transferência utilizando o identificador",
     "id",
@@ -17757,7 +17757,7 @@
     "transferências",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-transferencias": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-transferencias": [
     "Códigos de erro",
     "Ao fazer requisições para a API de Transferências, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Os códigos de erro apresentados na tabela abaixo podem ocorrer durante a interação com a API de Transferências.  Consulte a tabela abaixo para obter mais informações sobre cada código de erro e o respectivo cenário.",
@@ -17928,7 +17928,7 @@
     "Enter a valid value ​​for size",
     "O valor informado para a quantidade de items por página não é válido."
   ],
-  "https://dev.pagbank.uol.com.br/reference/teste-da-api-de-transferencias": [
+  "https://developer.pagbank.com.br/reference/teste-da-api-de-transferencias": [
     "Teste da API de Transferências",
     "Durante o uso do ambiente Sandbox, é importante ter em mente que não é possível realizar transferências de fundos para outras contas, mesmo que sejam contas Sandbox. No entanto, para permitir que você teste sua implementação, o PagBank oferece configurações especiais que geram resultados pré-definidos ao utilizar a API de transferências. A tabela a seguir apresenta diferentes cenários para transferências do tipo P2P e PIX. Para realizar seus testes, utilize as configurações disponibilizadas na coluna",
     "Cenário",
@@ -18009,7 +18009,7 @@
     "transfer_pix_invalid_key",
     "Pix key value is invalid"
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-checkout": [
+  "https://developer.pagbank.com.br/reference/objeto-checkout": [
     "Objeto Checkout",
     "id",
     "String",
@@ -18452,7 +18452,7 @@
     "-",
     "GET"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-checkout": [
+  "https://developer.pagbank.com.br/reference/criar-checkout": [
     "Criar Checkout",
     "Este endpoint permite que você crie checkouts personalizados para cada pedido recebedo dos seus clientes. Note que você pode definir opções para receber notificações sobre o status do pagamento, através do parâmetro",
     "payment_notification_urls",
@@ -18464,7 +18464,7 @@
     "checkout",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-checkout": [
+  "https://developer.pagbank.com.br/reference/consultar-checkout": [
     "Consultar Checkout",
     "Permite que você consulte um checkout e todos os pagamentos a ele associados. Você tem a opção de utilizar a paginação para retornar o número desejado de pagamentos a cada requisição.",
     "📘",
@@ -18472,7 +18472,7 @@
     "checkout",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/ativar-checkout": [
+  "https://developer.pagbank.com.br/reference/ativar-checkout": [
     "Ativar Checkout",
     "Utilize este endpoint para ativar um checkout caso que tenha sido inativado, ou seja, que possua um status",
     "INACTIVE",
@@ -18486,7 +18486,7 @@
     "checkout",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/inativar-checkout": [
+  "https://developer.pagbank.com.br/reference/inativar-checkout": [
     "Inativar Checkout",
     "Caso você enfrente algum contratempo em suas vendas ou por qualquer outro motivo, você pode utilizar esse endpoint para desativar um Checkout. Um checkout pode ser inativado permanentemente ou temporatiamente de acordo com sua necessidade. Se necessário, depois você pode reativá-lo utilizando o endpoint",
     "Ativar Checkout",
@@ -18496,7 +18496,7 @@
     "checkout",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/webhooks-checkout": [
+  "https://developer.pagbank.com.br/reference/webhooks-checkout": [
     "Webhooks",
     "O PagBank poderá enviar notificações via webhook para seu ambiente sempre que um evento (uma mudança de status de transação ou de checkout) acontecer, possibilitando a automação de seus processos de gestão de vendas.",
     "Configurando o recebimento de notificação",
@@ -19362,7 +19362,7 @@
     "Confirmar autenticidade da notificação",
     "para aprender como como confirmar a autenticidade da notificação usando SHA256."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erro-checkout": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erro-checkout": [
     "Códigos de erro",
     "Ao fazer requisições para a API de Checkout do PagBank, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Tratamento de erros",
@@ -19495,7 +19495,7 @@
     "Address must be complete when it's unmodifiable.",
     "O endereço deve estar completo caso shipping.address_modifiable contenha o valor false."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-chave-publica-pagamento-recorrente": [
+  "https://developer.pagbank.com.br/reference/consultar-chave-publica-pagamento-recorrente": [
     "Consultar chave pública",
     "📘",
     "Acesse o guia do serviço de",
@@ -19505,7 +19505,7 @@
     "criptografia e chave pública",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-chave-publica-pagamento-recorrente": [
+  "https://developer.pagbank.com.br/reference/criar-chave-publica-pagamento-recorrente": [
     "Criar chave pública",
     "📘",
     "Acesse o guia do serviço de",
@@ -19515,7 +19515,7 @@
     "criptografia e chave pública",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-preferencias-notificacoes": [
+  "https://developer.pagbank.com.br/reference/consultar-preferencias-notificacoes": [
     "Consultar preferências de notificações",
     "Permite que você receba todas as configurações de notificações associadas a sua conta.",
     "📘",
@@ -19526,7 +19526,7 @@
     "preferências de notificação",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-preferencias-notificacoes": [
+  "https://developer.pagbank.com.br/reference/alterar-preferencias-notificacoes": [
     "Alterar preferências de notificações",
     "Permite que você altere as configurações de notificações que você e os seus clientes irão receber.",
     "📘",
@@ -19537,7 +19537,7 @@
     "preferências de notificação",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-plano": [
+  "https://developer.pagbank.com.br/reference/objeto-plano": [
     "Objeto Plano",
     "id",
     "String",
@@ -19643,7 +19643,7 @@
     "Tipo de link.",
     "Exemplo: GET"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-plano": [
+  "https://developer.pagbank.com.br/reference/criar-plano": [
     "Criar plano",
     "Utilize esse recurso para criar novos planos. Os planos são pré-requisitos para a criação de assinaturas.",
     "🚧",
@@ -19657,7 +19657,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-por-id": [
+  "https://developer.pagbank.com.br/reference/consultar-por-id": [
     "Consultar por id",
     "Retorna todas as informações do plano associado ao",
     "id",
@@ -19677,7 +19677,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-planos": [
+  "https://developer.pagbank.com.br/reference/listar-planos": [
     "Listar planos",
     "Utilize esse recurso para recuperar todos os planos associados a sua conta. Você pode configurar o retorno utilizando o recurso de paginação para melhorar a organização das informações.",
     "📘",
@@ -19700,7 +19700,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-plano": [
+  "https://developer.pagbank.com.br/reference/alterar-plano": [
     "Alterar plano",
     "Utilize esse recurso para atualizar planos existentes com novas configurações. Todas as assinatura associadas serão afetadas.",
     "🚧",
@@ -19714,7 +19714,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/ativar-plano": [
+  "https://developer.pagbank.com.br/reference/ativar-plano": [
     "Ativar plano",
     "Ative um plano para que seja possível vincular assinaturas a ele.",
     "📘",
@@ -19725,7 +19725,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/inativar-plano": [
+  "https://developer.pagbank.com.br/reference/inativar-plano": [
     "Inativar plano",
     "Utilize esse recurso para inativar um plano existente. Você não conseguirá associar assinaturas a um plano inativo.",
     "📘",
@@ -19736,7 +19736,7 @@
     "planos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-assinante": [
+  "https://developer.pagbank.com.br/reference/objeto-assinante": [
     "Objeto Assinante",
     "id",
     "String (41 caracteres)",
@@ -19921,7 +19921,7 @@
     "MASTERCARD",
     "ELO"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-assinante": [
+  "https://developer.pagbank.com.br/reference/criar-assinante": [
     "Criar assinante",
     "Utilize este endpoint para criar novos assinantes. Você precisa dos dados do assinante e do plano para gerar novas assinaturas.",
     "📘",
@@ -19932,7 +19932,7 @@
     "assinantes",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-assinante": [
+  "https://developer.pagbank.com.br/reference/consultar-assinante": [
     "Consultar por id",
     "Utilize esse recurso para recuperar as informações de um assinando utilizando o",
     "id",
@@ -19945,7 +19945,7 @@
     "assinantes",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-assinantes": [
+  "https://developer.pagbank.com.br/reference/listar-assinantes": [
     "Listar assinantes",
     "Este recurso possibilita que você liste todos os assinantes criados previamente.",
     "📘",
@@ -19968,7 +19968,7 @@
     "assinantes",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-dados-cadastrais-do-assinante": [
+  "https://developer.pagbank.com.br/reference/alterar-dados-cadastrais-do-assinante": [
     "Alterar dados cadastrais do assinante",
     "Utilize este recurso para atualizar os dados cadastrais de um assinante. Você pode fornecer apenas as informações que precisam ser atualizadas.",
     "📘",
@@ -19979,7 +19979,7 @@
     "assinantes",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-dados-de-pagamento-do-assinante": [
+  "https://developer.pagbank.com.br/reference/alterar-dados-de-pagamento-do-assinante": [
     "Alterar dados de pagamento do assinante",
     "Utilize esse recurso para atualizar os dados de pagamento do assinante. Apenas os dados de pagamento com cartão de crédito podem ser atualizados.",
     "📘",
@@ -19990,7 +19990,7 @@
     "assinantes",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-assinatura": [
+  "https://developer.pagbank.com.br/reference/objeto-assinatura": [
     "Objeto Assinatura",
     "id",
     "String (41 caracteres)",
@@ -20124,7 +20124,7 @@
     "Tipo de link.",
     "Exemplo: GET"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-assinatura": [
+  "https://developer.pagbank.com.br/reference/criar-assinatura": [
     "Criar assinatura",
     "Utilize esse recurso para criar uma nova assinatura vinculando um assinante a um plano. Você pode criar o assinante no momento da criação da assinatura, mas isso não é obrigatório. Se o assinante foi criado previamente, você pode fornecer apenas o",
     "id",
@@ -20147,7 +20147,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-assinatura": [
+  "https://developer.pagbank.com.br/reference/consultar-assinatura": [
     "Consultar assinatura",
     "Utilize esse recurso para recuperar s dados associados a uma assinatura previamente criada. O",
     "id",
@@ -20162,7 +20162,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-assinaturas": [
+  "https://developer.pagbank.com.br/reference/listar-assinaturas": [
     "Listar assinaturas",
     "Utilize esse recurso para recuperar os dados de todas as assinaturas associadas a sua conta.",
     "📘",
@@ -20185,7 +20185,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-faturas-de-assinatura": [
+  "https://developer.pagbank.com.br/reference/listar-faturas-de-assinatura": [
     "Listar faturas de uma assinatura",
     "Utilize esse recurso para recuperar os dados de faturas associadas a uma fatura. Você tem a opção de filtrar os tipos de fatura de acordo com o status desejado e utilizar paginação para melhorar a organização das informações recebidas.",
     "📘",
@@ -20196,7 +20196,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-assinatura": [
+  "https://developer.pagbank.com.br/reference/alterar-assinatura": [
     "Alterar assinatura",
     "Utilize esse recurso para atualizar as configurações de uma assinatura existente. Você pode aplicar cupons de desconto ou alterar a data do pagamento, por exemplo.",
     "📘",
@@ -20207,7 +20207,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/cancelar-assinatura": [
+  "https://developer.pagbank.com.br/reference/cancelar-assinatura": [
     "Cancelar assinatura",
     "Esse recurso cancela uma assinatura existente. Depois de cancelada, a assinatura não pode ser reativada.",
     "📘",
@@ -20218,7 +20218,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/suspender-assinatura": [
+  "https://developer.pagbank.com.br/reference/suspender-assinatura": [
     "Suspender assinatura",
     "Utilize esse recurso para suspender uma assinatura caso o seu cliente (assinante) não tenha pago a última fatura, por exemplo. Você tem a opção de reativar a assinatura no futuro utilizando o endpoint",
     "Ativar assinatura",
@@ -20231,7 +20231,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/ativar-assinatura": [
+  "https://developer.pagbank.com.br/reference/ativar-assinatura": [
     "Ativar assinatura",
     "Utilize esse recurso para ativar uma assinatura previamente suspensa.",
     "📘",
@@ -20242,7 +20242,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/deletar-cupons-de-assinatura": [
+  "https://developer.pagbank.com.br/reference/deletar-cupons-de-assinatura": [
     "Deletar cupons de uma assinatura",
     "Com esse recurso, você pode remover os cupons associados à assinatura informada.",
     "📘",
@@ -20253,7 +20253,7 @@
     "assinaturas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/objeto-cupom": [
+  "https://developer.pagbank.com.br/reference/objeto-cupom": [
     "Objeto Cupom",
     "id",
     "String (41 caracteres)",
@@ -20344,7 +20344,7 @@
     "Tipo de link.",
     "Exemplo: GET"
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-cupom": [
+  "https://developer.pagbank.com.br/reference/criar-cupom": [
     "Criar cupom",
     "Com esse recurso você pode criar cupons de desconto para utilizar em suas assinaturas. Esses cupons podem fornecer um desconto fixo ou percentual. Além disso, você pode definir por quantas faturas esse desconto será válido através do parâmetro",
     "duration",
@@ -20357,7 +20357,7 @@
     "cupons",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-cupom": [
+  "https://developer.pagbank.com.br/reference/consultar-cupom": [
     "Consultar por id",
     "Utilize esse recurso para consultar as informações de um cupom previamente criado.",
     "📘",
@@ -20368,7 +20368,7 @@
     "cupons",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-cupons": [
+  "https://developer.pagbank.com.br/reference/listar-cupons": [
     "Listar cupons",
     "Liste todos os cupons criados anteriormente. Utilize o recurso de paginação para melhor organizar os dados recebidos.",
     "📘",
@@ -20391,7 +20391,7 @@
     "cupons",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/inativar-cupom": [
+  "https://developer.pagbank.com.br/reference/inativar-cupom": [
     "Inativar cupom",
     "Com esse recurso você desabilita o uso de um cupom. Quando desativado, a utilização do cupom em novas assinaturas não resultará em um desconto na fatura.",
     "📘",
@@ -20402,7 +20402,7 @@
     "cupons",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/ativar-cupom": [
+  "https://developer.pagbank.com.br/reference/ativar-cupom": [
     "Ativar cupom",
     "Utilize esse recurso para ativar um cupom. Quando ativo, o cupom pode ser utilizado para conceder descontos na fatura de assinaturas.",
     "📘",
@@ -20413,7 +20413,7 @@
     "cupons",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-fatura": [
+  "https://developer.pagbank.com.br/reference/consultar-fatura": [
     "Consultar fatura",
     "Utilize esse serviço para recuperar os dados de uma fatura específica. O parâmetro",
     "invoice_id",
@@ -20428,7 +20428,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-pagamento-da-fatura": [
+  "https://developer.pagbank.com.br/reference/listar-pagamento-da-fatura": [
     "Listar pagamento da fatura",
     "Utilize este recurso para listar todos os pagamentos associados a uma fatura.",
     "📘",
@@ -20439,7 +20439,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-pagamento-1": [
+  "https://developer.pagbank.com.br/reference/consultar-pagamento-1": [
     "Consultar pagamento",
     "Utilize esse recurso para obter as informações associadas a um pagamento específico. O parâmetro",
     "payment_id",
@@ -20454,7 +20454,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/criar-estorno-de-pagamento": [
+  "https://developer.pagbank.com.br/reference/criar-estorno-de-pagamento": [
     "Criar estorno de pagamento",
     "Este recurso possibilita que você realize o estorno total de um pagamento. Você não precisa informar o",
     "amount",
@@ -20476,7 +20476,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-estorno": [
+  "https://developer.pagbank.com.br/reference/consultar-estorno": [
     "Consultar estorno",
     "Utilize esse recurso para realizar o acompanhamento do status do estorno criado anteriormente. Utilize o",
     "refund_id",
@@ -20489,7 +20489,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-estornos-do-vendedor": [
+  "https://developer.pagbank.com.br/reference/listar-estornos-do-vendedor": [
     "Listar estornos do vendedor",
     "Utilize esse recurso para consultar todos os estornor vinculados a sua conta.",
     "📘",
@@ -20500,7 +20500,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-estornos-do-payment": [
+  "https://developer.pagbank.com.br/reference/listar-estornos-do-payment": [
     "Listar estornos do pagamento",
     "Este recurso permite que você liste todos os estornos associados a um pagamento.",
     "📘",
@@ -20511,7 +20511,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/listar-pagamentos": [
+  "https://developer.pagbank.com.br/reference/listar-pagamentos": [
     "Listar pagamentos",
     "Utilize esse recurso para recuperar todos os pagamentos vinculados a sua conta. Você tem a opção de filtrar os resultados selecionando o estado do pagamento desejado.",
     "📘",
@@ -20522,7 +20522,7 @@
     "pagamentos",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-retentativa-automatica": [
+  "https://developer.pagbank.com.br/reference/consultar-retentativa-automatica": [
     "Consultar retentativa automática",
     "Este recurso permite que você recupere as informações sobre as configurações de retentativas de cobrança automática associadas a sua conta.",
     "📘",
@@ -20533,7 +20533,7 @@
     "retentativas automáticas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/alterar-retentativa-automatica": [
+  "https://developer.pagbank.com.br/reference/alterar-retentativa-automatica": [
     "Alterar retentativa automática",
     "Utilize esse recurso para configurar o intervalo de dias entre as retentativas de cobrança automática associadas a assinaturas com cartão de crédito como meio de pagamento.",
     "📘",
@@ -20544,7 +20544,7 @@
     "retentativas automáticas",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/reference/testar-sua-integracao-pagamentos-recorrentes": [
+  "https://developer.pagbank.com.br/reference/testar-sua-integracao-pagamentos-recorrentes": [
     "Testar sua integração",
     "A etapa de testes permite analisar se a integração foi feita de maneira correta e se os pagamentos estão sendo processados sem erros. Dessa forma, ao testar sua integração no ambiente Sandbox do Pagbank, você pode minimizar os que erros que podem surgir ao disponibilizar a solução ao usuário final.",
     "Nenhuma das transações realizadas nesse ambiente tem valor monetário e nele é possível simular diversas alterações de estado das transações. Você também pode reenviar notificações caso necessário.",
@@ -20619,7 +20619,7 @@
     "Pagamentos Recorrentes",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/webhooks-assinaturas": [
+  "https://developer.pagbank.com.br/reference/webhooks-assinaturas": [
     "Webhooks",
     "Os Webhooks são notificações enviadas pelo PagBank para seu servidor sempre que um evento ocorre. Para ser notificado sobre eventos que acontecem na sua conta de Assinaturas, você deve cadastrar um ou mais URLs como endereços de recebimento das notificações, nas configurações de preferências. Para entender como alterar as configurações de preferências e cadastrar um URL de recebimento, acesse a página de",
     "Preferências de notificação",
@@ -20963,7 +20963,7 @@
     "Confirmar autenticidade da notificação",
     "para aprender como como confirmar a autenticidade da notificação usando SHA256."
   ],
-  "https://dev.pagbank.uol.com.br/reference/codigos-de-erros-assinaturas": [
+  "https://developer.pagbank.com.br/reference/codigos-de-erros-assinaturas": [
     "Códigos de Erros",
     "Ao fazer requisições para a API de Pagamentos Recorrentes do PagBank, parâmetros incorretos podem gerar erros que impedem o fornecimento de uma resposta com os dados esperados. Nesse caso, erros serão retornados como resposta à sua requisição para ajudá-lo a entender o problema.",
     "Tratamento de erros",
@@ -21096,7 +21096,7 @@
     "Address must be complete when it's unmodifiable.",
     "O endereço deve estar completo caso shipping.address_modifiable contenha o valor false."
   ],
-  "https://dev.pagbank.uol.com.br/reference/consultar-movimentos": [
+  "https://developer.pagbank.com.br/reference/consultar-movimentos": [
     "Consultar movimentos",
     "Esse endpoint possibilita que você consulte os dados do EDI relacionados a movimentações do tipo:",
     "Transacional",
@@ -21116,7 +21116,7 @@
     "EDI",
     "para mais informações sobre seu funcionamento e funcionalidades disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/reference/verificar-validade-do-token-clientid": [
+  "https://developer.pagbank.com.br/reference/verificar-validade-do-token-clientid": [
     "Verificar validade do token ClientId",
     "Com esse endpoint você pode validar o Token associado a um cliente PagBank. Para mais informações de como adquirir esse Token, acesse a página de",
     "Introdução ao EDI",

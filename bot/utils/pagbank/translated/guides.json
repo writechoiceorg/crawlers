@@ -1,5 +1,5 @@
 {
-  "https://dev.pagbank.uol.com.br/docs/o-pagbank": [
+  "https://developer.pagbank.com.br/docs/o-pagbank": [
     "Conheça o PagBank",
     "Suggest Edits",
     "O PagBank é um banco digital completo, oferecendo soluções simples, seguras e grátis para todo o ciclo de vendas. Com o PagBank você tem uma solução de pagamentos completa, que além das vendas físicas no balcão, também é desenvolvida para ajudá-lo a impulsionar e facilitar suas vendas online.",
@@ -32,7 +32,7 @@
     "Primeiros passos",
     "para criar sua conta e enter melhor o processo de integração de cada um dos produtos disponíveis."
   ],
-  "https://dev.pagbank.uol.com.br/docs/primeiros-passos-pagbank": [
+  "https://developer.pagbank.com.br/docs/primeiros-passos-pagbank": [
     "Primeiros passos",
     "Suggest Edits",
     "Para utilizar os serviços do PagBank, você irá passar por três passos básicos:",
@@ -114,7 +114,7 @@
     "Ou então veja como o PagBank garante a",
     "segurança dos seus clientes"
   ],
-  "https://dev.pagbank.uol.com.br/docs/seguranca-e-selo-pci": [
+  "https://developer.pagbank.com.br/docs/seguranca-e-selo-pci": [
     "Segurança e Selo PCI",
     "Suggest Edits",
     "O Selo PCI, também conhecido como PCI DSS (Payment Card Industry Data Security Standard), é um conjunto de regras e requisitos rigorosos criado pelas principais bandeiras de cartão (American Express, Visa, Mastercard, etc.) para proteger os dados dos seus cartões em todas as transações online.",
@@ -153,7 +153,7 @@
     "página oficial",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/apis-pagbank": [
+  "https://developer.pagbank.com.br/docs/apis-pagbank": [
     "Introdução APIs PagBank",
     "Suggest Edits",
     "O PagBank disponibiliza uma série de serviços para que você gerencie contas e conduza pagamentos utilizando APIs. Todas as APIs utilizam o padrão REST para garantir segurança e desempenho.",
@@ -209,7 +209,7 @@
     "Requisitos de uso",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/primeiros-passos": [
+  "https://developer.pagbank.com.br/docs/primeiros-passos": [
     "Primeiros passos",
     "Suggest Edits",
     "Para começar a utilizar as APIs do PagBank, é essencial compreender os processos de integração dos serviços disponíveis e os requisitos para sua utilização.",
@@ -256,7 +256,7 @@
     "Códigos de status",
     "para visualizar uma lista completa dos códigos utilizados."
   ],
-  "https://dev.pagbank.uol.com.br/docs/codigos-de-status": [
+  "https://developer.pagbank.com.br/docs/codigos-de-status": [
     "Códigos de status",
     "Suggest Edits",
     "A PagBank usa códigos de resposta HTTP convencionais para indicar o sucesso ou a falha de uma solicitação de API. Em geral: Os códigos no intervalo",
@@ -311,7 +311,7 @@
     "Códigos de erro da API de Checkout PagBank",
     "Códigos de erro da API de Pagamentos Recorrentes"
   ],
-  "https://dev.pagbank.uol.com.br/docs/crie-sua-conta-pagbank": [
+  "https://developer.pagbank.com.br/docs/crie-sua-conta-pagbank": [
     "Crie sua conta PagBank",
     "Suggest Edits",
     "Antes de utilizar as APIs do PagBank você precisa criar uma conta PagBank. Todas as novas contas são alocadas ao ambiente Sandbox para permitir que você realize testes no ambiente de desenvolvimento. Portanto, não existe opção de criação de conta diretamente para o ambiente de produção.",
@@ -362,7 +362,7 @@
     "Funcionalidades disponíveis",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/ambientes-disponiveis": [
+  "https://developer.pagbank.com.br/docs/ambientes-disponiveis": [
     "Ambientes disponíveis",
     "Suggest Edits",
     "Você pode interagir com as APIs do PagBank por meio de dois ambientes: Sandbox e Produção.",
@@ -387,7 +387,7 @@
     "cURL",
     "https://secure.api.pagseguro.com"
   ],
-  "https://dev.pagbank.uol.com.br/docs/token-de-autenticacao": [
+  "https://developer.pagbank.com.br/docs/token-de-autenticacao": [
     "Token de autenticação",
     "Suggest Edits",
     "Os tokens de autenticação oferecem uma maneira segura e eficiente de garantir a identidade do usuário ou aplicação ao acessar sistemas ou APIs, sem a necessidade de enviar credenciais sensíveis em cada solicitação. Eles ajudam a proteger as informações confidenciais e garantir que apenas usuários autorizados possam acessar os recursos adequados.",
@@ -425,7 +425,7 @@
     "API Connect",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/chaves-publicas-e-de-idempotencia": [
+  "https://developer.pagbank.com.br/docs/chaves-publicas-e-de-idempotencia": [
     "Chaves públicas e de idempotência",
     "Suggest Edits",
     "Para garantir a segurança das operações realizadas através de suas APIs, o PagBank utiliza chaves públicas e de idempotência.",
@@ -436,7 +436,7 @@
     "Chaves de idempotência",
     "As chaves de idempotência são identificadores únicos usados para garantir a idempotência em solicitações aos endpoints de uma API. Em um serviço RESTful como do PagBank, ao fazer várias solicitações usando a mesma chave de idempotência, você sempre receberá a mesma resposta. Isso é útil em situações em que uma solicitação falha devido a um problema de comunicação e não há uma resposta conclusiva, como ao criar um pagamento. Ao reenviar a solicitação com a mesma chave de idempotência, é possível garantir que a segunda chamada não falhe. A chave de idempotência é enviada como um cabeçalho na solicitação e é usada para identificar uma transação específica."
   ],
-  "https://dev.pagbank.uol.com.br/docs/chaves-publicas": [
+  "https://developer.pagbank.com.br/docs/chaves-publicas": [
     "Chaves públicas",
     "Suggest Edits",
     "Na criptografia, uma chave pública é um valor numérico grande usado para criptografar dados. Uma chave pública também pode ser usada para criptografar uma mensagem ou verificar a legitimidade de uma assinatura digital. Ela é acompanhada por uma chave privada correspondente, conhecida apenas pelo seu proprietário. Chaves privadas são usadas para descriptografar mensagens que foram criadas com a chave pública correspondente ou para criar assinaturas. Em outras palavras, uma chave pública protege os dados contra uso não autorizado, enquanto uma chave privada é usada para desbloqueá-los.",
@@ -473,7 +473,7 @@
     "Validade da chave pública antiga",
     "Ao gerar uma nova chave pública, a sua chave pública anterior continuará válida por 7 dias. Dessa forma, os cartões criptografamos com ela também terão o mesmo prazo de funcionamento. Após 7 dias a chave antiga não será mais válida e o mesmo irá ocorrer com os cartões criptografados."
   ],
-  "https://dev.pagbank.uol.com.br/docs/connect": [
+  "https://developer.pagbank.com.br/docs/connect": [
     "Connect",
     "Suggest Edits",
     "Nesta página, você encontrará os passos principais para conectar sua aplicação ao sistema PagBank. E-commerce, marketplaces e sistemas de conciliação são exemplos de aplicações que podem ser conectadas ao PagBank. Ao fazer essa integração, sua aplicação será capaz de executar ações em nome dos usuários do PagBank. Para isso, é necessário registrar sua aplicação no PagBank e estabelecer a conexão com as contas dos usuários, caso eles já tenham uma conta aberta.",
@@ -573,7 +573,7 @@
     "refresh_token",
     "que será utilizado na próxima renovação."
   ],
-  "https://dev.pagbank.uol.com.br/docs/connect-authorization": [
+  "https://developer.pagbank.com.br/docs/connect-authorization": [
     "Connect Authorization",
     "Suggest Edits",
     "Os passos relacionados ao processos de autorização usando o Connect Authorization são apresentados nessa página.",
@@ -677,7 +677,7 @@
     "Mudança de e-mail pelo usuário",
     "Se o usuário alterar o e-mail usado para autorizar a aplicação no PagBank, será necessário realizar uma nova autorização usando o novo e-mail."
   ],
-  "https://dev.pagbank.uol.com.br/docs/connect-via-sms": [
+  "https://developer.pagbank.com.br/docs/connect-via-sms": [
     "Connect via SMS",
     "Suggest Edits",
     "Para utilizar a autorização através do Connect SMS é necessário que o usuário esteja cadastrado no PagBank.",
@@ -759,7 +759,7 @@
     "sms_code = 200200",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/connect-challenge": [
+  "https://developer.pagbank.com.br/docs/connect-challenge": [
     "Connect challenge",
     "Suggest Edits",
     "O Connect Challenge é o processo de adição de autenticação em dois fatores na API de Transferência do PagBank. Ele envolve a geração de um token e um desafio a serem utilizados como segundo fator de segurança durante a integração com determinadas APIs do PagBank. Esse procedimento envolve o uso de um par de chaves criptografadas, uma pública e outra privada, que oferecem um alto nível de segurança. A utilização das chaves criptografadas garante uma camada adicional de proteção, tornando o sistema mais resiliente a ameaças e violações de segurança.",
@@ -1378,7 +1378,7 @@
     "));",
     "Uma vez que você tenha descriptografado o desafio com sucesso, poderá utilizar as informações obtidas, juntamente com o token gerado, na sua próxima requisição que exigir essa informação. O token gerado deve ser utilizado na sua próxima requisição e tem uma válidade de 30 segundos. Caso o token expire, você deve repetir o processo para obter um novo token."
   ],
-  "https://dev.pagbank.uol.com.br/docs/certificado-digital": [
+  "https://developer.pagbank.com.br/docs/certificado-digital": [
     "Certificado digital",
     "Suggest Edits",
     "Nesta página você encontrará a descrição do que são e para que são utilizados os certificados digitais. Além disso, também é apresentado um guia para a criação e utilização dos certificados digitais junto ao PagBank. É importante destacar que todas as APIs públicas do PagBank fazem uso de autenticação com certificados digitais. Isso garante que o servidor PagBank irá identificar e autorizar a sua aplicação a utilizar as APIs disponibilizadas pelo PagBank. No entanto, a utilização dos certificados digitais é obrigatório apenas para a Api de transferência, sendo opcional nas demais.",
@@ -1428,7 +1428,7 @@
     "Durante o processo de atualização ou geração de um novo certificado, você não poderá realizar nenhuma transação. Portanto, é recomendado planejar e agendar a renovação do certificado para evitar interrupções indesejadas em suas atividades.",
     "Lembre-se de estar atento à validade de seu certificado digital e tomar as medidas necessárias para renová-lo antes do prazo de expiração, garantindo assim a continuidade de suas operações de forma segura."
   ],
-  "https://dev.pagbank.uol.com.br/docs/cadastro-de-clientes": [
+  "https://developer.pagbank.com.br/docs/cadastro-de-clientes": [
     "Cadastro de clientes",
     "Suggest Edits",
     "A API de Cadastro é uma ferramenta desenvolvida para os Parceiros PagBank que desejam criar contas em nome de seus clientes. Ela permite que os seus clientes criem uma nova conta PagBank ou se conectem a uma conta existente através da sua plataforma. É importante notar que a utilização da API de Cadastro para a criação de uma conta não é obrigatória. Você pode optar por redirecionar o usuário à",
@@ -1608,7 +1608,7 @@
     "@sandbox.pagseguro.com.br",
     "como domínio de e-mail. Ao utilizar qualquer outro domínio, o processo de criação não será bem-sucedido."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pedidos-e-pagamentos-order": [
+  "https://developer.pagbank.com.br/docs/pedidos-e-pagamentos-order": [
     "Pedidos e pagamentos (Order)",
     "Suggest Edits",
     "A API de Pedidos do PagBank, também conhecida como API Order, engloba todas as operações relacionadas ao processo de cobrança após a definição do pedido.",
@@ -1703,7 +1703,7 @@
     "Motivos de compra negada",
     "disponibiliza a lista de códigos que você pode receber ao tentar realizar um pagamento e descrições complementares."
   ],
-  "https://dev.pagbank.uol.com.br/docs/servicos-de-pedidos-e-pagamentos": [
+  "https://developer.pagbank.com.br/docs/servicos-de-pedidos-e-pagamentos": [
     "Serviços de pedidos e pagamentos",
     "Suggest Edits",
     "A API de pedidos e pagamentos do PagBank oferece uma ampla gama de funcionalidades para impulsionar o seu negócio. Esta página aborda as diversas possibilidades associadas a essas funcionalidades com uma perspectiva de negócio. Se você necessita de uma compreensão mais técnica do processo de utilização, acesse a página de",
@@ -1837,7 +1837,7 @@
     "Criar pedido com repasse de taxa ao comprador",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/transferencias": [
+  "https://developer.pagbank.com.br/docs/transferencias": [
     "Transferências",
     "Suggest Edits",
     "A API de Transferências do PagBank possibilita que você realize movimentações de saldo entre contas PagBank ou para contas de outras instituições bancárias. Por esse motivo, o PagBank disponibiliza dois tipos de transferências:",
@@ -1952,7 +1952,7 @@
     "Códigos de erro",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/checkout": [
+  "https://developer.pagbank.com.br/docs/checkout": [
     "Checkout e Link de Pagamento",
     "Suggest Edits",
     "A API de Checkout e Link de Pagamento do PagBank oferece uma solução completa e versátil para simplificar o processo de pagamento online. Com essa API, você pode gerar links compartilháveis que direcionam os clientes a uma página de pagamento dentro do ambiente seguro do PagBank, garantindo uma experiência de compra contínua e protegida, alinhada aos mais altos padrões de segurança e conveniência do mercado de pagamentos.",
@@ -2101,7 +2101,7 @@
     "VERDECARD",
     "VISA"
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagamentos-recorrentes": [
+  "https://developer.pagbank.com.br/docs/pagamentos-recorrentes": [
     "Pagamentos Recorrentes",
     "Suggest Edits",
     "O Pagamento Recorrente PagBank permite que você faça cobranças de forma automática, no valor e intervalo que escolher por meio da criação de planos. É possível gerenciar mensalidades, assinaturas, contas de assinantes e cobranças recorrentes, podendo ser utilizado para assinaturas de produtos e/ou serviços em seus mais variados setores.",
@@ -2171,7 +2171,7 @@
     "Códigos de erro",
     ", que lista os códigos que você pode receber e provê detalhes adicionais para cada erro."
   ],
-  "https://dev.pagbank.uol.com.br/docs/autenticacao-pagamentos-recorrentes": [
+  "https://developer.pagbank.com.br/docs/autenticacao-pagamentos-recorrentes": [
     "Autenticação",
     "Suggest Edits",
     "Todas as APIs públicas do Pagamento Recorrente PagBank requerem autenticação. Através da autenticação, identificamos e autorizamos o integrador a utilizar nossas APIs e seus recursos, bem como eventuais configurações adicionais.",
@@ -2213,7 +2213,7 @@
     "Não compartilhe suas senhas",
     "Para usar todos os ambientes é preciso ter cadastrado 2 senhas e obtido 2 chaves de acesso, uma para cada ambiente. Certifique-se de não compartilhar suas credenciais ou chaves de acesso com terceiros."
   ],
-  "https://dev.pagbank.uol.com.br/docs/criptografia-e-chave-publica": [
+  "https://developer.pagbank.com.br/docs/criptografia-e-chave-publica": [
     "Criptografia e chave pública",
     "Suggest Edits",
     "A solução de criptografia de cartões pode ser utilizada nas transações recorrentes de assinaturas. Essa funcionalidade permite que você colete os dados dos cartões e os transforme em cartões criptografados, proporcionando uma forma segura de criar cobranças.",
@@ -2357,7 +2357,7 @@
     "INVALID_HOLDER",
     "Invalid holder"
   ],
-  "https://dev.pagbank.uol.com.br/docs/preferencias-de-notificacao": [
+  "https://developer.pagbank.com.br/docs/preferencias-de-notificacao": [
     "Preferências de notificação",
     "Suggest Edits",
     "Ao utilizar os recursos de Pagamento Recorrente do PagBank, você irá receber notificações relatando o avanço das operações. Essas notificações podem ser personalizadas conforme a sua necessidade. As configurações modificáveis incluem o envio de e-mails ao vendedor, o envio de e-mails ao assinante e a URL de notificação.",
@@ -2388,7 +2388,7 @@
     "PAGAMENTO ESTORNADO",
     "Enviado quando o estabelecimento solicita e o estorno de pagamento é realizado com sucesso."
   ],
-  "https://dev.pagbank.uol.com.br/docs/planos": [
+  "https://developer.pagbank.com.br/docs/planos": [
     "Planos",
     "Suggest Edits",
     "Um plano de assinatura determina as configurações que uma assinatura seguirá, incluindo o valor e o intervalo de cobrança. O serviço de planos permite que você crie os planos que deseja oferecer aos seus clientes para que eles possam assinar seus serviços de maneira conveniente.",
@@ -2417,7 +2417,7 @@
     "Objeto Plano",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/assinantes": [
+  "https://developer.pagbank.com.br/docs/assinantes": [
     "Assinantes",
     "Suggest Edits",
     "Para iniciar uma assinatura, é necessário cadastrar um assinante com os dados de pagamento. Essa ação pode ser realizada tanto por meio desta API quanto no momento da criação da assinatura.",
@@ -2438,7 +2438,7 @@
     "Objeto Assinante",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/assinaturas": [
+  "https://developer.pagbank.com.br/docs/assinaturas": [
     "Assinaturas",
     "Suggest Edits",
     "O recurso de assinatura oferece uma maneira eficiente e automatizada de cobrar clientes (assinantes). Ao criar uma assinatura, você só precisa especificar o plano desejado, associar o cliente à assinatura e fornecer um identificador exclusivo para ela. Se preferir, é possível criar o cliente e seus detalhes de pagamento simultaneamente durante o processo de assinatura, simplificando ainda mais a gestão do ciclo de cobrança.",
@@ -2493,7 +2493,7 @@
     "Objeto Assinatura",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/cupons": [
+  "https://developer.pagbank.com.br/docs/cupons": [
     "Cupons",
     "Suggest Edits",
     "A API de Pagamento Recorrente do PagBank possibilita que você crie cupons de desconto para oferecer aos assinantes. Esses cupons podem proporcionar descontos em valores inteiros ou percentuais e podem incluir uma data de vencimento ou um limite máximo de uso por assinatura.",
@@ -2525,7 +2525,7 @@
     "Objeto Cupom",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagamentos": [
+  "https://developer.pagbank.com.br/docs/pagamentos": [
     "Pagamentos",
     "Suggest Edits",
     "Ao administrar assinaturas, é essencial compreender o estado tanto das faturas quanto dos pagamentos associados a cada ciclo. É importante entender que a fatura é o pedido de pagamento, enquanto o pagamento é a execução efetiva da transação financeira. Portanto, cada ciclo da assinatura estará associado a uma fatura que será considerada paga quando a operação financeira de pagamento for executada.",
@@ -2614,7 +2614,7 @@
     "Listar pagamentos",
     ": Visualize a lista completa de todos os pagamentos registrados em sua conta."
   ],
-  "https://dev.pagbank.uol.com.br/docs/retentativas-automaticas": [
+  "https://developer.pagbank.com.br/docs/retentativas-automaticas": [
     "Retentativas automáticas",
     "Suggest Edits",
     "Após um pagamento ser recusado em uma fatura, o sistema de Pagamentos Recorrentes do PagBank oferece a opção de realizar novas tentativas de cobrança automaticamente. Esta facilidade visa proporcionar uma experiência mais flexível e conveniente para os usuários na gestão de transações financeiras.",
@@ -2651,7 +2651,7 @@
     "Alterar Retentativas Automática",
     ": Modifique as configurações de retentativas automáticas para as suas assinaturas, ajustando os intervalos e as ações finais desejadas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagar-com-pagbank": [
+  "https://developer.pagbank.com.br/docs/pagar-com-pagbank": [
     "Pagar com PagBank",
     "Suggest Edits",
     "O Pagar com PagBank é a carteira digital do PagBank que disponibiliza aos vendedores mais uma forma de pagamento para ofertar aos seus clientes nos checkouts do seu e-commerce. O Pagar com PagBank traz mais rapidez, segurança e praticidade na hora de realizar uma compra online. Além de contar com a base de milhões de potenciais compradores usuários do PagBank.",
@@ -2700,7 +2700,7 @@
     "Pagar com PagBank no Android",
     "Pagar com PagBank no iOS"
   ],
-  "https://dev.pagbank.uol.com.br/docs/edi": [
+  "https://developer.pagbank.com.br/docs/edi": [
     "EDI",
     "Suggest Edits",
     "O servido de EDI (Electronic Data Interchange) disponibilizado pelo PagBank, também chamado de intercâmbio eletrônico de dados, é usado para enviar extratos eletrônicos para que os clientes possam conciliar suas vendas e pagamentos. Três tipos de extratos são disponibilizados:",
@@ -2771,7 +2771,7 @@
     "Coleção do Postman",
     ". Alternativamente, você também pode utilizar os endpoints disponíveis na documentação. No entanto, note que com eles você não estará realizando requisições a um ambiente SandBox, mas sim ao ambiente de produção."
   ],
-  "https://dev.pagbank.uol.com.br/docs/testar-integracao": [
+  "https://developer.pagbank.com.br/docs/testar-integracao": [
     "Testar integração",
     "Suggest Edits",
     "A etapa de testes permite analisar se a integração foi feita de maneira correta e se os pagamentos estão sendo processados sem erros. Dessa forma, ao testar sua integração no ambiente Sandbox do Pagbank, você pode minimizar os que erros que podem surgir ao disponibilizar a solução ao usuário final. Nenhuma das transações realizadas nesse ambiente tem valor monetário e nele é possível simular diversas alterações de estado das transações. Você também pode reenviar notificações caso necessário.",
@@ -2784,7 +2784,7 @@
     "homologação",
     "para receber acesso ao ambiente de Produção."
   ],
-  "https://dev.pagbank.uol.com.br/docs/cartoes-de-teste": [
+  "https://developer.pagbank.com.br/docs/cartoes-de-teste": [
     "Cartões de teste",
     "Suggest Edits",
     "Para testar a integração usando cartões de teste, disponibilizamos uma lista que permite simular diversos cenários em sua aplicação com os recursos da plataforma de APIs Pagbank.",
@@ -3395,7 +3395,7 @@
     "\"POST\"",
     "}\n  ]\n}"
   ],
-  "https://dev.pagbank.uol.com.br/docs/simulador": [
+  "https://developer.pagbank.com.br/docs/simulador": [
     "Simulador",
     "Suggest Edits",
     "O Simulador é um conjunto de regras do ambiente de testes do PagBank na qual você pode simular cenários que podem ocorrer no ambiente Produção. Dessa forma, você pode construir uma solução completa sem abrir mão da segurança e praticidade de um ambiente de testes. Atualmente, o Simulador cobre os cenários relacionados à:",
@@ -3475,7 +3475,7 @@
     "Importante:",
     "PIX realizados através da API PIX não estão contemplados no simulador."
   ],
-  "https://dev.pagbank.uol.com.br/docs/solicitar-homologacao": [
+  "https://developer.pagbank.com.br/docs/solicitar-homologacao": [
     "Solicitar homologação",
     "Suggest Edits",
     "O objetivo da homologação é garantir que a sua integração com o PagBank está ocorrendo da melhor maneira possível, evitando transtornos no ambiente de produção e auxiliando na validação das solicitações para uma melhor experiência. Nesse processo, nossa equipe validará os testes feitos no nosso ambiente Sandbox e, com esse processo concluído, você poderá acessar o ambiente Produção.",
@@ -3488,13 +3488,13 @@
     "Segurança adicional",
     "Para melhorar a experiência de nossos parceiros e visando sempre uma integração saudável e segura, orientamos fortemente que em sua tela de checkout seja implementado recursos adicionais de segurança, como o reCaptcha. Isso evitará que seu site fique sujeito a ataques de robôs para validação de cartões e outros tipos de fraudes que podem impactar negativamente em suas vendas e negócio."
   ],
-  "https://dev.pagbank.uol.com.br/docs/plataformas-introducao": [
+  "https://developer.pagbank.com.br/docs/plataformas-introducao": [
     "Introdução",
     "Integração do PagSeguro com sua Plataforma.",
     "Suggest Edits",
     "Integração do PagSeguro com sua Plataforma."
   ],
-  "https://dev.pagbank.uol.com.br/docs/001-shop": [
+  "https://developer.pagbank.com.br/docs/001-shop": [
     "001 Shop",
     "Suggest Edits",
     "A 001 Shop é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -3505,7 +3505,7 @@
     "Integrando 001 Shop com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/shop-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/shop-processo-de-integracao": [
     "Integrando 001 Shop com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma 001 Shop com o PagBank consiste de duas etapas:",
@@ -3559,7 +3559,7 @@
     ".",
     "Com isso a integração está ativa, para finalizar realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/arco-informatica": [
+  "https://developer.pagbank.com.br/docs/arco-informatica": [
     "Arco Informática",
     "Suggest Edits",
     "A Arco Informatica desenvolve plataformas de ecommerce que permitem conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -3570,7 +3570,7 @@
     "Integrando Arco Informática com o PagBank",
     "Seguindo a guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/arcoinformatica-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/arcoinformatica-processo-de-integracao": [
     "Integrando Arco Informática com PagBank",
     "Suggest Edits",
     "Utilizar o PagBank como meio de pagamento em sua plataforma Arco Informática é fácil e simples, confira o guia abaixo para ativar a integração.",
@@ -3647,7 +3647,7 @@
     "em produção",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/braspag": [
+  "https://developer.pagbank.com.br/docs/braspag": [
     "Braspag",
     "Suggest Edits",
     "A Braspag é um gateway de pagamento que faz o roteamento das transações de cartão de crédito para a adquirência do PagBank.",
@@ -3656,7 +3656,7 @@
     "guia de integração",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/processo-de-integra%C3%A7%C3%A3o": [
+  "https://developer.pagbank.com.br/docs/processo-de-integra%C3%A7%C3%A3o": [
     "Integrando Braspag com PagBank",
     "Suggest Edits",
     "A integração da Braspag é feita entrando em contato diretamente com as equipes de ambas plataformas. Confira a seguir como realizar o pedido de integração das plataformas.",
@@ -3677,7 +3677,7 @@
     "time de integração",
     "estamos à disposição para te ajudar! :-)"
   ],
-  "https://dev.pagbank.uol.com.br/docs/digital-manager-guru": [
+  "https://developer.pagbank.com.br/docs/digital-manager-guru": [
     "Digital Manager Guru",
     "Suggest Edits",
     "A Dooca é uma plataforma de ecommerce que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito.",
@@ -3686,7 +3686,7 @@
     "Integrando Dooca com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/ativando-conector-digital-guru": [
+  "https://developer.pagbank.com.br/docs/ativando-conector-digital-guru": [
     "Integrando Digital Manager Guru com PagBank",
     "Suggest Edits",
     "A Digital Manager Guru já possui o módulo PagBank pronto para uso por padrão. Basta ativá-lo e associá-lo à sua conta PagBank, assim, sua loja Virtuol poderá realizar operações utilizando o PagBank.",
@@ -3730,7 +3730,7 @@
     ".",
     "Para finalizar, recomendamos que você realize uma compra de teste para validar o processo."
   ],
-  "https://dev.pagbank.uol.com.br/docs/dloja": [
+  "https://developer.pagbank.com.br/docs/dloja": [
     "DLoja",
     "Suggest Edits",
     "A DLoja é uma plataforma de ecommerce que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito.",
@@ -3739,7 +3739,7 @@
     "Integrando DLoja com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/dloja-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/dloja-processo-de-integracao": [
     "Integrando DLoja com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Loja Integrada com o PagBank consiste de duas etapas:",
@@ -3812,7 +3812,7 @@
     ".",
     "Feito isso a integraçao esta ativa, para finalizar, realize uma compra de teste para validar a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/dooca": [
+  "https://developer.pagbank.com.br/docs/dooca": [
     "Dooca",
     "Suggest Edits",
     "A Dooca é uma plataforma de ecommerce que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito e Boleto Bancário.",
@@ -3821,7 +3821,7 @@
     "Integrando Dooca com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/dooca-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/dooca-processo-de-integracao": [
     "Integrando Dooca com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Dooca com o PagBank consiste de duas etapas:",
@@ -3912,7 +3912,7 @@
     ".",
     "Para finalizar, realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/fast-commerce": [
+  "https://developer.pagbank.com.br/docs/fast-commerce": [
     "Fast Commerce",
     "Suggest Edits",
     "A Fast Commerce é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -3923,7 +3923,7 @@
     "Integrando Fast commerce com o PagBank",
     "Seguindo a guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/fastcommerce-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/fastcommerce-processo-de-integracao": [
     "Integrando Fast Commerce com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Fast Commerce com o PagBank consiste de duas etapas:",
@@ -4033,7 +4033,7 @@
     "para finalizar.",
     "Para finalizar realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/iluria": [
+  "https://developer.pagbank.com.br/docs/iluria": [
     "Iluria",
     "Suggest Edits",
     "A Iluria é uma plataforma de ecommerce que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito mediante um checkout transparente.",
@@ -4042,7 +4042,7 @@
     "Integrando Iluria com o PagBank",
     "Seguindo as intruções acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/iluria-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/iluria-processo-de-integracao": [
     "Integrando Iluria com PagBank",
     "Suggest Edits",
     "A integração com Iluria é muita rapida e simples, o guia de como realiza-la é apresentado a seguir.",
@@ -4106,7 +4106,7 @@
     ".",
     "Com isso a integração esta finalizada, realize uma compra de teste para validar-la."
   ],
-  "https://dev.pagbank.uol.com.br/docs/intranet-mall": [
+  "https://developer.pagbank.com.br/docs/intranet-mall": [
     "Intranet Mall",
     "Suggest Edits",
     "A Intranet Mall é uma plataforma de ecommerce que permite conectar o PagBank, para que seus clientes possam pagar suas compras na plataforma.",
@@ -4115,7 +4115,7 @@
     "integração da Intranet Mall com o PagBank",
     ". Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas as plataformas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/intranetmall-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/intranetmall-processo-de-integracao": [
     "Integrando Intranet Mall Com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Intranet Mall com o PagBank consiste em duas etapas:",
@@ -4169,7 +4169,7 @@
     ".",
     "Feito isso, o PagBank ja estará integrado na sua loja Intranet Mall. Sugerimos, realizar uma compra de teste para validar a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/jet-commerce": [
+  "https://developer.pagbank.com.br/docs/jet-commerce": [
     "Jet Commerce",
     "Suggest Edits",
     "A Jet Commerce é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, as seguintes funcionalidades:",
@@ -4183,7 +4183,7 @@
     "Integrando Jet Commerce com o PagBank",
     "Seguindo a guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/jetcommerce-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/jetcommerce-processo-de-integracao": [
     "Integrando Jet Commerce com Pagbank",
     "Suggest Edits",
     "Utilizar o PagBank como meio de pagamento em sua plataforma Jet Commerce é fácil e simples, confira o guia abaixo para ativar a integração.",
@@ -4241,7 +4241,7 @@
     ".",
     "Após finalizar o processo,  realize uma compra de teste e valide a integração. Feito isso sua integração esta ativa."
   ],
-  "https://dev.pagbank.uol.com.br/docs/linx": [
+  "https://developer.pagbank.com.br/docs/linx": [
     "Linx",
     "Suggest Edits",
     "A Linx é uma plataforma de ecommerce em que você pode conectar o PagBank para fornecer meios de pagamento aos seus clientes. Ao optar pela conexão com o PagBank você tem a sua disponibilidade, os seguintes métodos de pagamento:",
@@ -4258,7 +4258,7 @@
     ".",
     "Seguindo os guias acima, você poderá integrar a plataformas de forma rápida e aproveitar as funcionalidades oferecidas pelo PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-linx-com-pagbank": [
+  "https://developer.pagbank.com.br/docs/integrando-linx-com-pagbank": [
     "Integrando Linx com PagBank",
     "Suggest Edits",
     "Para integrar a plataforma Linx com o PagBank, é necessário adicionar o PagBank como uma opção de pagamento na plataforma e conceder-lhe autorização para executar transações em sua conta PagBank",
@@ -4300,7 +4300,7 @@
     "configurar meios de pagamento",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/configurando-meios-de-pagamento-linx": [
+  "https://developer.pagbank.com.br/docs/configurando-meios-de-pagamento-linx": [
     "Configurando meios de pagamento",
     "Suggest Edits",
     "A integração do PagBank em sua loja Linx aceita quatro formas de pagamento:",
@@ -4426,7 +4426,7 @@
     ".",
     "Feito isso, o pagamento via Boleto Bancário estará disponível no checkout dos seus clientes."
   ],
-  "https://dev.pagbank.uol.com.br/docs/ativar-split-de-pagamentos-linx": [
+  "https://developer.pagbank.com.br/docs/ativar-split-de-pagamentos-linx": [
     "Ativar split de pagamentos",
     "Suggest Edits",
     "A plataforma Linx permite que você realize o split de recebíveis entre marketplace e seller. Para adicionar essa opção, você deve configurar a sua conta. Esse processo consiste de duas etapas:",
@@ -4500,7 +4500,7 @@
     ".",
     "Uma vez finalizada a configuração, o split do pagamento irá ocorrer conforme a definição dos sellers."
   ],
-  "https://dev.pagbank.uol.com.br/docs/loja-integrada": [
+  "https://developer.pagbank.com.br/docs/loja-integrada": [
     "Loja Integrada",
     "Suggest Edits",
     "A",
@@ -4513,7 +4513,7 @@
     "integração da Loja Integrada com o PagBank",
     ".  Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/loja-integrada-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/loja-integrada-processo-de-integracao": [
     "Integrando Loja Integrada com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Loja Integrada com o PagBank consiste em duas etapas:",
@@ -4585,7 +4585,7 @@
     "para finalizar.",
     "Após finalizar os dois processos, os seus clientes terão acesso às opções de pagamento no momento do checkout. Aconselhamos que você realize uma compra teste em sua loja para garantir que todas as configurações estão funcionando como esperado. Por exemplo, verifique se o desconto aplicado ao pagamento com boleto está correto e se o pedido é executado corretamente."
   ],
-  "https://dev.pagbank.uol.com.br/docs/loja-que-vende": [
+  "https://developer.pagbank.com.br/docs/loja-que-vende": [
     "Loja que Vende",
     "Suggest Edits",
     "A Loja que Vende é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -4596,7 +4596,7 @@
     "Integrando Loja que Vende com o PagBank",
     "Seguindo a guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/lojaquevende-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/lojaquevende-processo-de-integracao": [
     "Integrando Loja que Vende com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Loja que Vende com o PagBank consiste de duas etapas:",
@@ -4650,7 +4650,7 @@
     ".",
     "Com isso a integração está ativa, para finalizar realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/modulo-magento": [
+  "https://developer.pagbank.com.br/docs/modulo-magento": [
     "Módulo Magento 2",
     "Suggest Edits",
     "A Magento é uma plataforma de e-commerce que oferece a possibilidade de utilizar o PagBank para fornecer meios de pagamento aos seus clientes. Com a integração do PagBank nesta plataforma, você tem à sua disposição as seguintes funcionalidades:",
@@ -4687,7 +4687,7 @@
     "Dúvidas frequentes",
     "para saber mais sobre como realizar testes e configurar parcelamento."
   ],
-  "https://dev.pagbank.uol.com.br/docs/instalando-o-magento-24": [
+  "https://developer.pagbank.com.br/docs/instalando-o-magento-24": [
     "Instalando o modulo PagBank na Magento",
     "Suggest Edits",
     "Existem três métodos para Instalar o modulo PagBank na sua loja Magento 2.x:",
@@ -4739,7 +4739,7 @@
     "bin/magento setup:upgrade",
     "bin/magento setup:di:compile"
   ],
-  "https://dev.pagbank.uol.com.br/docs/autorizando-magento": [
+  "https://developer.pagbank.com.br/docs/autorizando-magento": [
     "Autorizando a Magento no PagBank",
     "Suggest Edits",
     "O primeiro passo para utilizar o PagBank na sua loja Magento, é vincular a sua conta PagBank autorizando a Magento a realizar operações através dela. Confira seção abaixo para saber com fazer isso.",
@@ -4773,7 +4773,7 @@
     "Autorizar",
     ". Você será redirecionado ao painel da Magento."
   ],
-  "https://dev.pagbank.uol.com.br/docs/meios-de-pagamento-magento": [
+  "https://developer.pagbank.com.br/docs/meios-de-pagamento-magento": [
     "Configurando os meios de pagamentos",
     "Suggest Edits",
     "A integração do PagBank em sua loja Magento pode aceita três formas de pagamento:",
@@ -4868,7 +4868,7 @@
     "Pagar com PagBank",
     "para aprender como adicionar essa opção de pagamento."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagar-com-pagbank-magento": [
+  "https://developer.pagbank.com.br/docs/pagar-com-pagbank-magento": [
     "Pagar com PagBank",
     "Suggest Edits",
     "A solução Pagar com PagBank utiliza a carteira digital do PagBank para disponibilizar aos vendedores mais uma forma de pagamento no checkout do seu e-commerce. O processo de pagamento é mais rápido e fácil. Além disso, ao disponibilizar essa opção de pagamento, você está facilitando o processo de pagamento de toda a base de milhões de potenciais compradores usuários do PagBank.",
@@ -4926,7 +4926,7 @@
     "Pagar com PagBank",
     ", o seu cliente será automaticamente redirecionado para o aplicativo do PagBank instalado no smartphone, onde irá definir como realizará o pagamento."
   ],
-  "https://dev.pagbank.uol.com.br/docs/spli-magento": [
+  "https://developer.pagbank.com.br/docs/spli-magento": [
     "Split para Magento e Adobe Commerce",
     "Suggest Edits",
     "O módulo de Split de Pagamentos é uma extensão do módulo de pagamento do PagBank. Após a configuração desse módulo, você pode configurar diferentes cenários e definir como o valor recebido será dividido entre os recebedores secundários.",
@@ -4949,7 +4949,7 @@
     "Solução de Split com regras avançadas de comissionamento.",
     "Nesse processo, as informações de valores e vendedores são obtidas por outros recursos. Por exemplo, os clientes que utilizam o Webkul Marketplace podem interagir com o módulo e passar os valores para o Split de pagamento."
   ],
-  "https://dev.pagbank.uol.com.br/docs/config-split": [
+  "https://developer.pagbank.com.br/docs/config-split": [
     "Configurando o Split Pagbank",
     "Suggest Edits",
     "Para utilizar o recurso de Split the pagamentos você precisa instalar e configurar o seu módulo.",
@@ -5272,7 +5272,7 @@
     ";\n}",
     "Observe que no exemplo, os valores de dados do vendedor são recebidos de um Helper do módulo que você criou. Você pode trocar essa abordagem pela que desejar. Ao alterar apenas a função do recebedor secundário, o módulo calculará e preencherá o primário, garantindo que o split tenha 100% dos valores declarados."
   ],
-  "https://dev.pagbank.uol.com.br/docs/webkul-split": [
+  "https://developer.pagbank.com.br/docs/webkul-split": [
     "Webkul e Pagbank - Split",
     "Suggest Edits",
     "Uma opção para realizar a divisão do pagamento é utilizar o módulo",
@@ -5313,7 +5313,7 @@
     "Definição da conta PagBank no frontend da loja",
     ": ao incluir o módulo, uma nova página é criada no perfil dos vendedores. Nessa página, os vendedores devem vincular sua conta PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/docs/gestao-de-pedidos-magento": [
+  "https://developer.pagbank.com.br/docs/gestao-de-pedidos-magento": [
     "Gestão de Pedidos",
     "Suggest Edits",
     "O PagBank utiliza diferentes status para identificar os diferentes estágios que o pagamento pode assumir. De forma similar, os fluxos da operação também podem assumir diferentes status. Nessa página, você encontra explicações sobre a localização dessas informações e como interpretá-las.",
@@ -5390,7 +5390,7 @@
     "Reembolso",
     "para finalizar a operação."
   ],
-  "https://dev.pagbank.uol.com.br/docs/servicos-de-notificacao-magento": [
+  "https://developer.pagbank.com.br/docs/servicos-de-notificacao-magento": [
     "Serviços de Notificação",
     "Suggest Edits",
     "Este é um grupo de ações destinadas a garantir a sincronia dos status de pedidos entre o PagBank e sua loja. Atualmente, existem quatro abordagens diferentes.",
@@ -5424,7 +5424,7 @@
     "increment_id",
     "). O status atual do pedido será informado através do terminal como demonstrado na imagem abaixo."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagamentos-recorrentes-magento": [
+  "https://developer.pagbank.com.br/docs/pagamentos-recorrentes-magento": [
     "Flag de Recorrência",
     "Suggest Edits",
     "Por padrão, o módulo",
@@ -5560,7 +5560,7 @@
     "2",
     ";"
   ],
-  "https://dev.pagbank.uol.com.br/docs/duvidas-frequentes": [
+  "https://developer.pagbank.com.br/docs/duvidas-frequentes": [
     "Dúvidas frequentes",
     "Suggest Edits",
     "Nessa página você encontra respostas para dúvidas frequentes relacionadas à utilização do módulo Magento. Cada seção aborda um tópico distinto. A seguir você encontra a lista das questões respondidas nesta página.",
@@ -5641,7 +5641,7 @@
     "📘",
     "Após gravar a configuração, o Magento pode solicitar que você realize a limpeza do cache."
   ],
-  "https://dev.pagbank.uol.com.br/docs/ricardo-martins": [
+  "https://developer.pagbank.com.br/docs/ricardo-martins": [
     "Módulos Ricardo Martins",
     "Suggest Edits",
     "Os plugins PagBank desenvolvidos por Ricardo Martins, oferecem a possibilidade integrar suas lojas WooCommerce e Magento com o PagBank com taxas exclusivas desta integração. Além disso, A versão 4.x trazem novos recursos totalmente plugados à nova API PagBank, oferecendo mais estabilidade e conversões para suas transações, além do suporte eficaz e gratuito oferecido pelos desenvolvedores.",
@@ -5667,7 +5667,7 @@
     "Checkout transparente.",
     "Além dos recursos acima, ao utilizar o módulo no modelo de aplicação você terá acesso a condições exclusivas para recebimento em 14 e 30 dias. A condição é válida caso não possua nenhuma negociação junto ao PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/docs/magento-1x": [
+  "https://developer.pagbank.com.br/docs/magento-1x": [
     "Magento 1.x",
     "Suggest Edits",
     "A nova versão dos plugins PagBank desenvolvido por Ricardo Martins trazem novos recursos totalmente plugados à nova API PagBank. Isso representa mais estabilidade e conversões para suas transações, além do suporte eficaz e gratuito oferecido pelos desenvolvedores.",
@@ -5751,7 +5751,7 @@
     "página do desenvolvedor",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/magento-2x": [
+  "https://developer.pagbank.com.br/docs/magento-2x": [
     "Magento 2.x",
     "Suggest Edits",
     "A versão 4.x dos Plugins PagBank desenvolvido por Ricardo Martins trazem novos recursos totalmente plugados à nova API PagBank. Isso representa mais estabilidade e conversões para suas transações, além do suporte eficaz e gratuito oferecido pelos desenvolvedores.",
@@ -5816,7 +5816,7 @@
     "guia atualizado",
     "disponibilizado na página de Ricardo Martins."
   ],
-  "https://dev.pagbank.uol.com.br/docs/ricardo-martins-woocommerce": [
+  "https://developer.pagbank.com.br/docs/ricardo-martins-woocommerce": [
     "Woocommerce",
     "Suggest Edits",
     "A versão 4.x dos Plugins PagBank desenvolvido por Ricardo Martins trazem novos recursos totalmente plugados à nova API PagBank. Isso representa mais estabilidade e conversões para suas transações, além do suporte eficaz e gratuito oferecido pelos desenvolvedores.",
@@ -5871,7 +5871,7 @@
     "Connect Key",
     "nos campos indicados nas configurações do plugin."
   ],
-  "https://dev.pagbank.uol.com.br/docs/nuvem-shop": [
+  "https://developer.pagbank.com.br/docs/nuvem-shop": [
     "Nuvemshop",
     "Suggest Edits",
     "A NuvemShop é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -5883,7 +5883,7 @@
     "Integrando NuvemShop com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrar-nuvemshop": [
+  "https://developer.pagbank.com.br/docs/integrar-nuvemshop": [
     "Integrando a Nuvemshop com PagBank",
     "Suggest Edits",
     "Utilizar o PagBank como meio de pagamento em sua plataforma NuvemShop é fácil e simples, confira o guia abaixo para ativar a integração.",
@@ -5936,7 +5936,7 @@
     ".",
     "Uma vez finalizado o PagBank ficará ativo como meio de pagamento em sua plataforma Nuvemshop. Sugerimos realizar uma compra de teste e validar a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/opencart": [
+  "https://developer.pagbank.com.br/docs/opencart": [
     "OpenCart",
     "Suggest Edits",
     "A OpenCart é uma plataforma de ecommerce que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito mediante um checkout transparente.",
@@ -5945,7 +5945,7 @@
     "integração da OpenCart com o PagBank",
     ".  Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/opencart-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/opencart-processo-de-integracao": [
     "Integrando OpenCart com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma OpenCart com o PagBank consiste de duas etapas:",
@@ -6002,7 +6002,7 @@
     "Sempre que uma transação mudar de status, o PagBank envia uma notificação para sua loja ou para a URL que você informar neste campo.",
     "Com isso a integração esta finalizada, realize uma compra de teste para validar-la."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagar-me": [
+  "https://developer.pagbank.com.br/docs/pagar-me": [
     "Pagar.me",
     "Suggest Edits",
     "A",
@@ -6018,7 +6018,7 @@
     "guia de integração",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-pagarme": [
+  "https://developer.pagbank.com.br/docs/integrando-pagarme": [
     "Integrando Pagar.me com PagBank",
     "Suggest Edits",
     "A integração da Pagar.me é feita entrando em contato diretamente com as equipes de ambas plataformas. Confira a seguir como realizar o pedido de integração das plataformas.",
@@ -6049,7 +6049,7 @@
     "deste formulário",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/paytour": [
+  "https://developer.pagbank.com.br/docs/paytour": [
     "Paytour",
     "Suggest Edits",
     "A Paytour é uma plataforma de serviços de tours turisticos que permite conectar o PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito.",
@@ -6058,7 +6058,7 @@
     "Integrando Paytour com o PagBank",
     "Seguindo o guia acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/paytour-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/paytour-processo-de-integracao": [
     "Integrando Paytour com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Paytour com o PagBank consiste de duas etapas:",
@@ -6139,7 +6139,7 @@
     ".",
     "Para finalizar, realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/prestashop": [
+  "https://developer.pagbank.com.br/docs/prestashop": [
     "PrestaShop",
     "Suggest Edits",
     "A Prestashop é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -6151,7 +6151,7 @@
     "integração da Prestashop com o PagBank",
     ".  Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/modulo-prestashop": [
+  "https://developer.pagbank.com.br/docs/modulo-prestashop": [
     "Módulo 1.6.x , 1.7.x e 8.x",
     "Suggest Edits",
     "Através do módulo PagBank, proporcionamos uma integração completa da sua loja PrestaShop com a principal solução de pagamentos no Brasil.",
@@ -6403,7 +6403,7 @@
     "Em análise",
     "Em disputa"
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-prestashop-com-pagbank": [
+  "https://developer.pagbank.com.br/docs/integrando-prestashop-com-pagbank": [
     "Integrando Prestashop com PagBank",
     "Suggest Edits",
     "Utilizar o PagBank como meio de pagamento em sua plataforma Pestashop é fácil e simples, confira o guia abaixo para instalar o módulo e ativar a integração.",
@@ -6439,7 +6439,7 @@
     "Defina quais meios de pagamento você quer ativar e configure cada um deles.",
     "Após finalizar o processo, realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/tray": [
+  "https://developer.pagbank.com.br/docs/tray": [
     "Tray",
     "Suggest Edits",
     "A Tray é uma plataforma de ecommerce que permite conectar o PagBank, para que seus clientes possam pagar suas compras na plataforma.",
@@ -6452,7 +6452,7 @@
     "A integração do PagBank encontra-se em fase Beta. Sendo assim, erros podem acontecer durante este período de teste. Em breve, você poderá desfrutar de uma experiência ainda mais conveniente e avançada.",
     "Não é possível realizar compras com o mesmo e-mail do vendedor."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-tray-com-pagbank": [
+  "https://developer.pagbank.com.br/docs/integrando-tray-com-pagbank": [
     "Integrando Tray com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma Tray com o PagBank consiste de duas etapas:",
@@ -6523,7 +6523,7 @@
     "Continuar",
     ", o PagBank ficará disponível em seu checkout. Sugerimos realizar uma venda de teste e verificar que integração esteja correta."
   ],
-  "https://dev.pagbank.uol.com.br/docs/virtuaria": [
+  "https://developer.pagbank.com.br/docs/virtuaria": [
     "Virtuaria",
     "Suggest Edits",
     "A Virtuaria é um plugin para plataforma de e-commerce WooCommerce que oferece a possibilidade de utilizar o PagBank para fornecer meios de pagamento aos seus clientes. Com a integração deste plugin, você tem à sua disposição as seguintes funcionalidades:",
@@ -6537,7 +6537,7 @@
     "integrar a Virtuaria com o PagBank",
     "para configurar o plugin de forma rápida e aproveitar as funcionalidades ele."
   ],
-  "https://dev.pagbank.uol.com.br/docs/passo-a-passo-integra%C3%A7%C3%A3o": [
+  "https://developer.pagbank.com.br/docs/passo-a-passo-integra%C3%A7%C3%A3o": [
     "Integrando Virtuaria com PagBank",
     "Suggest Edits",
     "O processo de integração do plugin Virtuaria da plataforma WooCommerce com o PagBank consiste de duas etapas:",
@@ -6590,7 +6590,7 @@
     ". Você sera redirecionado para o painel da WooCommerce.",
     "Ao finalizar, a sua integração estará ativa. Recomendamos que você realize uma compra de teste para validar o processo."
   ],
-  "https://dev.pagbank.uol.com.br/docs/virtuol": [
+  "https://developer.pagbank.com.br/docs/virtuol": [
     "VirtUOL",
     "Suggest Edits",
     "A VirtUOL é uma plataforma de e-commerce que oferece a possibilidade de utilizar o PagBank para fornecer meios de pagamento aos seus clientes. Com a integração do PagBank nesta plataforma, você tem à sua disposição as seguintes funcionalidades:",
@@ -6604,7 +6604,7 @@
     "integrar a VirtUOL com o PagBank",
     "para configurar as plataformas de forma rápida e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-virtuol-com-pagbank": [
+  "https://developer.pagbank.com.br/docs/integrando-virtuol-com-pagbank": [
     "Integrando VirtUOL com Pagbank",
     "Suggest Edits",
     "A VirtUOL já possui o módulo PagBank pronto para uso por padrão. Basta ativá-lo e associá-lo à sua conta PagBank, assim, sua loja Virtuol poderá realizar operações utilizando o PagBank.",
@@ -6648,7 +6648,7 @@
     ".",
     "Ao finalizar esse processo a sua integração estará ativa. Recomendamos que você realize uma compra de teste para validar o processo."
   ],
-  "https://dev.pagbank.uol.com.br/docs/vnda": [
+  "https://developer.pagbank.com.br/docs/vnda": [
     "VNDA",
     "Suggest Edits",
     "A VNDA é uma plataforma de ecommerce que permite conectar o PagBank, para que seus clientes possam pagar suas compras na plataforma.",
@@ -6659,7 +6659,7 @@
     "integração da VNDA com o PagBank",
     ". Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas as plataformas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/vnda-integracao-v3": [
+  "https://developer.pagbank.com.br/docs/vnda-integracao-v3": [
     "Integrando VNDA com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma VNDA com o PagBank consiste consiste em duas etapas:",
@@ -6750,7 +6750,7 @@
     "clicando aqui",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/vtex": [
+  "https://developer.pagbank.com.br/docs/vtex": [
     "VTEX",
     "Suggest Edits",
     "A VTEX é uma plataforma de ecommerce em que você pode conectar o PagBank para fornecer meios de pagamento aos seus clientes. Ao optar pela conexão com o PagBank você tem a sua disponibilidade, as seguintes funcionalidades:",
@@ -6771,7 +6771,7 @@
     "Configurar meios de pagamento",
     "Seguindo as guias acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-conector-pagbankv3-vtex": [
+  "https://developer.pagbank.com.br/docs/integrando-conector-pagbankv3-vtex": [
     "Integrando VTEX com o PagBank",
     "Suggest Edits",
     "Para integrar a plataforma VTEX com o PagBank é necessario registrar este como Provedor na plataforma utilizando o conector PagBankV3, e autoriza-ló a realizar transações na plataforma utilizando sua conta PagBank.",
@@ -6830,7 +6830,7 @@
     "esta pagina",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/pagamento-com-divisao-vtex": [
+  "https://developer.pagbank.com.br/docs/pagamento-com-divisao-vtex": [
     "Pagamento com Split de recebíveis",
     "Suggest Edits",
     "A configuração de pagamento com divisão de recebedores consiste de duas etapas:",
@@ -6901,7 +6901,7 @@
     "Reponsável de tarifas e estornos",
     "Será responsável pelas tarifas e estornos apenas o Marketplace. Não sendo possível repassar tarifas e estornos para os sellers."
   ],
-  "https://dev.pagbank.uol.com.br/docs/configurando-meios-de-pagamento": [
+  "https://developer.pagbank.com.br/docs/configurando-meios-de-pagamento": [
     "Configurando meios de pagamento",
     "Suggest Edits",
     "Nesta página, você encontrará informações importantes sobre como configurar meios de pagamento utilizando o conector PagBankV3.",
@@ -7101,7 +7101,7 @@
     "Tempo de processamento da transaçõ",
     "Lembrando que se deve aguardar cerca de 10 minutos para as transações processarem pelo conector PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/docs/wbuy": [
+  "https://developer.pagbank.com.br/docs/wbuy": [
     "wBuy",
     "Suggest Edits",
     "A wBuy é uma plataforma de ecommerce que permite você se conectar ao PagBank para que seus clientes possam pagar suas compras via Cartão de Crédito mediante um checkout transparente.",
@@ -7110,7 +7110,7 @@
     "Integrando wBuy com o PagBank",
     "Seguindo as instruções da página acima, você poderá integrar as plataformas de forma rápida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integrando-wbuy-com-o-pagbank": [
+  "https://developer.pagbank.com.br/docs/integrando-wbuy-com-o-pagbank": [
     "Integrando wBuy com o PagBanK",
     "Suggest Edits",
     "A integração com a wBuy é rápida e simples, o guia de como realizá-la é apresentado a seguir.",
@@ -7138,7 +7138,7 @@
     "Autorizar",
     "para autorizar a integração da sua conta com a wBuy."
   ],
-  "https://dev.pagbank.uol.com.br/docs/webstore": [
+  "https://developer.pagbank.com.br/docs/webstore": [
     "WebStore",
     "Suggest Edits",
     "A Webstore é uma plataforma de ecommerce que permite conectar o PagBank, para que seus clientes possam pagar suas compras na plataforma.",
@@ -7147,7 +7147,7 @@
     "integração da Webstore com o PagBank",
     ". Ao finalizar o processo de integração, você poderá aproveitar as funcionalidades oferecidas por ambas as plataformas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/webstore-processo-de-integracao": [
+  "https://developer.pagbank.com.br/docs/webstore-processo-de-integracao": [
     "Integrando Webstore com o PagBank",
     "Suggest Edits",
     "A Webstore já possui o módulo PagBank pronto para uso por padrão. Basta ativá-lo e associá-lo à sua conta PagBank, assim, sua loja Webstore poderá realizar operações utilizando o PagBank.",
@@ -7196,7 +7196,7 @@
     "Salvar",
     "Feito isso a integração estará pronta, para finalizar, realize uma compra de teste e valide a integração."
   ],
-  "https://dev.pagbank.uol.com.br/docs/woocommerce": [
+  "https://developer.pagbank.com.br/docs/woocommerce": [
     "Woocommerce",
     "Suggest Edits",
     "A WooCommerce é uma plataforma de ecommerce que permite conectar o PagBank para fornecer aos seus clientes, os seguintes meios de pagamento:",
@@ -7221,7 +7221,7 @@
     "Configurar meios de pagamento",
     "Seguindo as guias acima, você poderá integrar as plataformas de forma rapida, e aproveitar as funcionalidades oferecidas por ambas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/processo-de-integracao-woocommerce": [
+  "https://developer.pagbank.com.br/docs/processo-de-integracao-woocommerce": [
     "Integrando WooCommerce com PagBank",
     "Suggest Edits",
     "O processo de integração da plataforma WooCommerce com o PagBank consiste de duas etapas:",
@@ -7278,7 +7278,7 @@
     "configurar os meios de pagamento",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/meios-de-pagamentos-woocommerce": [
+  "https://developer.pagbank.com.br/docs/meios-de-pagamentos-woocommerce": [
     "Configurando meios de pagamentos",
     "Suggest Edits",
     "Nesta página, você encontrará informações importantes sobre como configurar os meios de pagamento PagBank na plataforma WooCommerce.",
@@ -7327,7 +7327,7 @@
     "Expiração em minutos",
     ": Permite controlar quantos minutos após gerar o codigo PIX o mesmo irá vencer."
   ],
-  "https://dev.pagbank.uol.com.br/docs/introducao-mundo-fisico": [
+  "https://developer.pagbank.com.br/docs/introducao-mundo-fisico": [
     "Introdução",
     "Suggest Edits",
     "Dentre as soluções fornecidas pelo PagBank, o termo Mundo Físico se refere ao ambiente onde as transações financeiras são realizadas pessoalmente, utilizando ferramentas e sistemas físicos. Normalmente incluem cédulas, cartões de crédito e débito, ou pagamento por aproximação utilizando dispositivos eletrônicos (NFC).",
@@ -7347,7 +7347,7 @@
     "Connect Parcerias",
     "O Connect Parcerias da PagBank é uma iniciativa focada em estabelecer parcerias e explorar novas oportunidades de negócio, como por exemplo em franquias ou prestação de serviços. Esta ferramenta possibilita aos parceiros de negócio replicar as condições comerciais aprovadas para o cliente que está adquirindo máquinas PagBank. Desta forma, suas filiais, ou vendedores, podem comprar terminais com preços e taxas únicas."
   ],
-  "https://dev.pagbank.uol.com.br/docs/smartpos": [
+  "https://developer.pagbank.com.br/docs/smartpos": [
     "SmartPOS",
     "Suggest Edits",
     "A SmartPos possibilita a execução de operações básicas das máquinas de cartão, como pagamentos com cartões de crédito, débito, vouchers, PIX e carteiras digitais. A SmartPOS possui sistema operacional Android que permite a instalação de aplicativos que aumentam as funcionalidades do equipamento e todas as operações são realizadas abaixo da adquirência do PagBank. Ao comprar o terminal, você já está apto a realizar vendas e conta com aplicativos padrões para controle de fluxo de caixa, vendas e estoque, porém você também pode desenvolver sua própria aplicação para utilizar o terminal da forma que melhor atenda sue negócio.",
@@ -7395,7 +7395,7 @@
     "Integração SmartPOS",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/integracao-smartpos": [
+  "https://developer.pagbank.com.br/docs/integracao-smartpos": [
     "Integração SmartPOS",
     "Suggest Edits",
     "A integração da SmartPOS é destinado aos clientes parceiros PagBank que desejam criar aplicações Android próprias e operar abaixo da adquirência da PagSeguro. As aplicações personalizadas podem ser utilizadas em um dos terminais da PagBank:",
@@ -7516,7 +7516,7 @@
     ". Você estará dando o primeiro passo para se tornar nosso parceiro.",
     "Pipefy | The operations excellence platform"
   ],
-  "https://dev.pagbank.uol.com.br/docs/providers-classes": [
+  "https://developer.pagbank.com.br/docs/providers-classes": [
     "Providers (Classes)",
     "Suggest Edits",
     "A biblioteca PlugPagService é composta de um conjunto de classes. A classe principal chama-se PlugPag, mas é necessário utilizar classes auxiliares para configurações e trocas de informações.",
@@ -7606,7 +7606,7 @@
     "aplicação demo",
     "disponibilizada pelo PagBank."
   ],
-  "https://dev.pagbank.uol.com.br/docs/exemplos-de-implementacao": [
+  "https://developer.pagbank.com.br/docs/exemplos-de-implementacao": [
     "Exemplos de implementação",
     "Suggest Edits",
     "Nessa página você encontra exemplos da utilização dos métodos do",
@@ -9882,7 +9882,7 @@
     "e",
     ");\n\t}\n\t\t});\n}"
   ],
-  "https://dev.pagbank.uol.com.br/docs/plugpag": [
+  "https://developer.pagbank.com.br/docs/plugpag": [
     "PlugPag",
     "Suggest Edits",
     "para  PlugPag é uma solução para integração automática da máquina de cartões PagBank com sistemas de automação comercial baseados em Windows, Linux, Android ou iOS. Com ele é possível desenvolver uma solução personalizada para cada modelo de negócio e garantir um processo ágil e inteligente para as vendas do dia-a-dia, reduzindo riscos de erros e disponibilizando relatórios em tempo real.",
@@ -9975,7 +9975,7 @@
     "Moderninha WIFI e Moderninha Pro",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/estrutura-da-aplicacao": [
+  "https://developer.pagbank.com.br/docs/estrutura-da-aplicacao": [
     "Estrutura da aplicação",
     "Suggest Edits",
     "A estrutura de aplicação da integração PlugPag, ou seja, a comunicação entre sua aplicação comercial, os terminais PagBank e os servidores PagBank, seguem o mesmo padrão independente do sistema operacional. A comunicação entre a automação comercial e os terminais é realizada via bluetooth, e a comunicação com os servidores é realizada via GSM/WIFI.",
@@ -10007,7 +10007,7 @@
     "Timeout",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/versao-do-terminal": [
+  "https://developer.pagbank.com.br/docs/versao-do-terminal": [
     "Versão do terminal",
     "Suggest Edits",
     "Antes de iniciar a integração, você precisa verificar a versão do firmware. É necessário que a versão seja igual ou superior a 3.11.x. Caso a versão seja anterior, realize a atualização manual.",
@@ -10039,7 +10039,7 @@
     "Atualizações",
     "."
   ],
-  "https://dev.pagbank.uol.com.br/docs/guide-plugpag-windows": [
+  "https://developer.pagbank.com.br/docs/guide-plugpag-windows": [
     "Guide PlugPag - Windows e Linux",
     "Suggest Edits",
     "Nest como iniciar o processo de integração dos terminais Moderninha PRO e WIFI com os sistemas operacionais Windows e Linux, e ao final disponibiliza Apps Demo para ambos sistemas.",
@@ -10054,7 +10054,7 @@
     "Linux:",
     "Demo Linux"
   ],
-  "https://dev.pagbank.uol.com.br/docs/providers-windows": [
+  "https://developer.pagbank.com.br/docs/providers-windows": [
     "Providers - Windows e Linux",
     "Suggest Edits",
     "Esta página irá apresentar os principais métodos disponíveis para a integração dos terminais Moderninha PRO e WIFI com os sistemas operacionais Windows e Linux, assim como alguns exemplos de aplicações.",
@@ -10237,7 +10237,7 @@
     "CancelTransaction",
     "é um ponteiro para uma estrutura que, ao fim da execução do método, estará populada com os dados do retorno da transação efetuada no terminal. A estrutura é apresentada no item Dados."
   ],
-  "https://dev.pagbank.uol.com.br/docs/guide-ios": [
+  "https://developer.pagbank.com.br/docs/guide-ios": [
     "Guide PlugPag - iOS",
     "Suggest Edits",
     "Esta página irá apresentar como iniciar o processo de integração dos terminais Minizinha, Moderninha PRO e WIFI com o sistema operacional iOS, e ao final disponibiliza Apps Demo para este sistema.",
@@ -10251,7 +10251,7 @@
     "Moderninha WIFI - Swift",
     "Moderninha WIFI - Objective C"
   ],
-  "https://dev.pagbank.uol.com.br/docs/proveiders-ios": [
+  "https://developer.pagbank.com.br/docs/proveiders-ios": [
     "Providers - iOS",
     "Suggest Edits",
     "Esta página irá apresentar os principais métodos disponíveis para a integração dos terminais Minizinha, Moderninha PRO e WIFI com o sistema operacional iOS, assim como alguns exemplos de aplicações. Esta apresentação está dividida em duas partes, sendo a primeira a respeito do terminal Minizinha e a segunda dos terminais Moderninha PRO e WIFI.",
@@ -11169,7 +11169,7 @@
     "3.12+",
     ")."
   ],
-  "https://dev.pagbank.uol.com.br/docs/guide-android": [
+  "https://developer.pagbank.com.br/docs/guide-android": [
     "Guide PlugPag - Android",
     "Suggest Edits",
     "Esta página irá apresentar como iniciar o processo de integração dos terminais Minizinha, Moderninha PRO e WIFI com o sistema operacional Android, e ao final disponibiliza Apps Demo para este sistema. Esta apresentação está dividida em duas partes, sendo a primeira a respeito do terminal Minizinha e a segunda dos terminais Moderninha PRO e WIFI.",
@@ -11462,7 +11462,7 @@
     "Moderninha PRO - Java",
     "Moderninha WIFI - Java"
   ],
-  "https://dev.pagbank.uol.com.br/docs/providers-android": [
+  "https://developer.pagbank.com.br/docs/providers-android": [
     "Providers - Android",
     "Suggest Edits",
     "Esta página irá apresentar os principais métodos disponíveis para a integração dos terminais Minizinha, Moderninha PRO e WIFI com o sistema operacional Android, assim como alguns exemplos de aplicações. Esta apresentação está dividida em duas partes, sendo a primeira a respeito do terminal Minizinha e a segunda dos terminais Moderninha PRO e WIFI. Clique",
@@ -12068,7 +12068,7 @@
     "GetLastApprovedTransactionStatus()",
     "aguarda a finalização da transação e retorna os dados desta se aprovada (nessessário biblioteca 1.3.0+ e moderninha 3.12+)."
   ],
-  "https://dev.pagbank.uol.com.br/docs/codigos-erro-retorno": [
+  "https://developer.pagbank.com.br/docs/codigos-erro-retorno": [
     "Códigos de erro e de retorno",
     "Suggest Edits",
     "Esta página apresenta os códigos de retorno e de erros para os terminais Minizinha, Moderninha PRO e WIFI para os sistemas operacionais Windows, Linux, iOS e Android.",
@@ -12249,7 +12249,7 @@
     "12 Bloqueada",
     "Não é possível alterar este status."
   ],
-  "https://dev.pagbank.uol.com.br/docs/tef": [
+  "https://developer.pagbank.com.br/docs/tef": [
     "TEF",
     "Suggest Edits",
     "A Transferência Eletrônica de Fundos (TEF) é um método de transferência de dinheiro entre contas que possibilita que vendas de crédito, débito ou voucher sejam realizadas de maneira eficiente e segura utilizando o terminal PINPad, que é o aparelho utilizado para realizar transações com cartão no ponto de venda. A TEF permite que um mesmo ponto de venda possa ser configurado para uso de várias adquirentes e que vários pontos de venda possam ser integrados no sistema do estabelecimento. O serviço é implantado através de um Software TEF homologado pelo adquirente, funciona de forma integrada com um PINPad e a automação comercial do estabelecimento, e possui compatibilidade com muitas bandeirass.",
@@ -12308,7 +12308,7 @@
     "A partir da autorização de pagamento do cartão do cliente, a venda é conciliada com o banco emissor automaticamente.",
     "Se a transação for negada, peça ao cliente entrar em contato com o banco para verificar o motivo. Caso a situação ocorra repetidamente, entre em contato com o suporte Pagbank para maiores informações."
   ],
-  "https://dev.pagbank.uol.com.br/docs/connect-parceria": [
+  "https://developer.pagbank.com.br/docs/connect-parceria": [
     "Connect Parceria",
     "Suggest Edits",
     "O sistema Connect Parceria do PagBank tem como público alvo clientes com modelo de operação através de parcerias, franquias ou prestação de serviços. Com o Connect Parceria é possível replicar as condições comerciais aprovadas para as filiais que estão adquirindo máquinas Pagbank.",
