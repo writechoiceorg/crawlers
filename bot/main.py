@@ -9,12 +9,13 @@ from yuno_crawler import run_yuno_apiref, run_yuno_guides
 from ideal_crawler import run_ideal_apiref, run_ideal_guides
 from time import sleep
 from packaging import version
+import time
 
 # from pagbank_get_all_text import run_pagbank_text_reader
 # from yuno_get_all_text import run_yuno_text_reader
 
 GITHUB_REPO = "writechoiceorg/bot"
-CURRENT_VERSION = "v1.1.4"
+CURRENT_VERSION = "v1.1.5"
 
 
 def search_updates():
@@ -37,7 +38,20 @@ def search_updates():
                 return True
             else:
                 return False
-    except requests.RequestException as e:
+    except requests.exceptions.HTTPError as e:
+        # Access the response object from the exception
+        response = e.response
+        if response.status_code == 403:
+            reset_time = int(response.headers.get("X-RateLimit-Reset", time.time()))
+            sleep_time = max(reset_time - time.time(), 0)
+            messagebox.showerror(
+                "Github rate limit",
+                f"Rate limit exceeded. Please wait {int(sleep_time)} seconds before trying again.",
+            )
+        else:
+            messagebox.showerror("Update Check Failed", f"HTTP Error: {e}")
+    except requests.exceptions.RequestException as e:
+        # Handles other request exceptions like ConnectionError, Timeout, etc.
         messagebox.showerror("Update Check Failed", f"Failed to check for updates: {e}")
 
 
